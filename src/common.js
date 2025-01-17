@@ -9,16 +9,23 @@ url = null;
 urlLen = null;
 ridPos = null;
 var my_uid = getCookieValue("acf_uid"); // 自己的uid
+var myName = "";
 var dyToken = getToken();
+// 功能条的显示定时器
+var exPanelTimer = null;
 
 function showExPanel() {
 	// 显示功能条
 	let a = document.getElementsByClassName("ex-panel")[0];
-	if (a.style.display != "block") {
-		a.style.display = "block";
-	} else {
-		a.style.display = "none";
-	}
+	if (a.style.visibility !== 'visible') {
+        a.style.visibility = 'visible';
+        a.style.opacity = '1';
+        clearTimeout(exPanelTimer);
+    } else {
+        a.style.visibility = 'hidden';
+        a.style.opacity = '0';
+        clearTimeout(exPanelTimer);
+    }
 }
 
 function sleep(time) {
@@ -290,35 +297,68 @@ function getTextareaPosition(element) {
     return cursorPos;
 }
 
+
+let panels = [
+	{
+		name: "弹幕发送小助手",
+		className: "bloop",
+	},
+	{
+		name: "扩展功能",
+		className: "extool",
+	},
+	{
+		name: "直播间工具",
+		className: "livetool",
+	},
+	{
+		name: "全站抽奖信息",
+		className: "exlottery"
+	},
+];
 function showExRightPanel(name) {
-	let panels = [
-		{
-			name: "弹幕发送小助手",
-			className: "bloop",
-		},
-		{
-			name: "扩展功能",
-			className: "extool",
-		},
-		{
-			name: "直播间工具",
-			className: "livetool",
-		},
-		{
-			name: "全站抽奖信息",
-			className: "exlottery"
-		},
-	];
 	for (let i = 0; i < panels.length; i++) {
 		let item = panels[i];
 		let dom = document.getElementsByClassName(item.className)[0];
+		let mask = document.getElementsByClassName("ex-mask")[0];
 		if (dom) {
 			if (name === item.name) {
 				dom.style.display = dom.style.display !== "block" ? "block" : "none";
+				mask.style.display = dom.style.display !== "block" ? "none" : "block";
 			} else {
 				dom.style.display = "none";
 			}
 		}
+	}
+}
+
+maskLayer();
+function maskLayer(){
+	let mask = document.createElement("div");
+	mask.style.position = "fixed";
+	mask.style.top = "0";
+	mask.style.left = "0";
+	mask.style.width = "100%";
+	mask.style.height = "100%";
+	mask.style.backgroundColor = "rgba(0,0,0,0.5)";
+	mask.style.zIndex = "10000";
+	mask.style.display = "none";
+	mask.className = "ex-mask";
+	mask.style.backdropFilter = "blur(3px)";
+	document.body.appendChild(mask);
+
+	mask.onclick = function(event) {
+		if(event.target.className != "ex-mask") {
+			return;
+		}
+		for (let i = 0; i < panels.length; i++) {
+			let item = panels[i];
+			let dom = document.getElementsByClassName(item.className)[0];
+			if (dom) {
+				dom.style.display = "none";
+			}
+		}
+		mask.style.display = "none";
 	}
 }
 
@@ -409,4 +449,40 @@ function sheet2blob(sheet, sheetName) {
 		return buf;
 	}
 	return blob;
+}
+
+function downloadFile(name, data) {
+    var urlObject = unsafeWindow.URL || unsafeWindow.webkitURL || unsafeWindow;
+    var export_blob = new Blob([data]);
+    var save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+    save_link.href = urlObject.createObjectURL(export_blob);
+    save_link.download = name;
+
+	var ev = document.createEvent("MouseEvents");
+    ev.initMouseEvent("click", true, false, unsafeWindow, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    save_link.dispatchEvent(ev);
+} 
+
+function timeText2Ms(text) {
+	let ret = 0;
+	let arr = text.split(":");
+	if (arr.length === 1) {
+		ret = Number(arr[0]);
+	} else if (arr.length === 2) {
+		ret = Number(arr[0]) * 60 + Number(arr[1]);
+	} else if (arr.length === 3) {
+		ret = Number(arr[0]) * 3600 + Number(arr[1]) * 60 + Number(arr[2]);
+	}
+	return ret * 1000;
+}
+
+function resizeWindow() {
+  const resizeEvent = new Event("resize");
+  window.dispatchEvent(resizeEvent);
+}
+
+function isValidImageFile(filename) {
+  const validExtensions = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp", ".ico", ".tiff", ".tif"];
+  const ext = filename.substring(filename.lastIndexOf(".")).toLowerCase();
+  return validExtensions.includes(ext);
 }

@@ -22,25 +22,32 @@ function getRealLive_Bilibili(room_id, qn, cdn, reallive_callback) {
             qn_data = "400";
             break;
         case "5":
-            qn_data = "10000";
+            qn_data = "20000";
             break;
         default:
             qn_data = "80";
             break;
     }
     GM_xmlhttpRequest({
-		method: "GET",
-		url: "https://api.live.bilibili.com/room/v1/Room/playUrl?cid=" + room_id + "&qn=" + qn_data + "&platform=web",
-		responseType: "json",
-		onload: function(response) {
+        method: "GET",
+        url: `https://api.live.bilibili.com/xlive/web-room/v2/index/getRoomPlayInfo?room_id=${room_id}&platform=web&qn=${qn_data}&protocol=0,1&format=0,1,2&codec=0,1`,
+        responseType: "json",
+        onload: function (response) {
             let ret = response.response;
             let rurl = "";
-            if (ret.data.durl != null) {
-                rurl = ret.data.durl[Number(cdn)].url;
-            } else {
-                rurl = "";
+            for (let i = 0; i < ret.data.playurl_info.playurl.stream.length; i++) {
+                const item = ret.data.playurl_info.playurl.stream[i];
+                if (String(item.protocol_name).includes("stream") && item.format.length > 0) {
+                    let url_info = item.format[0].codec[0].url_info[0];
+                    let base_url = item.format[0].codec[0].base_url;
+                    rurl = `${url_info.host}${base_url}${url_info.extra}`;
+                }
+            }
+            let streamList = ret.data.durl;
+            if (streamList) {
+                rurl = streamList.length > 0 ? streamList[0].url : "";
             }
             reallive_callback(rurl);
         }
-	});
+    });
 }

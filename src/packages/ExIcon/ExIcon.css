@@ -9,3 +9,13 @@
     -khtml-user-select:none; /*早期浏览器*/
     user-select:none;
 }
+
+.ex-icon a {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.ex-icon svg:hover {
+    transform: scale(1.1);
+}

@@ -127,12 +127,31 @@ function initPkg_VideoTools_Filter_Func() {
         liveVideoNode.style.filter = `${ currentBrightness } ${ currentContrast } ${ currentSaturate }`;
     });
 
-    document.getElementById("ex-filter").addEventListener("mouseover", function () {
-        document.getElementsByClassName("filter__wrap")[0].style.display = "block";
+    const filterButton = document.getElementById("ex-filter");
+    const filterPanel = document.getElementsByClassName("filter__wrap")[0];
+    let overPanel = false;
+    let timeout = null;
+
+    filterButton.addEventListener("mouseover", function () {
+        if (timeout) clearTimeout(timeout);
+        filterPanel.style.display = "block";
+        timeout = setTimeout(() => {
+            if(!overPanel) {
+                filterPanel.style.display = "none";
+            }
+        }, 1500);
     });
-    document.getElementsByClassName("filter__wrap")[0].addEventListener("mouseleave", function () {
-        document.getElementsByClassName("filter__wrap")[0].style.display = "none"
+
+    filterPanel.addEventListener("mouseover", function() {
+        overPanel = true;
+    })
+    filterPanel.addEventListener("mouseleave", function () {
+        setTimeout(() => {
+            filterPanel.style.display = "none"
+            overPanel = false;
+        }, 500);
     });
+    
     document.getElementById("filter__reset").addEventListener("click", () => {
         resetVideoFilter();
     });
@@ -156,7 +175,11 @@ function initPkg_VideoTools_Filter_Func() {
         transformCss.rotate = `rotate(${String(rotateAngle)}deg)`;
         liveVideoNode.parentNode.style.transition = "all .5s";
         if ((rotateAngle/90) % 2 !== 0) {
-            transformCss.scale = "scale(" + String(liveVideoNode.videoHeight / liveVideoNode.videoWidth) + ")";
+            if (window.innerWidth > window.innerHeight) {
+                transformCss.scale = "scale(" + String(liveVideoNode.videoHeight / liveVideoNode.videoWidth) + ")";
+            } else {
+                transformCss.scale = "scale(" + String(liveVideoNode.videoWidth / liveVideoNode.videoHeight) + ")";
+            }
         } else {
             transformCss.scale = "";
         }

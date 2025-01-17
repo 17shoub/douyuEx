@@ -19,6 +19,7 @@ function initPkg_VideoTools() {
 
 function initPkg_VideoTools_Module() {
     // 添加模块
+    initPkg_VideoTools_Joysound();
     initPkg_VideoTools_VideoSpeed();
     initPkg_VideoTools_Cinema();
     initPkg_VideoTools_VideoSync();
@@ -26,6 +27,7 @@ function initPkg_VideoTools_Module() {
     initPkg_VideoTools_Filter();
     initPkg_VideoTools_Camera();
     initPkg_VideoTools_VideoZoom();
+    initPkg_VideoTools_MetaData();
 }
 
 function initPkg_VideoTools_Func() {

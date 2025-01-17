@@ -33,8 +33,14 @@ function Refresh_Video_insertIcon() {
 }
 
 function initPkg_Refresh_Video_Func() {
+    new DomHook('.right-e7ea5d', true, () => {
+        const video_fullPage = document.querySelector('.wfs-2a8e83.removed-9d4c42') ? true : false;
+        const dom_player_toolbar = document.getElementById("js-player-toolbar");
+        dom_player_toolbar.style = video_fullPage ? "z-index:20" : "z-index:30";
+    });
+
 	document.getElementById("refresh-video").addEventListener("click", (e) => {
-        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
         let dom_video = document.getElementsByClassName("layout-Player-video")[0];
         let dom_refresh = document.getElementById("refresh-video");
         let dom_refresh2 = document.getElementById("refresh-video2");
@@ -52,9 +58,10 @@ function initPkg_Refresh_Video_Func() {
             refresh_Video_setStyle();
         }
         saveData_Refresh();
+        resizeWindow();
     });
     document.getElementById("refresh-video2").addEventListener("click", () => {
-        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
         let dom_video = document.getElementsByClassName("layout-Player-video")[0];
         let dom_refresh = document.getElementById("refresh-video");
         let dom_refresh2 = document.getElementById("refresh-video2");
@@ -72,11 +79,12 @@ function initPkg_Refresh_Video_Func() {
             refresh_Video_setStyle();
         }
         saveData_Refresh();
+        resizeWindow();
     });
 }
 
 function refresh_Video_getStatus() {
-    let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+    let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
     if (dom_toolbar.style.visibility == "hidden") {
         return true;
     } else {
@@ -92,22 +100,32 @@ function initPkg_Refresh_Video_Set() {
             retJson.video = {status: false};
         }
         if (retJson.video.status == true) {
-            let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+            let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
             let dom_video = document.getElementsByClassName("layout-Player-video")[0];
             let dom_refresh2 = document.getElementById("refresh-video2");
             let dom_refresh = document.getElementById("refresh-video");
+            let dom_player_toolbar = document.getElementById("js-player-toolbar");
             dom_toolbar.style.visibility = "hidden";
             dom_video.style = "bottom:0;z-index:25";
+            dom_player_toolbar.style = "z-index:30";
+            let ret = localStorage.getItem("ExSave_FullScreen");
+            if (ret != null) {
+                let retJson = JSON.parse(ret);
+                if (retJson.isFullScreen) {
+                    dom_player_toolbar.style = "z-index:20";
+                }
+            }
             dom_refresh2.style.display = "block";
             dom_refresh.innerText = "√ 简洁模式";
             refresh_Video_setStyle();
+            resizeWindow();
         }
     }
 }
 
 function refresh_Video_setStyle() {
     StyleHook_set("Ex_Style_VideoRefresh", `
-    .pushTower-wrapper-gf1HG,.PkView-9f6a2c,.MorePk,.RandomPKBar,.LiveRoomLoopVideo,.LiveRoomDianzan,.maiMaitView-68e80c,.PkView{display:none !important;}
+    .PELact,.pushTower-wrapper-gf1HG,.PkView-9f6a2c,.MorePk,.RandomPKBar,.LiveRoomLoopVideo,.LiveRoomDianzan,.maiMaitView-68e80c,.PkView{display:none !important;}
     `)
 }
 

@@ -1,10 +1,11 @@
 function initPkg_DyVideoDownload() {
     let timer = setInterval(() => {
-        let toolBar = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector(".ToolBar-positiveUl");
-        if (toolBar) {
+        let toolBarShadow = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot;
+        if (toolBarShadow) {
             clearInterval(timer);
+            let toolbar = toolBarShadow.querySelector(".ToolBar-positiveUl");
             initPkg_DyVideoDownload_Style();
-            initPkg_DyVideoDownload_Dom(toolBar);
+            initPkg_DyVideoDownload_Dom(toolbar);
             initPkg_DyVideoDownload_Func();
         }
     }, 1000);
@@ -49,8 +50,11 @@ function initPkg_DyVideoDownload_Dom(dom) {
         <div class="download__item" id="download__copy" title="可将链接填至第三方下载器中下载">
             <span class="ToolBar-iconText">复制m3u8链接</span>
         </div>
-        <div class="download__item" id="download__barrage" title="下载弹幕">
-            <span class="ToolBar-iconText">下载弹幕</span>
+        <div class="download__item" id="download__barrage" title="下载弹幕(.xlsx)">
+            <span class="ToolBar-iconText">下载弹幕(.xlsx)</span>
+        </div>
+        <div class="download__item" id="download__barrageass" title="下载弹幕(.ass)">
+            <span class="ToolBar-iconText">下载弹幕(.ass)</span>
         </div>
     </div>
     <span class="ToolBar-icon ">
@@ -183,46 +187,28 @@ function initPkg_DyVideoDownload_Func() {
         } while (pre >= 0);
 
         exportJsonToExcel(header, body, `【${videoTitle}】弹幕数据.xlsx`);
-
-        // domDownloadPanel.style.display = "none";
     })
-}
 
-function getVideoStreamUrl(vid, sign) {
-    return new Promise(resolve => {
-        fetch("https://v.douyu.com/api/stream/getStreamUrl", {
-            method: 'POST',
-            mode: 'no-cors',
-            credentials: 'include',
-            headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
-            body: `${sign}&vid=${vid}`
-        }).then(result => {
-            return result.json();
-        }).then(ret => {
-            resolve(ret);
-        }).catch(err => {
-            console.log("请求失败!", err);
-        })
-    })
-}
-
-function getVideoBarrageByTime(vid, pre = 0) {
-    // pre来自接口返回值data.pre中
-    // 若为-1则不再获取
-    if (pre < 0) {
-        return;
-    }
-    return new Promise(resolve => {
-        fetch(`https://v.douyu.com/wgapi/vod/center/getBarrageListByPage?vid=${vid}&offset=${pre}`, {
-            method: 'GET',
-            mode: 'no-cors',
-            credentials: 'include',
-        }).then(result => {
-            return result.json();
-        }).then(ret => {
-            resolve(ret);
-        }).catch(err => {
-            console.log("请求失败!", err);
-        })
+    document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector("#download__barrageass").addEventListener("click", async () => {
+        let videoTitle = document.getElementsByTagName("demand-video-title")[0].shadowRoot.querySelector(".Title-Main").innerText;
+        let hashid = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector("share-hover").getAttribute("hashid");
+        showMessage("正在获取弹幕数据，请勿切换页面...", "info");
+        let pre = 0;
+        let ass = new ASS({title: videoTitle});
+        let list = [];
+        do {
+            let data = await getVideoBarrageByTime(hashid, pre);
+            pre = data.data.pre;
+            for (let i = 0; i < data.data.list.length; i++) {
+                let item = data.data.list[i];
+                list.push({
+                    time: Number(item.tl),
+                    txt: item.ctt,
+                    color: item.col,
+                });
+            }
+        } while (pre >= 0);
+        let result = ass.generate(list);
+        downloadFile(`${videoTitle}.ass`, result);
     })
 }

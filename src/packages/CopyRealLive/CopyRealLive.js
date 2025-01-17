@@ -17,33 +17,49 @@ function CopyRealLive_insertIcon() {
     }
 }
 
+function CopyRealLive_getQn(qnName) {
+    if (String(qnName).includes("蓝光8M")) return 8;
+    if (String(qnName).includes("蓝光4M")) return 4;
+    if (String(qnName).includes("超清")) return 3;
+    if (String(qnName).includes("高清")) return 2;
+    return 0;
+}
+
+function CopyRealLive_copyUrl(qn) {
+    getRealLive_Douyu(rid, true, false, qn, (lurl) => {
+        if (lurl == "None") {
+            showMessage("房间未开播或其他错误", "error");
+        } else {
+            let str = String(lurl);
+            // GM_setClipboard(String(lurl).replace("https", "http"));
+            GM_setClipboard(str);
+            showMessage("复制成功", "success");
+        }
+    })
+}
+
 function initPkg_CopyRealLive_Func() {
 	document.getElementById("copy-real-live").addEventListener("click", function() {
-        getRealLive_Douyu(rid, true, false, "1015", (lurl) => {
-            if (lurl == "None") {
-                showMessage("房间未开播或其他错误", "error");
-            } else {
-                let str = String(lurl);
-                // GM_setClipboard(String(lurl).replace("https", "http"));
-                GM_setClipboard(str);
-                showMessage("复制成功", "success");
-            }
-            
-        })
+        if (document.querySelectorAll(".tipItem-898596 > ul > li").length > 0) {
+            document.querySelectorAll(".tipItem-898596 > ul > li").forEach(item => {
+                if (item.className.includes("selected")) {
+                    CopyRealLive_copyUrl(CopyRealLive_getQn(item.innerText));
+                }
+            })
+        } else {
+            CopyRealLive_copyUrl(0);
+        }
     });
     document.getElementsByClassName("Title-header")[0].addEventListener("click", function() {
-        getRealLive_Douyu(rid, true, false, "1015", (lurl) => {
-            if (lurl == "None") {
-                showMessage("房间未开播或其他错误", "error");
-            } else {
-                // // GM_setClipboard(String(lurl).replace("https", "http"));
-                // GM_setClipboard(String(lurl));
-                let str = String(lurl);
-                GM_setClipboard(str);
-                showMessage("复制成功", "success");
-            }
-            
-        })
+        if (document.querySelectorAll(".tipItem-898596 > ul > li").length > 0) {
+            document.querySelectorAll(".tipItem-898596 > ul > li").forEach(item => {
+                if (item.className.includes("selected")) {
+                    CopyRealLive_copyUrl(CopyRealLive_getQn(item.innerText));
+                }
+            })
+        } else {
+            CopyRealLive_copyUrl(0);
+        }
     });
 
     let titNode = document.getElementsByClassName("RecommendViewTit-04ebd8");

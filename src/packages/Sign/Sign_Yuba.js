@@ -1,6 +1,7 @@
 let signedYuba = 0;
 let totalYuba = 0;
 let doneYuba = 0;
+let signCountMap = {};
 function initPkg_Sign_Yuba() {
     signYubaList();
 }
@@ -31,7 +32,7 @@ function signYubaFast() {
     });
 }
 
-function signYuba(group_id, t) {
+async function signYuba(group_id, t) {
     GM_xmlhttpRequest({
         method: "POST",
         url: "https://yuba.douyu.com/ybapi/topic/sign",
@@ -43,7 +44,20 @@ function signYuba(group_id, t) {
             "dy-token": t,
             'Referer': 'https://yuba.douyu.com/group/' + group_id
         },
-        onload: function (response) {
+        onload: async function (response) {
+            if (signCountMap[group_id] >= 10) {
+                return;
+            }
+            if (response.response.message == "签到失败") {
+                await sleep(2000);
+                signYuba(group_id, t);
+                return;
+            }
+            if (signCountMap[group_id]) {
+                signCountMap[group_id]++;
+            } else {
+                signCountMap[group_id] = 1;
+            }
             doneYuba++;
             if (response.response.message == "") {
                 signedYuba++;
@@ -53,17 +67,8 @@ function signYuba(group_id, t) {
                 // showMessage("【鱼吧】" + group_id + response.response.message, "warning");
                 // console.log("【鱼吧】" + group_id + response.response.message);
             }
-            getSupplementaryNums(group_id).then(async (numsRet) => {
-                if (numsRet.status_code == "200") {
-                    let nums = numsRet.data.supplementary_cards;
-                    for (let j = 0; j < nums; j++) {
-                        let a = await signSupplementary(group_id);
-                        if (a.message == "补签失败" || a.message == "系统维护中") {
-                            break;
-                        }
-                    }
-                }
-            })
+            
+            signYubaSupplementary(group_id);
             if (doneYuba == totalYuba) {
                 // 完成全部签到
                 if (signedYuba > 0) {
@@ -80,9 +85,15 @@ function signYuba(group_id, t) {
                 totalYuba = null;
                 doneYuba = null;
             }
-
         }
     });
+}
+
+async function signYubaSupplementary(group_id) {
+    let result = await signSupplementary(group_id);
+    for (let i = 0; i < result.data.supplementary_cards; i++) {
+        await signSupplementary(group_id);
+    }
 }
 
 async function signYubaList() {

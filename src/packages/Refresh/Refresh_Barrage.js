@@ -22,10 +22,8 @@ function initPkg_Refresh_Barrage_Func() {
 	document.getElementById("refresh-barrage").addEventListener("click", function() {
         if (current_barrage_status == 0) {
             // 简化
-            current_barrage_status = 1;
             setRefreshBarrage();
         } else {
-            current_barrage_status = 0;
             cancelRefreshBarrage();
         }
         saveData_Refresh();
@@ -51,7 +49,6 @@ function initPkg_Refresh_Barrage_Set() {
             retJson.barrage = {status: false};
         }
         if (retJson.barrage.status == true) {
-            current_barrage_status = 1;
             setRefreshBarrage();
         }
     }
@@ -59,12 +56,20 @@ function initPkg_Refresh_Barrage_Set() {
  
 function setRefreshBarrage() {
     let cssText = `
-    .Barrage-honor,.Barrage-listItem .Barrage-icon,.Barrage-listItem .FansMedal.is-made,.Barrage-listItem .RoomLevel,.Barrage-listItem .Motor,.Barrage-listItem .ChatAchievement,.Barrage-listItem .Barrage-hiIcon,.Barrage-listItem .Medal,.Barrage-listItem .MatchSystemTeamMedal{display:none !important;}
+    .UserCsgoGameDataMedal,.Barrage-honor,.Barrage-listItem .Barrage-icon,.Barrage-listItem .FansMedal.is-made,.Barrage-listItem .RoomLevel,.Barrage-listItem .Motor,.Barrage-listItem .ChatAchievement,.Barrage-listItem .Barrage-hiIcon,.Barrage-listItem .Medal,.Barrage-listItem .MatchSystemTeamMedal{display:none !important;}
     /*.Barrage-listItem .UserLevel{display:none !important;}*/
+    .Barrage-listItem .Baby{display:none !important;}
+    .FansMedalWrap{display:none !important;}
     `;
     StyleHook_set("Ex_Style_RefreshBarrage", cssText);
+    current_barrage_status = 1;
+    document.getElementById("refresh-barrage").style.backgroundColor = "rgb(18,150,219)";
+    document.getElementById("refresh-barrage__text").style.color = "#fff";
 }
 
 function cancelRefreshBarrage() {
     StyleHook_remove("Ex_Style_RefreshBarrage");
+    current_barrage_status = 0;
+    document.getElementById("refresh-barrage").style.backgroundColor = "#fff";
+    document.getElementById("refresh-barrage__text").style.color = "";
 }

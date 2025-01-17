@@ -19,14 +19,16 @@ function initPkg_LiveTool_Module() {
 	initPkg_LiveTool_Reply();
 	initPkg_LiveTool_Treasure();
 	initPkg_LiveTool_BarrageSpeed();
+	initPkg_LiveTool_RankList();
+	initPkg_LiveTool_BarrageSendCheck();
 
 	// initPkg_LiveTool_Bojiang_Handle();
 }
 function LiveTool_insertModal() {
 	let a = document.createElement("div");
-	a.className = "livetool";
+	a.className = "livetool ex-dialog";
 	
-	let b = document.getElementsByClassName("layout-Player-chat")[0];
+	let b = document.getElementsByClassName("ex-mask")[0];
 	b.insertBefore(a, b.childNodes[0]);
 }
 function LiveTool_insertIcon() {
@@ -58,6 +60,8 @@ function initPkg_LiveTool_HandleFunc() {
 		// initPkg_LiveTool_Friend_Handle(ret);
 		initPkg_LiveTool_Vote_Handle(ret); // 投票
 		initPkg_LiveTool_BarrageSpeed_Handle(ret); // 弹幕时速
+		initPkg_LiveTool_RankList_Handle(ret); // 排行榜
+		initPkg_LiveTool_BarrageSendCheck_Handle(ret); // 检查弹幕是否发送成功
     });
 }
 

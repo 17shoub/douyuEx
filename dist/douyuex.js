@@ -2,9 +2,9 @@
 // ==UserScript==
 // @name         DouyuEx-斗鱼直播间增强插件
 // @namespace    https://github.com/qianjiachun
-// @icon         https://s2.ax1x.com/2020/01/12/loQI3V.png
-// @version      2022.02.08.01
-// @description  弹幕自动变色防检测循环发送 一键续牌 查看真实人数/查看主播数据 已播时长 一键签到(直播间/车队/鱼吧/客户端) 一键领取鱼粮(宝箱/气泡/任务) 一键寻宝 送出指定数量的礼物 一键清空背包 屏蔽广告 调节弹幕大小 自动更新 同屏画中画/多直播间小窗观看/可在斗鱼看多个平台直播(虎牙/b站) 获取真实直播流地址 自动抢礼物红包 背包信息扩展 简洁模式 夜间模式 开播提醒 幻神模式 关键词回复 关键词禁言 自动谢礼物 自动抢宝箱 弹幕右键信息扩展 防止下播自动跳转 影院模式 直播时间流控制 弹幕投票 直播滤镜 直播音频流 账号多开/切换 显示粉丝牌获取日期 月消费数据显示 弹幕时速 相机截图录制gif 全景播放器 斗鱼视频下载/弹幕下载 直播画面局部缩放 全站抽奖信息
+// @icon         data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTA4cHgiIGhlaWdodD0iMTA4cHgiIHZpZXdCb3g9IjAgMCAxMDggMTA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPueyvueBteeQgzwvdGl0bGU+CiAgICA8ZyBpZD0i6aG16Z2iLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnsr7ngbXnkIMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODMwNzY5LCAwLjgzMDc2OSkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDEwNi4zMzg0NjEgQzIzLjgyNzY5MjIsMTA2LjMzODQ2MSAwLDgyLjUxMDc2OTIgMCw1My4xNjkyMzA3IEMwLDUxLjAwMzA3NjkgMS43NzIzMDc3NSw0OS4yMzA3NjkyIDMuOTM4NDYxNSw0OS4yMzA3NjkyIEwzMy40NzY5MjMsNDkuMjMwNzY5MiBDMzUuNjQzMDc2OSw0OS4yMzA3NjkyIDM3LjQxNTM4NDUsNTEuMDAzMDc3IDM3LjQxNTM4NDYsNTMuMTY5MjMwNyBDMzcuNDE1Mzg0Niw2MS44MzM4NDYxIDQ0LjUwNDYxNTQsNjguOTIzMDc2OSA1My4xNjkyMzA3LDY4LjkyMzA3NjkgQzYxLjgzMzg0NjEsNjguOTIzMDc2OSA2OC45MjMwNzY5LDYxLjgzMzg0NjEgNjguOTIzMDc2OSw1My4xNjkyMzA3IEM2OC45MjMwNzY5LDUxLjAwMzA3NjkgNzAuNjk1Mzg0Niw0OS4yMzA3NjkyIDcyLjg2MTUzODUsNDkuMjMwNzY5MiBMMTAyLjQsNDkuMjMwNzY5MiBDMTA0LjU2NjE1NCw0OS4yMzA3NjkyIDEwNi4zMzg0NjEsNTEuMDAzMDc3IDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw4Mi41MTA3NjkyIDgyLjUxMDc2OTIsMTA2LjMzODQ2MSA1My4xNjkyMzA3LDEwNi4zMzg0NjEgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iIzMzMzYzQSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOC4wNzM4NDYxMiw1Ny4xMDc2OTIyIEMxMC4wNDMwNzY5LDgwLjI0NjE1MzcgMjkuNTM4NDYxNSw5OC40NjE1Mzg1IDUzLjE2OTIzMDcsOTguNDYxNTM4NSBDNzYuOCw5OC40NjE1Mzg1IDk2LjI5NTM4NDYsODAuMjQ2MTUzOSA5OC4yNjQ2MTU0LDU3LjEwNzY5MjIgTDc2LjUwNDYxNTQsNTcuMTA3NjkyMiBDNzQuNjMzODQ2MSw2OC4yMzM4NDYxIDY0Ljg4NjE1MzksNzYuOCA1My4xNjkyMzA3LDc2LjggQzQxLjQ1MjMwNzYsNzYuOCAzMS43MDQ2MTU0LDY4LjIzMzg0NjEgMjkuODMzODQ2MSw1Ny4xMDc2OTIyIEw4LjA3Mzg0NjEyLDU3LjEwNzY5MjIgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwOCwzLjkzODQ2MTUgQzI1Ljk5Mzg0NjEsMy45Mzg0NjE1IDMuOTM4NDYxNSwyNS45OTM4NDYxIDMuOTM4NDYxNSw1My4xNjkyMzA3IEwzMy40NzY5MjMsNTMuMTY5MjMwNyBDMzMuNDc2OTIzLDQyLjMzODQ2MTUgNDIuMzM4NDYxNSwzMy40NzY5MjMgNTMuMTY5MjMwOCwzMy40NzY5MjMgQzY0LDMzLjQ3NjkyMyA3Mi44NjE1Mzg1LDQyLjMzODQ2MTUgNzIuODYxNTM4NSw1My4xNjkyMzA3IEwxMDIuNCw1My4xNjkyMzA3IEMxMDIuNCwyNS45OTM4NDYxIDgwLjM0NDYxNTQsMy45Mzg0NjE1IDUzLjE2OTIzMDgsMy45Mzg0NjE1IFoiIGlkPSLot6/lvoQiIGZpbGw9IiNENjA5MDkiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTEwMi40LDU3LjEwNzY5MjIgTDcyLjg2MTUzODUsNTcuMTA3NjkyMiBDNzAuNjk1Mzg0Niw1Ny4xMDc2OTIyIDY4LjkyMzA3Nyw1NS4zMzUzODQ1IDY4LjkyMzA3NjksNTMuMTY5MjMwNyBDNjguOTIzMDc2OSw0NC41MDQ2MTU0IDYxLjgzMzg0NjEsMzcuNDE1Mzg0NiA1My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDU1LjMzNTM4NDYgMzUuNjQzMDc2OSw1Ny4xMDc2OTIyIDMzLjQ3NjkyMyw1Ny4xMDc2OTIyIEwzLjkzODQ2MTUsNTcuMTA3NjkyMiBDMS43NzIzMDc2Miw1Ny4xMDc2OTIyIDAsNTUuMzM1Mzg0NSAwLDUzLjE2OTIzMDcgQzAsMjMuODI3NjkyMiAyMy44Mjc2OTIzLDAgNTMuMTY5MjMwNywwIEM4Mi41MTA3NjkyLDAgMTA2LjMzODQ2MSwyMy44Mjc2OTIyIDEwNi4zMzg0NjEsNTMuMTY5MjMwNyBDMTA2LjMzODQ2MSw1NS4zMzUzODQ2IDEwNC41NjYxNTQsNTcuMTA3NjkyMiAxMDIuNCw1Ny4xMDc2OTIyIFoiIGlkPSLot6/lvoQiIGZpbGw9IiMzMzM2M0EiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTc2LjUwNDYxNTQsNDkuMjMwNzY5MyBMOTguMzYzMDc2OSw0OS4yMzA3NjkzIEM5Ni4yOTUzODQ2LDI2LjA5MjMwNzYgNzYuOCw3Ljg3NjkyMyA1My4xNjkyMzA3LDcuODc2OTIzIEMyOS41Mzg0NjE1LDcuODc2OTIzIDEwLjA0MzA3NjksMjYuMDkyMzA3NiA4LjA3Mzg0NjEyLDQ5LjIzMDc2OTMgTDI5LjkzMjMwNzYsNDkuMjMwNzY5MyBDMzEuNzA0NjE1NCwzOC4xMDQ2MTU0IDQxLjQ1MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY0Ljg4NjE1MzksMjkuNTM4NDYxNSA3NC42MzM4NDYxLDM4LjEwNDYxNTQgNzYuNTA0NjE1NCw0OS4yMzA3NjkzIEw3Ni41MDQ2MTU0LDQ5LjIzMDc2OTMgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0Q2MDkwOSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNTMuMTY5MjMwNyw3Ni44IEM0MC4xNzIzMDc2LDc2LjggMjkuNTM4NDYxNSw2Ni4xNjYxNTM5IDI5LjUzODQ2MTUsNTMuMTY5MjMwNyBDMjkuNTM4NDYxNSw0MC4xNzIzMDc2IDQwLjE3MjMwNzYsMjkuNTM4NDYxNSA1My4xNjkyMzA3LDI5LjUzODQ2MTUgQzY2LjE2NjE1MzksMjkuNTM4NDYxNSA3Ni44LDQwLjE3MjMwNzYgNzYuOCw1My4xNjkyMzA3IEM3Ni44LDY2LjE2NjE1MzkgNjYuMTY2MTUzOSw3Ni44IDUzLjE2OTIzMDcsNzYuOCBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01My4xNjkyMzA3LDM3LjQxNTM4NDYgQzQ0LjUwNDYxNTQsMzcuNDE1Mzg0NiAzNy40MTUzODQ2LDQ0LjUwNDYxNTQgMzcuNDE1Mzg0Niw1My4xNjkyMzA3IEMzNy40MTUzODQ2LDYxLjgzMzg0NjEgNDQuNTA0NjE1NCw2OC45MjMwNzY5IDUzLjE2OTIzMDcsNjguOTIzMDc2OSBDNjEuODMzODQ2MSw2OC45MjMwNzY5IDY4LjkyMzA3NjksNjEuODMzODQ2MSA2OC45MjMwNzY5LDUzLjE2OTIzMDcgQzY4LjkyMzA3NjksNDQuNTA0NjE1NCA2MS44MzM4NDYxLDM3LjQxNTM4NDYgNTMuMTY5MjMwNywzNy40MTUzODQ2IEw1My4xNjkyMzA3LDM3LjQxNTM4NDYgWiIgaWQ9Iui3r+W+hCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNNDMuMzIzMDc2OSw1My4xNjkyMzA3IEM0My4zMjMwNzY5LDU4LjYwNzExMTQgNDcuNzMxMzUwMSw2My4wMTUzODQ2IDUzLjE2OTIzMDcsNjMuMDE1Mzg0NiBDNTguNjA3MTExNCw2My4wMTUzODQ2IDYzLjAxNTM4NDYsNTguNjA3MTExNCA2My4wMTUzODQ2LDUzLjE2OTIzMDcgQzYzLjAxNTM4NDYsNDcuNzMxMzUwMSA1OC42MDcxMTE0LDQzLjMyMzA3NjkgNTMuMTY5MjMwNyw0My4zMjMwNzY5IEM0Ny43MzEzNTAxLDQzLjMyMzA3NjkgNDMuMzIzMDc2OSw0Ny43MzEzNTAxIDQzLjMyMzA3NjksNTMuMTY5MjMwNyBaIiBpZD0i6Lev5b6EIiBmaWxsPSIjMzMzNjNBIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=
+// @version      2024.12.26.01
+// @description  弹幕自动变色防检测循环发送 一键续牌 查看真实人数/查看主播数据 已播时长 一键签到(直播间/车队/鱼吧/客户端) 一键领取鱼粮(宝箱/气泡/任务) 一键寻宝 送出指定数量的礼物 一键清空背包 屏蔽广告 调节弹幕大小 自动更新 同屏画中画/多直播间小窗观看/可在斗鱼看多个平台直播(虎牙/b站) 获取真实直播流地址 自动抢礼物红包 背包信息扩展 简洁模式 夜间模式 开播提醒 幻神模式 关键词回复 关键词禁言 自动谢礼物 自动抢宝箱 弹幕右键信息扩展 防止下播自动跳转 影院模式 直播时间流控制 弹幕投票 直播滤镜 直播音频流 账号多开/切换 显示粉丝牌获取日期 月消费数据显示 弹幕时速 相机截图录制gif 全景播放器 斗鱼视频下载/弹幕ass下载 直播画面局部缩放 全站抽奖信息 直播音效增强 阻止P2P上传 显示贡献榜贡献值 恢复弹幕显示 斗鱼视频弹幕高能进度条 检测弹幕是否发送成功 查看主播配置信息 自动网页全屏 自动最高画质 弹幕无限收藏 收藏弹幕搜索 支持弹幕带图片 屏蔽弹幕背景 弹幕+1 房间VIP到期提醒 自动钓鱼
 // @author       小淳
 // @match			*://*.douyu.com/0*
 // @match			*://*.douyu.com/1*
@@ -23,11 +23,12 @@
 // @match        *://yuba.douyu.com/*
 // @match        *://v.douyu.com/*
 // @match        *://cz.douyu.com/*
-// @require      https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js
-// @require      https://cdn.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js
-// @require      https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.min.js
+// @require      https://lib.baomitu.com/flv.js/1.6.2/flv.min.js
+// @require      https://fastly.jsdelivr.net/npm/svgaplayerweb@2.3.1/build/svga.min.js
+// @require      https://lib.baomitu.com/gif.js/0.2.0/gif.js
 // @require      https://lib.baomitu.com/three.js/80/three.min.js
 // @require      https://lib.baomitu.com/xlsx/0.16.4/xlsx.full.min.js
+// @require      https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/dompurify/2.3.6/purify.min.js
 // @grant        GM_openInTab
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setClipboard
@@ -50,13 +51,22 @@
 // @connect      huya.com
 // @connect      jsdelivr.net
 // @connect      shadiao.app
+// @connect      shadiao.pro
 // @connect      fz996.com
 // @connect      toubang.tv
 // @connect      doseeing.com
+// @antifeature  tracking
 // ==/UserScript==
 
 function init() {
+	initPkg_ShowDanmakuOriginAction();
+	initScriptHook();
 	initPkg_Night_Set_Fast();
+	initResponseHook();
+	initPkg_ShowDanmaku();
+	initKillP2P();
+	initFullScreen();
+	initHighestVideoQuality();
 	removeAD();
 	initPkg_Statistics();
 	initPkg_Console();
@@ -72,8 +82,10 @@ function initPkg() {
 	initPkg_CopyRealLive();
 	initPkg_AudioLine();
 	initPkg_RemoveAD();
+	initPkg_Shield();
 	initPkg_BagInfo();
 	initPkg_Update();
+	initPkg_SyncJoy();
 	initPkg_Monitor();
 	initPkg_Lottery();
 	// initPkg_MiniProgram();
@@ -84,18 +96,21 @@ function initPkg() {
 	initPkg_Refresh();
 	initPkg_BarrageLoop();
 	initPkg_FansContinue();
-	initPkg_FishFood();
+	// initPkg_FishFood();
 	initPkg_Sign();
 	initPkg_BarragePanel();
-	initPkg_AdVideo();
+	// initPkg_AdVideo();
 	initPkg_AccountList();
 	initPkg_ChatTools();
 	initPkg_MonthCost();
-	initPkg_TabSwitch();
+	initPkg_RoomVip();
 	initPkg_WeeklyPanel();
+	initPkg_DanmakuCollect();
 }
 function initPkg_Timer() {
-	initPkg_FishPond_Timer();
+	// initPkg_FishPond_Timer();
+	initPkg_DisableCloseJump_Timer();
+	initPkg_LevelTask_Timer();
 }
 function initTimer() {
 	initPkg_Timer();
@@ -104,7 +119,7 @@ function initTimer() {
 
 function initStyles() {
 	let style = document.createElement("style");
-	style.appendChild(document.createTextNode(`#ex-accountList-wrap {    left: -152px;    top: -16px;    /* max-height: 330px;    overflow-y: scroll;    scrollbar-width: none;    -ms-overflow-style: none; */    -webkit-transition: all .2s cubic-bezier(.22,.58,.12,.98);    -o-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    -moz-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    transition: all .2s cubic-bezier(.22,.58,.12,.98);    -webkit-transform-origin: 80% 0;    -moz-transform-origin: 80% 0;    -ms-transform-origin: 80% 0;    -o-transform-origin: 80% 0;    transform-origin: 80% 0;    -webkit-animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);    -moz-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    -o-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);}/* #ex-accountList-wrap::-webkit-scrollbar {    display: none;} */.ex-accountList-item {    padding: 10px;    display: flex;    border-radius: 10px;    align-items: center;}.ex-accountList-item:hover {    background-color: rgb(244,244,244);}#ex-accountList-iframe {    display: none;}#ex-accountList-iframe2 {    display: none;}#ex-accountList-item-add {    padding: 10px;    text-align: center;    margin-bottom:0px;    border-radius: 10px;}#ex-accountList-item-add:hover {    background-color: rgb(244,244,244);}.ex-accountList-item__imgWrap {    flex: 0 0 25%;}.ex-accountList-item__img {    width: 50px;    height: 50px;    border-radius: 50%;}.ex-accountList-item__name {    line-height: 50px;    flex: 0 0 55%;}.ex-accountList-item__btn {    height: 30px;    width: 50px;    border-radius: 10px;    align-items: center;    flex: auto;    text-align: center;    line-height: 28px;    color: white;    background-color: rgb(245,108,108);}.ex-accountList-item__btn:hover {    background-color: rgb(247,137,137);}#ex-accountList-icon:hover > #ex-accountList-wrap {    display: block;}#ex-audio-line {    cursor: pointer;}.bag-info {    position: absolute;    background-color: rgba(0, 0, 0, 0.6);    color: white;    width: 20px;    font-weight: 800;    height: 20px;    text-align: center;}.bag-button {    position: relative;    color: rgb(255, 255, 255);    text-align: center;    height: 15px;    line-height: 15px;    cursor: pointer;    margin-left: 5px;    background: rgb(70, 171, 255);    border-radius: 9px;    padding: 0px 10px;    float: right;    right: 20px;}.bloop {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 200px;	position: relative;	bottom: 200px;	display: none;	z-index: 1015;}.bloop__switch {	position: absolute;	right: 0;	bottom: 0;}.bloop__mode {	display: inline-block;}.barragePanel__funcPanel {    position: absolute;    width: 232px;    height: 270px;    display: block;    background: white;    overflow-y: scroll;}.barragePanel__funcPanel::-webkit-scrollbar {display:none}.barragePanel__muteTime {    position: absolute;    left: 25px;    top: 123px;    z-index: 5;}#copy-real-live {    cursor: pointer;}.ex-icon {	display: inline-block;	vertical-align: middle;	margin-right: 8px;	-moz-user-select:none; /*火狐*/    -webkit-user-select:none; /*webkit浏览器*/    -ms-user-select:none; /*IE10*/    -khtml-user-select:none; /*早期浏览器*/    user-select:none;}.extool {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 200px;	position: relative;	bottom: 200px;	display: none;	z-index: 1015;}.extool__switch {	position: absolute;	right: 0;	bottom: 0;}.extool__bsize,.extool__sendgift {	margin-bottom: 5px;}.extool__redpacket_room,.extool__gold {	display: inline-block;}.ex_giftAnimation {	width: 100%;	height: 100%;	position: absolute;	z-index: 50;	pointer-events: none;}.ex-panel {	position: absolute;	bottom: 32px;	right: 5px;	background-color: rgba(255,255,255,0.9);	display: none;	border: 2px rgb(234,173,26) solid;	z-index: 1015;	user-select: none;}.ex-panel__wrap {	display: flex;	align-items: center;	justify-content: center;	width: 100%;	height: 100%;}.ex-panel__icon {	margin: 0 10px;	display: block;	position: relative;	padding: 5px;	transition: 0.5s;}.ex-panel__icon:hover {	transform: scale(1.15);}.ex-panel__tip {	display:none;	background:#f00;	border-radius:50%;	width:8px;	height:8px;	top:0px;	right:0px;	position:absolute;}#refreshFollowList {    color: grey;position: absolute;right: 5px;top:0px;cursor: default;}.barrageSpeed {    position: absolute;    right: 10px;    top: -20px;    color: rgba(0,0,0,0.5);    cursor: default;    z-index: 0;}.enter__panel {    width: 100%;    display: none;    margin-top: 4px;}#enter__title {    cursor: pointer;    user-select: none;}#enter__select {    width: 190px;}.enter__option {    margin-top: 5px;}#enter__enterId {    width: 40px;}#enter__reply {    width: 150px;}#enter__word {    width: 140px;}#enter__level {    width: 25px;    text-align: center;}#enter__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#enter__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.gift__panel {    width: 100%;    display: none;    margin-top: 4px;}#gift__title {    cursor: pointer;    user-select: none;}#gift__select {    width: 113px;}.gift__option {    margin-top: 5px;}#gift__giftId {    width: 40px;}#gift__reply {    width: 150px;}#gift__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#gift__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.livetool {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 290px;	position: relative;	bottom: 290px;	display: none;	z-index: 1015;}.livetool__cell {	position: relative;    display: -webkit-box;    display: -webkit-flex;    display: flex;    box-sizing: border-box;    width: 100%;    padding: 10px 16px;    overflow: hidden;    color: #323233;    font-size: 14px;    line-height: 24px;	background-color: #fff;	border-bottom: 1px solid rgba(0,0,0,0.2);	flex-wrap: wrap;    -webkit-flex-wrap: wrap;}.livetool__cell_title {	flex: 1;    -webkit-box-flex: 1;}.livetool__cell_option {	text-align: right;}.livetool__cell_switch {	float: right;}.mute__panel {    width: 100%;    display: none;    margin-top: 4px;}#mute__title {    cursor: pointer;    user-select: none;}#mute__idlist {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#mute__export, #mute__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}#mute__select {    width: 110px;}.mute__option {    margin-top: 5px;}#mute__word {    width: 70px;}#mute__count {    width: 30px;}#mute__time {    width: 65px;}.reply__panel {    width: 100%;    display: none;    margin-top: 4px;}#reply__title {    cursor: pointer;    user-select: none;}#reply__select {    /* width: 190px; */    width: 100px;}#reply__time {    width: 35px;}.reply__option {    margin-top: 5px;}#reply__word {    width: 70px;}#reply__reply {    width: 147px;}#reply__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#reply__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.livetool__Treasure {    width: 100%;    position: relative;    z-index: 999;}.vote__panel {    width: 100%;    display: none;    margin-top: 4px;}#vote__title {    cursor: pointer;    user-select: none;}#vote__select {    width: 100px;}.vote__option {    margin-top: 5px;}#vote__theme {    width: 70px;}#vote__options {    width: 133px;}#vote__time {    width: 35px;}#vote__show-result {    cursor: pointer;    color: royalblue;    margin-left: 10px;}.vote__result {    position: absolute;    top: 0px;    width: 300px;    background: rgba(255,255,255,0.85);    left: 0px;    z-index: 999;    padding: 5px;    border-radius: 10px;    user-select: none;    display: none;}#vote__result-theme {    font-size: 20px;    font-weight: 600;    margin-bottom: 10px;}#vote__result-close {    position: absolute;    top: 5px;    right: 10px;    font-size: 14px;    cursor: pointer;    color: gray;}.vote__option-wrap {    margin-bottom: 10px;}.vote__option-choice {    display: inline-block;    font-size: 14px;}.vote__option-num {    float: right;    font-size: 14px;}.vote__progress {    width: 100%;    background-color: #ddd;    border-radius: 10px;}.vote__progress-bar {    width: 0%;    height: 14px;    background-color: #4CAF50;    text-align: center;    line-height: 30px;    border-radius: 10px;}.exlottery {	background-color: rgba(255,255,255,1);	width: 100%;	height: 250px;	position: relative;	bottom: 250px;	display: none;	z-index: 1015;    overflow: auto;    padding: 0 10px;    box-sizing: border-box;}.lottery__nodata {    z-index: 998;    position: absolute;    left:50%;    top:50%;    transform: translate(-50%, -50%);    color: #606266;}.lottery__wrap {    display: flex;    flex-direction: column;    z-index: 999;}.lottery__a:hover .lottery__item {    background-color: rgb(244,244,244);}.lottery__item {    display: flex;    padding: 5px 0;    border-bottom: 1px solid #d0d0d0;    color: #606266;}.lottery__img img {    width: 150px;    border-radius: 5px;}.lottery__anchor {    position: absolute;    background-color: rgba(255,255,255,0.9);    border-radius: 5px 0px 5px 0px;}.lottery__info {    display: flex;    justify-content: space-evenly;    flex-direction: column;    margin-left: 10px;    overflow: hidden;}.lottery__prize {    white-space: nowrap;    text-overflow: ellipsis;    word-break: break-all;    font-size: 14px;}.lottery__expireTime {    position: absolute;    margin-top: -18px;    background-color: rgba(255,255,255,0.9);    border-radius: 0px 5px 0px 5px;} /*滚动条样式*/.exlottery::-webkit-scrollbar {    width: 4px;    }.exlottery::-webkit-scrollbar-thumb {    border-radius: 10px;    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);    background: rgba(0,0,0,0.2);}.exlottery::-webkit-scrollbar-track {    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);    border-radius: 0;    background: rgba(0,0,0,0.1);}.lottery__func {    display: flex;    justify-content: space-between;    margin-top: 5px;    user-select: none;    border-bottom: 1px solid #d0d0d0;}.lottery__notice,#lottery-refresh {    cursor: pointer;    color: #606266;}.miniprogram__panel {    position: absolute;    right: 43px;    bottom: 100px;    animation: move-in 0.75s;    z-index: 101;    text-align: center;    display: none;}.miniprogram__wrap {    overflow: hidden;    background-color: white;    border-radius: 5%;    width: 200px;    box-shadow: 0px 2px 20px 0px #888888;    font-size: 14px;}.miniprogram__triangle {    width: 0px;    height: 0px;    border-color: white transparent transparent transparent;    border-style: solid;    border-width: 10px;    position: absolute;    left: 100px;}.month-cost {    margin-right: 5px;    cursor: default;    -moz-user-select:none;/*火狐*/    -webkit-user-select:none;/*webkit浏览器*/    -ms-user-select:none;/*IE10*/    -khtml-user-select:none;/*早期浏览器*/    user-select:none;}.monthcost__icon {    position: relative;    top: 3px;    cursor: pointer;    margin-left: 3px;}#ex-point {    cursor: pointer;    float: left;    line-height: 30px;    -moz-user-select:none; /*火狐*/    -webkit-user-select:none; /*webkit浏览器*/    -ms-user-select:none; /*IE10*/    -khtml-user-select:none; /*早期浏览器*/    user-select:none;}#point__value {    color: #333;}#ex-exchange {    position: absolute;    left: 0;    bottom: 37px;    z-index: 100;}.exchange__panel {    width: 400px;    height: 500px;    position: relative;}.exchange__wrap {    width: 400px;    height: 500px;    background-color: white;    border-radius: 3%;    overflow-y: scroll;    overflow-x: hidden;    box-shadow: 0px 0px 20px 0px #888888;}.exchange__wrap::-webkit-scrollbar {    display:none}.exchange__close {    position: absolute;    color: rgb(127, 127, 137);    right: 10px;    top: 5px;    font-size: 15px;    cursor: pointer;    z-index: 101;}.item__wrap {    width: 100%;    height: 130px;    border-bottom: 1px solid rgba(121,127,137,0.4);    position: relative;}.item__pic {    left: 10px;    top: 10px;    position: absolute;    height: 110px;    width: 110px;}.item__name {    position: absolute;    top: 7px;    left: 130px;    color: #353536;;    font-size: 15px;    margin-right: 10px;}.item__description {    position: absolute;    top: 32px;    left: 130px;    font-size: 12px;    margin-right: 10px;    color: #969799;}.item__num {    position: absolute;    bottom: 27px;    left: 130px;    font-size: 12px;    color: #969799;}.item__price {    position: absolute;    bottom: 7px;    left: 130px;    font-size: 14px;    color: rgb(255,93,35);    font-weight: 600;}.item__exchange {    position: absolute;    bottom: 8px;    right: 10px;    font-size: 14px;    color: white;    text-align: center;    width: 80px;    height: 25px;        background-color: rgb(255,93,35);    border-radius: 999px;    cursor: pointer;}#ex-pointlist {    position: absolute;    width: 300px;    height: 400px;    background-color: white;    border-radius: 3%;    overflow: auto;    z-index: 100;    bottom: 37px;}#ex-pointlist::-webkit-scrollbar {    display:none}.pointlist__wrap {    width: 100%;    height: 100%;    margin: 15px 0;    position: absolute;}.pointlist__close {    position: absolute;    color: rgb(127, 127, 137);    right: 7px;    font-size: 15px;    cursor: pointer;}.pointlist__wrap table {    border-collapse: collapse;    margin: 0 auto;    text-align: center;}.pointlist__wrap td,.pointlist__wrap th {    border: 1px solid #cad9ea;    color: #666;    height: 30px;    width: 85px;}.pointlist__wrap thead th {    background-color: #CCE8EB;    width: 100px;}.pointlist__wrap tr:nth-child(odd) {    background: #fff;}.pointlist__wrap tr:nth-child(even) {    background: #F5FAFA;}.point__panel {    position: absolute;    left: 0px;    bottom: 37px;    display: none;    animation: move-in 0.75s;    z-index: 101;}@keyframes move-in {    0% {        opacity: 0;    }    100% {        opacity: 0.95;    }}.panel__wrap {    overflow: hidden;    background-color: white;    border-radius: 5%;    width: 120px;    box-shadow: 0px 2px 20px 0px #888888;    font-size: 14px;}.panel__cell {    width: 100%;    height: 37px;    line-height: 37px;    border-bottom: 1px solid rgba(121,127,137,0.4);    text-align: center;    cursor: pointer;}.panel__cell:hover {    background-color: rgb(217, 217, 217);    transition: 0.75s;}.panel__triangle {    width: 0px;    height: 0px;    border-color: white transparent transparent transparent;    border-style: solid;    border-width: 10px;    position: absolute;    left: 35px;}#ex-record {    width: 300px;    height: 400px;    position: absolute;    bottom: 67px;    z-index: 100;}.record__close {    position: absolute;    color: rgb(127, 127, 137);    right: -20px;    font-size: 15px;    cursor: pointer;}.records__wrap {    width: 100%;    height: 100%;    background-color: white;    border-radius: 3%;    box-shadow: 0px 0px 20px 0px #888888;    padding: 15px;    overflow-y: scroll;    overflow-x: hidden;}.records__wrap::-webkit-scrollbar {    display:none}.record__wrap {    height: 50px;    width: 100%;    border: 1px solid rgba(121,127,137,0.4);    margin-bottom: 10px;    display: -webkit-box;    display: -moz-box;     display: -ms-flexbox;    display: -webkit-flex;     display: flex;     transition: 0.75s;    cursor: pointer;}.record__wrap:hover {    background-color: #e9f5ff;}.record__left {    flex: 1;    position: relative;}.record__name {    position: absolute;    flex: 1;    color: #353536;;    font-size: 15px;    top: 2px;    margin-left: 5px;}.record__updatetime {    position: absolute;    margin-left: 5px;    font-size: 12px;    bottom: 2px;    color: #969799;}.record__price {    line-height: 50px;    color: rgb(255,93,35);    margin-right: 10px;}.record__pagenav {    display: -webkit-box;    display: -moz-box;     display: -ms-flexbox;    display: -webkit-flex;     display: flex;     width: 310px;    position: absolute;    bottom: -20px;    padding-left: 10px;    padding-right: 10px;    cursor: pointer;}.record__prev {    flex: 1;    text-align: center;    border: 1px solid rgba(121,127,137,0.8);    transition: 0.75s;    color: white;    background-color: rgb(57,169,237);}.record__prev:hover {    background-color: #7167ff;}.record__next {    flex: 1;    text-align: center;    border: 1px solid rgba(121,127,137,0.8);    transition: 0.75s;    background-color: rgb(57,169,237);    color: white;}.record__next:hover {    background-color: #7167ff;}.exVideoDiv {    width: 400px;    height: 200px;    background-color: rgba(255, 255, 255, 0);    position: absolute;    z-index: 1015;}.exVideoPlayer {    width: 100%;    height: 100%;    cursor: move;}.exVideoScale {    width: 10px;    height: 10px;    overflow: hidden;    cursor: se-resize;    position: absolute;    right: 0;    bottom: 0;    background-color: rgb(231, 57, 57);}.exVideoInfo {    width: 100%;    height: 30px;    background-color: gray;    position: absolute;    top: -30px;    line-height: 30px;}.exVideoClose {    width: 30px;    float: right;    color: white;}.exVideoQn, .exVideoCDN {    margin-left: 5px;}.exVideoRID {    margin: 0px 5px;    font-weight: 800;    font-size: medium;}#popup-player__prompt {    display: none;}.real-audience {    cursor: pointer;    display: flex;    padding: 0 7px;    line-height: 33px;}/* #refresh-video {    float: left;    width: 24px;    height: 24px;    margin-right: 5px;    cursor: pointer;    background-size: contain;} */#refresh-video2 {    display: none;    position: absolute;    top: 20px;    right: 20px;    cursor: pointer;}#refresh-video2-svg {    fill: rgba(0,0,0,.6)}.refresh-barrage {    display: inline-block;    vertical-align: top;    margin: 0 2px;    padding: 0 8px;    height: 22px;    line-height: 21px;    background-color: #fff;    border: 1px solid #e5e4e4;    -webkit-border-radius: 4px;    -moz-border-radius: 4px;    border-radius: 4px;    cursor: pointer;}#refresh-barrage__svg {    vertical-align: middle;}#ex-camera {    background: rgba(0,0,0,0.7);    position: absolute;    right: 20px;    bottom: 190px;    z-index: 10;    width: 60px;    height: 60px;    cursor: pointer;    -webkit-border-radius: 50%;    -moz-border-radius: 50%;    border-radius: 50%;    cursor: pointer;    display: none;    justify-content: center;    align-items: center;    border: 2px solid #2d2c2c;    box-sizing: border-box;}#ex-camera:hover > svg > path {    fill: rgb(252, 199, 84);}#ex-camera:active > svg > path {    fill: rgb(253, 60, 60);}#ex-cinema:hover > .cinema__wrap {    display: block;}.cinema__wrap {    display: none;    margin: 0;    padding: 0;    border: 1px solid #e5e5e5;    background: #fff;    position: absolute;    left: 201px;    min-width: 100px;    top: 130px;}.cinema__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 70px;}.cinema__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.cinema__panel li:hover {    background-color: rgb(85, 85, 85);}  #ex-filter {    float: left;    width: 24px;    height: 24px;    margin-right: 10px;    cursor: pointer;    background-size: contain;}.filter__wrap {    display: none;    position: relative;    height: 100%;    margin-right: -15px;    border-radius: 4px;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    float: left;    right: -12px;    bottom: 10px;}.filter__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 300px;    padding-top: 10px;    padding-left: 10px;    padding-right: 10px;}.filter__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.filter__panel li:hover {    background-color: rgb(85, 85, 85);}.filter__scroll {    width: 255px;    height: 5px;    background: #ccc;    position: relative;    display: inline-block;}.filter__scroll-bar {    width: 15px;    height: 15px;    background: #369;    position: absolute;    top: -5px;    left: 100px;    cursor: pointer;    border-radius: 100%;}.filter__scroll-mask {    position: absolute;    left: 0;    top: 0;    background: #369;    width: 100px;    height: 5px;}.filter__title {    color: white;    display: inline-block;    cursor: initial;    margin-right: 2px;}#filter__select {    width: 260px;    float: right;}.filter__filter {    margin-top: 5px;}#ex-videospeed:hover > .videospeed__wrap {    display: block;}.videospeed__wrap {    display: none;    margin: 0;    padding: 0;    border: 1px solid #e5e5e5;    background: #fff;    position: absolute;    left: 201px;    min-width: 100px;    top: 120px;}.videospeed__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 70px;}.videospeed__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.videospeed__panel li:hover {    background-color: rgb(85, 85, 85);}  #ex-videosync {    float: left;    width: 24px;    height: 24px;    margin-left: 20px;    cursor: pointer;    background-size: contain;}.weeklypanel__panel-wrap {    width: 100%;    height: 100%;    z-index: 999;    background-color: rgba(0, 0, 0, 0.9);    position: absolute;    top: 0;    left: 0;    display: flex;    justify-content: center;    align-items: center;}.weeklypanel__panel {    height: 600px;    width: 500px;    background-color: white;    border-radius: 20px;    position: fixed;    top: 0;    left: 0;    right: 0;    bottom: 0;    margin: auto;}.weeklypanel__content {    position: relative;    top: 50%;    transform: translateY(-50%);    text-align: center;}.weeklypanel__text {    font-size: 18px;}.weeklypanel__text a {    font-weight: bold;    font-size: 24px;}.weeklypanel__close {    font-size: 30px;    font-weight: bold;    position: absolute;    right: 15px;    cursor: pointer;}.noticejs-top{top:0;width:100% !important}.noticejs-top .item{border-radius:0 !important;margin:0 !important}.noticejs-topRight{top:10px;right:10px}.noticejs-topLeft{top:10px;left:10px}.noticejs-topCenter{top:10px;left:50%;transform:translate(-50%)}.noticejs-middleLeft,.noticejs-middleRight{right:10px;top:50%;transform:translateY(-50%)}.noticejs-middleLeft{left:10px}.noticejs-middleCenter{top:50%;left:50%;transform:translate(-50%,-50%)}.noticejs-bottom{bottom:0;width:100% !important}.noticejs-bottom .item{border-radius:0 !important;margin:0 !important}.noticejs-bottomRight{bottom:10px;right:10px}.noticejs-bottomLeft{bottom:10px;left:10px}.noticejs-bottomCenter{bottom:10px;left:50%;transform:translate(-50%)}.noticejs{font-family:Helvetica Neue,Helvetica,Arial,sans-serif}.noticejs .item{margin:0 0 10px;border-radius:3px;overflow:hidden}.noticejs .item .close{float:right;font-size:18px;font-weight:700;line-height:1;color:#fff;text-shadow:0 1px 0 #fff;opacity:1;margin-right:7px}.noticejs .item .close:hover{opacity:.5;color:#000}.noticejs .item a{color:#fff;border-bottom:1px dashed #fff}.noticejs .item a,.noticejs .item a:hover{text-decoration:none}.noticejs .success{background-color:#64ce83}.noticejs .success .noticejs-heading{background-color:#3da95c;color:#fff;padding:10px}.noticejs .success .noticejs-body{color:#fff;padding:10px}.noticejs .success .noticejs-body:hover{visibility:visible !important}.noticejs .success .noticejs-content{visibility:visible}.noticejs .info{background-color:#3ea2ff}.noticejs .info .noticejs-heading{background-color:#067cea;color:#fff;padding:10px}.noticejs .info .noticejs-body{color:#fff;padding:10px}.noticejs .info .noticejs-body:hover{visibility:visible !important}.noticejs .info .noticejs-content{visibility:visible}.noticejs .warning{background-color:#ff7f48}.noticejs .warning .noticejs-heading{background-color:#f44e06;color:#fff;padding:10px}.noticejs .warning .noticejs-body{color:#fff;padding:10px}.noticejs .warning .noticejs-body:hover{visibility:visible !important}.noticejs .warning .noticejs-content{visibility:visible}.noticejs .error{background-color:#e74c3c}.noticejs .error .noticejs-heading{background-color:#ba2c1d;color:#fff;padding:10px}.noticejs .error .noticejs-body{color:#fff;padding:10px}.noticejs .error .noticejs-body:hover{visibility:visible !important}.noticejs .error .noticejs-content{visibility:visible}.noticejs .progressbar{width:100%}.noticejs .progressbar .bar{width:1%;height:30px;background-color:#4caf50}.noticejs .success .noticejs-progressbar{width:100%;background-color:#64ce83;margin-top:-1px}.noticejs .success .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#3da95c}.noticejs .info .noticejs-progressbar{width:100%;background-color:#3ea2ff;margin-top:-1px}.noticejs .info .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#067cea}.noticejs .warning .noticejs-progressbar{width:100%;background-color:#ff7f48;margin-top:-1px}.noticejs .warning .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#f44e06}.noticejs .error .noticejs-progressbar{width:100%;background-color:#e74c3c;margin-top:-1px}.noticejs .error .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#ba2c1d}@keyframes noticejs-fadeOut{0%{opacity:1}to{opacity:0}}.noticejs-fadeOut{animation-name:noticejs-fadeOut}@keyframes noticejs-modal-in{to{opacity:.3}}@keyframes noticejs-modal-out{to{opacity:0}}.noticejs-rtl .noticejs-heading{direction:rtl}.noticejs-rtl .close{float:left !important;margin-left:7px;margin-right:0 !important}.noticejs-rtl .noticejs-content{direction:rtl}.noticejs{position:fixed;z-index:10050;width:320px}.noticejs::-webkit-scrollbar{width:8px}.noticejs::-webkit-scrollbar-button{width:8px;height:5px}.noticejs::-webkit-scrollbar-track{border-radius:10px}.noticejs::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.5);border-radius:10px}.noticejs::-webkit-scrollbar-thumb:hover{background:#fff}.noticejs-modal{position:fixed;width:100%;height:100%;background-color:#000;z-index:10000;opacity:.3;left:0;top:0}.noticejs-modal-open{opacity:0;animation:noticejs-modal-in .3s ease-out}.noticejs-modal-close{animation:noticejs-modal-out .3s ease-out;animation-fill-mode:forwards}.noticejs .special{background-color:rgb(160,37,160)}.noticejs .special .noticejs-heading{background-color:rgb(110,26,110);color:#fff;padding:10px}.noticejs .special .noticejs-body{color:#fff;padding:10px}.noticejs .special .noticejs-body:hover{visibility:visible !important}.noticejs .special .noticejs-content{visibility:visible}.noticejs .special .noticejs-progressbar{width:100%;background-color:rgb(160,37,160);margin-top:-1px}.noticejs .special .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:rgb(110,26,110)}/** * PostbirdAlertBox.js * -    原生javascript弹框插件 * Author:  Postbird - http://www.ptbird.cn * License: MIT * Date:    2017-09-23 */.postbird-box-container {    width: 100%;    height: 100%;    overflow: hidden;    position: fixed;    top: 0;    left: 0;    z-index: 9999;    background-color: rgba(0, 0, 0, 0.2);    display: block;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none}.postbird-box-container.active {    display: block}.postbird-box-content {    min-width: 400px;    max-width: 600px;    min-height: 150px;    background-color: #fff;    border: solid 1px #dfdfdf;    position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    margin-top: -100px}.postbird-box-header {    width: 100%;    padding: 10px 15px;    position: relative;    font-size: 1.1em;    letter-spacing: 2px}.postbird-box-close-btn {    cursor: pointer;    font-weight: 700;    color: #000;    float: right;    opacity: .5;    font-size: 1.3em;    margin-top: -3px;    display: none}.postbird-box-close-btn:hover {    opacity: 1}.postbird-box-text {    box-sizing: border-box;    width: 100%;    padding: 0 10%;    text-align: center;    line-height: 40px;    font-size: 20px;    letter-spacing: 1px}.postbird-box-footer {    width: 100%;    position: absolute;    padding: 0;    margin: 0;    bottom: 0;    display: flex;    display: -webkit-flex;    justify-content: space-around;    border-top: solid 1px #dfdfdf;    align-items: flex-end}.postbird-box-footer .btn-footer {    line-height: 44px;    border: 0;    cursor: pointer;    background-color: #fff;    color: #0e90d2;    font-size: 1.1em;    letter-spacing: 2px;    transition: background-color .5s;    -webkit-transition: background-color .5s;    -o-transition: background-color .5s;    -moz-transition: background-color .5s;    outline: 0}.postbird-box-footer .btn-footer:hover {    background-color: #e5e5e5}.postbird-box-footer .btn-block-footer {    width: 100%}.postbird-box-footer .btn-left-footer,.postbird-box-footer .btn-right-footer {    position: relative;    width: 100%}.postbird-box-footer .btn-left-footer::after {    content: "";    position: absolute;    right: 0;    top: 0;    background-color: #e5e5e5;    height: 100%;    width: 1px}.postbird-box-footer .btn-footer-cancel {    color: #333}.postbird-prompt-input {    width: 100%;    padding: 5px;    font-size: 16px;    border: 1px solid #ccc;    outline: 0}.onoffswitch {    position: relative; width: 45px;    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;}.onoffswitch-checkbox {    position: absolute;    opacity: 0;    pointer-events: none;}.onoffswitch-label {    display: block; overflow: hidden; cursor: pointer;    height: 20px; padding: 0; line-height: 20px;    border: 2px solid #E3E3E3; border-radius: 20px;    background-color: #FFFFFF;    transition: background-color 0.3s ease-in;}.onoffswitch-label:before {    content: "";    display: block; width: 20px; margin: 0px;    background: #FFFFFF;    position: absolute; top: 0; bottom: 0;    right: 23px;    border: 2px solid #E3E3E3; border-radius: 20px;    transition: all 0.3s ease-in 0s; }.onoffswitch-checkbox:checked + .onoffswitch-label {    background-color: #3AAD38;}.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {   border-color: #3AAD38;}.onoffswitch-checkbox:checked + .onoffswitch-label:before {    right: 0px; }.layui-timeline {    padding-left: 5px;}.layui-timeline-item {    position: relative;    padding-bottom: 20px;}li {    list-style: none;}.layui-timeline-item:first-child::before {    display: block;}.layui-timeline-item:last-child::before {    content: '';    position: absolute;    left: 5px;    top: 0;    z-index: 0;    width: 0;    height: 100%;}.layui-timeline-item::before {    content: '';    position: absolute;    left: 5px;    top: 0;    z-index: 0;    width: 1px;    height: 100%;}.layui-timeline-item::before,hr {    background-color: #e6e6e6;}.layui-timeline-axis {    position: absolute;    left: -5px;    top: 0;    z-index: 10;    width: 20px;    height: 20px;    line-height: 20px;    background-color: #fff;    color: #5FB878;    border-radius: 50%;    text-align: center;    cursor: pointer;}.layui-icon {    font-family: layui-icon !important;    font-size: 16px;    font-style: normal;}.layui-timeline-content {    padding-left: 25px;}.layui-text {    line-height: 22px;    font-size: 14px;    color: rgb(85,85,85);}.layui-timeline-title {    position: relative;}`));
+	style.appendChild(document.createTextNode(`#ex-accountList-wrap {    left: -152px;    top: -16px;    /* max-height: 330px;    overflow-y: scroll;    scrollbar-width: none;    -ms-overflow-style: none; */    -webkit-transition: all .2s cubic-bezier(.22,.58,.12,.98);    -o-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    -moz-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    transition: all .2s cubic-bezier(.22,.58,.12,.98);    -webkit-transform-origin: 80% 0;    -moz-transform-origin: 80% 0;    -ms-transform-origin: 80% 0;    -o-transform-origin: 80% 0;    transform-origin: 80% 0;    -webkit-animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);    -moz-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    -o-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);}/* #ex-accountList-wrap::-webkit-scrollbar {    display: none;} */.ex-accountList-item {    padding: 10px;    display: flex;    border-radius: 10px;    align-items: center;}.ex-accountList-item:hover {    background-color: rgb(244,244,244);}#ex-accountList-iframe {    display: none;}#ex-accountList-iframe2 {    display: none;}#ex-accountList-item-add {    padding: 10px;    text-align: center;    margin-bottom:0px;    border-radius: 10px;}#ex-accountList-item-add:hover {    background-color: rgb(244,244,244);}.ex-accountList-item__imgWrap {    flex: 0 0 25%;}.ex-accountList-item__img {    width: 50px;    height: 50px;    border-radius: 50%;}.ex-accountList-item__name {    line-height: 50px;    flex: 0 0 55%;}.ex-accountList-item__btn {    height: 30px;    width: 50px;    border-radius: 10px;    align-items: center;    flex: auto;    text-align: center;    line-height: 28px;    color: white;    background-color: rgb(245,108,108);}.ex-accountList-item__btn:hover {    background-color: rgb(247,137,137);}#ex-accountList-icon:hover > #ex-accountList-wrap {    display: block;}#ex-audio-line {    cursor: pointer;}.bag-info {    position: absolute;    background-color: rgba(0, 0, 0, 0.6);    color: white;    width: 20px;    font-weight: 800;    height: 20px;    text-align: center;    z-index: 10;    bottom: 0;}.bag-button {    color: rgb(255, 255, 255);    text-align: center;    height: 15px;    line-height: 15px;    cursor: pointer;    margin-left: 5px;    background: rgb(70, 171, 255);    border-radius: 9px;    padding: 0px 10px;    right: 20px;}.bloop {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 200px;	position: relative;	bottom: 200px;	display: none;	z-index: 1015;}.bloop__switch {	position: absolute;	right: 0;	bottom: 0;}.bloop__mode {	display: inline-block;}#bloop__select {	width: 150px;}.barragePanel__funcPanel {    position: absolute;    width: 232px;    height: 270px;    display: block;    background: white;    overflow-y: scroll;}.barragePanel__funcPanel::-webkit-scrollbar {display:none}.barragePanel__muteTime {    position: absolute;    left: 25px;    top: 123px;    z-index: 5;}.danmuContent-25f266 {    pointer-events: auto !important;}#copy-real-live {    cursor: pointer;}.ChatBarrageCollect .TagItem {  height: auto !important;}.ChatBarrageCollect .TagItem-txt {  overflow: auto !important;  white-space: normal !important;}.ex-icon {	display: inline-block;	vertical-align: middle;	margin-right: 8px;	-moz-user-select:none; /*火狐*/    -webkit-user-select:none; /*webkit浏览器*/    -ms-user-select:none; /*IE10*/    -khtml-user-select:none; /*早期浏览器*/    user-select:none;}.ex-icon a {    display: flex;    justify-items: center;    align-items: center;}.ex-icon svg:hover {    transform: scale(1.1);}.extool {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 200px;	position: relative;	bottom: 200px;	display: none;	z-index: 1015;}.extool__switch {	position: absolute;	right: 0;	bottom: 0;}.extool__bsize,.extool__sendgift {	margin-bottom: 5px;}.extool__redpacket_room,.extool__gold,.extool__autofish {	display: inline-block;}.ex_giftAnimation {	width: 100%;	height: 100%;	position: absolute;	z-index: 50;	pointer-events: none;}.ex-panel {	position: absolute;	bottom: 32px;	right: 0px;	background-color: rgba(255,255,255,0.9);	opacity: 0;    visibility: hidden;    transition: all 0.3s ease-in-out; /* 给工具栏出现加一下过渡效果 */	border: 2px rgb(234,173,26) solid;	z-index: 1015;	user-select: none;}.ex-panel__wrap {	display: flex;	align-items: center;	justify-content: center;	width: 100%;	height: 100%;}.ex-panel__icon {	margin: 0 10px;	display: block;	position: relative;	padding: 5px;	transition: 0.5s;}.ex-panel__icon:hover {	transform: scale(1.15);}.ex-panel__tip {	display:none;	background:#f00;	border-radius:50%;	width:8px;	height:8px;	top:0px;	right:0px;	position:absolute;}#refreshFollowList {    color: grey;position: absolute;right: 5px;top:0px;cursor: default;}.text-879f3e {  height: auto !important;  max-height: 48px !important;}.ex-image-danmaku {  height: 48px;  border-radius: 6px;  margin: 0 4px;}.danmuContent-25f266 .ex-image-danmaku {  max-height: 32px;}.barrageSpeed {    position: absolute;    right: 10px;    top: -20px;    color: rgba(0,0,0,0.5);    cursor: default;    z-index: 0;}.enter__panel {    width: 100%;    display: none;    margin-top: 4px;}#enter__title {    cursor: pointer;    user-select: none;    color: royalblue;}#enter__select {    width: 190px;}.enter__option {    margin-top: 5px;}#enter__enterId {    width: 40px;}#enter__reply {    width: 150px;}#enter__word {    width: 140px;}#enter__level {    width: 25px;    text-align: center;}#enter__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#enter__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.gift__panel {    width: 100%;    display: none;    margin-top: 4px;}#gift__title {    cursor: pointer;    user-select: none;    color: royalblue;}#gift__select {    width: 113px;}.gift__option {    margin-top: 5px;}#gift__giftId {    width: 40px;}#gift__reply {    width: 150px;}#gift__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#gift__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.livetool {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 290px;	position: relative;	bottom: 290px;	display: none;	z-index: 1015;}.livetool__cell {	position: relative;    display: -webkit-box;    display: -webkit-flex;    display: flex;    box-sizing: border-box;    width: 100%;    padding: 10px 16px;    overflow: hidden;    color: #323233;    font-size: 14px;    line-height: 24px;	background-color: #fff;	border-bottom: 1px solid rgba(0,0,0,0.2);	flex-wrap: wrap;    -webkit-flex-wrap: wrap;}.livetool__cell_title {	flex: 1;    -webkit-box-flex: 1;}.livetool__cell_option {	text-align: right;}.livetool__cell_switch {	float: right;}.mute__panel {    width: 100%;    display: none;    margin-top: 4px;}#mute__title {    cursor: pointer;    user-select: none;    color: royalblue;}#mute__idlist {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#mute__export, #mute__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}#mute__select {    width: 110px;}.mute__option {    margin-top: 5px;}#mute__word {    width: 70px;}#mute__count {    width: 30px;}#mute__time {    width: 65px;}.exRankPoint {    position: absolute;    right: 16px;}.exRankPoint--top {    position: absolute;    bottom: -12px;    right: 0;    left: 0;}.reply__panel {    width: 100%;    display: none;    margin-top: 4px;}#reply__title {    cursor: pointer;    user-select: none;    color: royalblue;}#reply__select {    /* width: 190px; */    width: 100px;}#reply__time {    width: 35px;}.reply__option {    margin-top: 5px;}#reply__word {    width: 70px;}#reply__reply {    width: 147px;}#reply__export {    cursor: pointer;    color: royalblue;    margin-left: 10px;}#reply__import {    cursor: pointer;    color: royalblue;    margin-left: 5px;}.livetool__Treasure {    width: 100%;    position: relative;    z-index: 999;}.vote__panel {    width: 100%;    display: none;    margin-top: 4px;}#vote__title {    cursor: pointer;    user-select: none;    color: royalblue;}#vote__select {    width: 100px;}.vote__option {    margin-top: 5px;}#vote__theme {    width: 70px;}#vote__options {    width: 133px;}#vote__time {    width: 35px;}#vote__show-result {    cursor: pointer;    color: royalblue;    margin-left: 10px;}.vote__result {    position: absolute;    top: 0px;    width: 300px;    background: rgba(255,255,255,0.85);    left: 0px;    z-index: 999;    padding: 5px;    border-radius: 10px;    user-select: none;    display: none;}#vote__result-theme {    font-size: 20px;    font-weight: 600;    margin-bottom: 10px;}#vote__result-close {    position: absolute;    top: 5px;    right: 10px;    font-size: 14px;    cursor: pointer;    color: gray;}.vote__option-wrap {    margin-bottom: 10px;}.vote__option-choice {    display: inline-block;    font-size: 14px;}.vote__option-num {    float: right;    font-size: 14px;}.vote__progress {    width: 100%;    background-color: #ddd;    border-radius: 10px;}.vote__progress-bar {    width: 0%;    height: 14px;    background-color: #4CAF50;    text-align: center;    line-height: 30px;    border-radius: 10px;}.exlottery {	background-color: rgba(255,255,255,1);	width: 100%;	height: 250px;	position: relative;	bottom: 250px;	display: none;	z-index: 1015;    overflow: auto;    padding: 0 10px;    box-sizing: border-box;}.lottery__nodata {    z-index: 998;    position: absolute;    left:50%;    top:50%;    transform: translate(-50%, -50%);    color: #606266;}.lottery__wrap {    display: flex;    flex-direction: column;    z-index: 999;}.lottery__a:hover .lottery__item {    background-color: rgb(244,244,244);}.lottery__item {    display: flex;    padding: 5px 0;    border-bottom: 1px solid #d0d0d0;    color: #606266;}.lottery__img img {    width: 150px;    border-radius: 5px;}.lottery__anchor {    position: absolute;    background-color: rgba(255,255,255,0.9);    border-radius: 5px 0px 5px 0px;}.lottery__info {    display: flex;    justify-content: space-evenly;    flex-direction: column;    margin-left: 10px;    overflow: hidden;}.lottery__prize {    white-space: nowrap;    text-overflow: ellipsis;    word-break: break-all;    font-size: 14px;}.lottery__expireTime {    position: absolute;    margin-top: -18px;    background-color: rgba(255,255,255,0.9);    border-radius: 0px 5px 0px 5px;} /*滚动条样式*/.exlottery::-webkit-scrollbar {    width: 4px;    }.exlottery::-webkit-scrollbar-thumb {    border-radius: 10px;    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);    background: rgba(0,0,0,0.2);}.exlottery::-webkit-scrollbar-track {    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);    border-radius: 0;    background: rgba(0,0,0,0.1);}.lottery__func {    display: flex;    justify-content: space-between;    margin-top: 5px;    user-select: none;    border-bottom: 1px solid #d0d0d0;}.lottery__notice,#lottery-refresh {    cursor: pointer;    color: #606266;}.miniprogram__panel {    position: absolute;    right: 43px;    bottom: 100px;    animation: move-in 0.75s;    z-index: 101;    text-align: center;    display: none;}.miniprogram__wrap {    overflow: hidden;    background-color: white;    border-radius: 5%;    width: 200px;    box-shadow: 0px 2px 20px 0px #888888;    font-size: 14px;}.miniprogram__triangle {    width: 0px;    height: 0px;    border-color: white transparent transparent transparent;    border-style: solid;    border-width: 10px;    position: absolute;    left: 100px;}.month-cost {    margin-right: 5px;    cursor: default;    -moz-user-select:none;/*火狐*/    -webkit-user-select:none;/*webkit浏览器*/    -ms-user-select:none;/*IE10*/    -khtml-user-select:none;/*早期浏览器*/    user-select:none;    display: inline-block;    vertical-align: middle;}.monthcost__icon {    position: relative;    top: 3px;    cursor: pointer;    margin-left: 3px;}#ex-point {    cursor: pointer;    float: left;    line-height: 30px;    -moz-user-select:none; /*火狐*/    -webkit-user-select:none; /*webkit浏览器*/    -ms-user-select:none; /*IE10*/    -khtml-user-select:none; /*早期浏览器*/    user-select:none;}#point__value {    color: #333;}#ex-exchange {    position: absolute;    left: 0;    bottom: 37px;    z-index: 100;}.exchange__panel {    width: 400px;    height: 500px;    position: relative;}.exchange__wrap {    width: 400px;    height: 500px;    background-color: white;    border-radius: 3%;    overflow-y: scroll;    overflow-x: hidden;    box-shadow: 0px 0px 20px 0px #888888;}.exchange__wrap::-webkit-scrollbar {    display:none}.exchange__close {    position: absolute;    color: rgb(127, 127, 137);    right: 10px;    top: 5px;    font-size: 15px;    cursor: pointer;    z-index: 101;}.item__wrap {    width: 100%;    height: 130px;    border-bottom: 1px solid rgba(121,127,137,0.4);    position: relative;}.item__pic {    left: 10px;    top: 10px;    position: absolute;    height: 110px;    width: 110px;}.item__name {    position: absolute;    top: 7px;    left: 130px;    color: #353536;;    font-size: 15px;    margin-right: 10px;}.item__description {    position: absolute;    top: 32px;    left: 130px;    font-size: 12px;    margin-right: 10px;    color: #969799;}.item__num {    position: absolute;    bottom: 27px;    left: 130px;    font-size: 12px;    color: #969799;}.item__price {    position: absolute;    bottom: 7px;    left: 130px;    font-size: 14px;    color: rgb(255,93,35);    font-weight: 600;}.item__exchange {    position: absolute;    bottom: 8px;    right: 10px;    font-size: 14px;    color: white;    text-align: center;    width: 80px;    height: 25px;        background-color: rgb(255,93,35);    border-radius: 999px;    cursor: pointer;}#ex-pointlist {    position: absolute;    width: 300px;    height: 400px;    background-color: white;    border-radius: 3%;    overflow: auto;    z-index: 100;    bottom: 37px;}#ex-pointlist::-webkit-scrollbar {    display:none}.pointlist__wrap {    width: 100%;    height: 100%;    margin: 15px 0;    position: absolute;}.pointlist__close {    position: absolute;    color: rgb(127, 127, 137);    right: 7px;    font-size: 15px;    cursor: pointer;}.pointlist__wrap table {    border-collapse: collapse;    margin: 0 auto;    text-align: center;}.pointlist__wrap td,.pointlist__wrap th {    border: 1px solid #cad9ea;    color: #666;    height: 30px;    width: 85px;}.pointlist__wrap thead th {    background-color: #CCE8EB;    width: 100px;}.pointlist__wrap tr:nth-child(odd) {    background: #fff;}.pointlist__wrap tr:nth-child(even) {    background: #F5FAFA;}.point__panel {    position: absolute;    left: 0px;    bottom: 37px;    display: none;    animation: move-in 0.75s;    z-index: 101;}@keyframes move-in {    0% {        opacity: 0;    }    100% {        opacity: 0.95;    }}.panel__wrap {    overflow: hidden;    background-color: white;    border-radius: 5%;    width: 120px;    box-shadow: 0px 2px 20px 0px #888888;    font-size: 14px;}.panel__cell {    width: 100%;    height: 37px;    line-height: 37px;    border-bottom: 1px solid rgba(121,127,137,0.4);    text-align: center;    cursor: pointer;}.panel__cell:hover {    background-color: rgb(217, 217, 217);    transition: 0.75s;}.panel__triangle {    width: 0px;    height: 0px;    border-color: white transparent transparent transparent;    border-style: solid;    border-width: 10px;    position: absolute;    left: 35px;}#ex-record {    width: 300px;    height: 400px;    position: absolute;    bottom: 67px;    z-index: 100;}.record__close {    position: absolute;    color: rgb(127, 127, 137);    right: -20px;    font-size: 15px;    cursor: pointer;}.records__wrap {    width: 100%;    height: 100%;    background-color: white;    border-radius: 3%;    box-shadow: 0px 0px 20px 0px #888888;    padding: 15px;    overflow-y: scroll;    overflow-x: hidden;}.records__wrap::-webkit-scrollbar {    display:none}.record__wrap {    height: 50px;    width: 100%;    border: 1px solid rgba(121,127,137,0.4);    margin-bottom: 10px;    display: -webkit-box;    display: -moz-box;     display: -ms-flexbox;    display: -webkit-flex;     display: flex;     transition: 0.75s;    cursor: pointer;}.record__wrap:hover {    background-color: #e9f5ff;}.record__left {    flex: 1;    position: relative;}.record__name {    position: absolute;    flex: 1;    color: #353536;;    font-size: 15px;    top: 2px;    margin-left: 5px;}.record__updatetime {    position: absolute;    margin-left: 5px;    font-size: 12px;    bottom: 2px;    color: #969799;}.record__price {    line-height: 50px;    color: rgb(255,93,35);    margin-right: 10px;}.record__pagenav {    display: -webkit-box;    display: -moz-box;     display: -ms-flexbox;    display: -webkit-flex;     display: flex;     width: 310px;    position: absolute;    bottom: -20px;    padding-left: 10px;    padding-right: 10px;    cursor: pointer;}.record__prev {    flex: 1;    text-align: center;    border: 1px solid rgba(121,127,137,0.8);    transition: 0.75s;    color: white;    background-color: rgb(57,169,237);}.record__prev:hover {    background-color: #7167ff;}.record__next {    flex: 1;    text-align: center;    border: 1px solid rgba(121,127,137,0.8);    transition: 0.75s;    background-color: rgb(57,169,237);    color: white;}.record__next:hover {    background-color: #7167ff;}.exVideoDiv {    width: 500px;    height: 250px;    background-color: rgba(255, 255, 255, 0);    position: absolute;    z-index: 1015;}.exVideoPlayer {    width: 100%;    height: 100%;    cursor: move;}.exVideoScale {    width: 10px;    height: 10px;    overflow: hidden;    cursor: se-resize;    position: absolute;    right: 0;    bottom: 0;    background-color: rgb(231, 57, 57);}.exVideoInfo {    width: 100%;    height: 30px;    background-color: gray;    position: absolute;    top: -30px;    line-height: 30px;}.exVideoClose {    width: 30px;    float: right;    color: white;}.exVideoQn, .exVideoCDN {    margin-left: 5px;}.exVideoRID {    margin: 0px 5px;    font-weight: 800;    font-size: medium;}#popup-player__prompt {    display: none;}.postbird-box-header {    width: auto !important;}.real-audience {    cursor: pointer;    display: flex;    padding: 0 7px;    line-height: 33px;}/* #refresh-video {    float: left;    width: 24px;    height: 24px;    margin-right: 5px;    cursor: pointer;    background-size: contain;} */#refresh-video2 {    display: none;    position: absolute;    top: 20px;    right: 20px;    cursor: pointer;}#refresh-video2-svg {    fill: rgba(0,0,0,.6)}.refresh-barrage {    display: inline-block;    vertical-align: top;    margin: 0 2px;    padding: 0 8px;    height: 22px;    line-height: 21px;    background-color: #fff;    border: 1px solid #e5e4e4;    -webkit-border-radius: 4px;    -moz-border-radius: 4px;    border-radius: 4px;    cursor: pointer;}#refresh-barrage__svg {    vertical-align: middle;}.top-0-important {    top: 0 !important;}.room-vip {  -moz-user-select:none;/*火狐*/  -webkit-user-select:none;/*webkit浏览器*/  -ms-user-select:none;/*IE10*/  -khtml-user-select:none;/*早期浏览器*/  user-select:none;  vertical-align: middle;  float: left;}#ex-camera {    background: rgba(0,0,0,0.7);    position: absolute;    right: 20px;    bottom: 190px;    z-index: 10;    width: 60px;    height: 60px;    cursor: pointer;    -webkit-border-radius: 50%;    -moz-border-radius: 50%;    border-radius: 50%;    cursor: pointer;    display: none;    justify-content: center;    align-items: center;    border: 2px solid #2d2c2c;    box-sizing: border-box;}#ex-camera:hover > svg > path {    fill: rgb(252, 199, 84);}#ex-camera:active > svg > path {    fill: rgb(253, 60, 60);}#ex-cinema:hover > .cinema__wrap {    display: block;}.cinema__wrap {    display: none;    margin: 0;    padding: 0;    border: 1px solid #e5e5e5;    background: #fff;    position: absolute;    left: 201px;    min-width: 100px;    top: 130px;}.cinema__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 70px;}.cinema__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.cinema__panel li:hover {    background-color: rgb(85, 85, 85);}  #ex-joysound {    float: left;    width: 24px;    height: 24px;    margin-right: 10px;    cursor: pointer;    background-size: contain;    pointer-events: all;}#ex-joysound img {    width: 24px;    height: 24px;}#exVideoDivFake {  display: none;}#ex-metadata:hover > .metadata__wrap {  display: block;}.metadata__wrap {  display: none;  margin: 0;  padding: 0;  border: 1px solid #e5e5e5;  background: #fff;  position: absolute;  left: 201px;  min-width: 100px;  top: 0px;  white-space: nowrap;}.metadata__panel {  position: absolute;  border: 1px solid #000;  border-radius: 4px;  transform: translateY(calc(-4px - 100%)) translateX(-50%);  left: 33%;  background-color: #000;  opacity: .75;  width: 70px;}.metadata__panel li {  padding: 0 2px;  white-space: nowrap;  color: #fff;  text-align: center;  cursor: pointer;}.metadata__panel li:hover {  background-color: rgb(85, 85, 85);}  #ex-filter {    float: left;    width: 24px;    height: 24px;    margin-right: 10px;    cursor: pointer;    background-size: contain;    pointer-events: all;}.filter__wrap {    display: none;    position: relative;    height: 100%;    margin-right: -15px;    border-radius: 4px;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;    float: left;    right: -12px;    bottom: 10px;}.filter__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 300px;    padding-top: 10px;    padding-left: 10px;    padding-right: 10px;}.filter__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.filter__panel li:hover {    background-color: rgb(85, 85, 85);}.filter__scroll {    width: 255px;    height: 5px;    background: #ccc;    position: relative;    display: inline-block;}.filter__scroll-bar {    width: 15px;    height: 15px;    background: #369;    position: absolute;    top: -5px;    left: 100px;    cursor: pointer;    border-radius: 100%;}.filter__scroll-mask {    position: absolute;    left: 0;    top: 0;    background: #369;    width: 100px;    height: 5px;}.filter__title {    color: white;    display: inline-block;    cursor: initial;    margin-right: 2px;}#filter__select {    width: 260px;    float: right;}.filter__filter {    margin-top: 5px;}#ex-videospeed:hover > .videospeed__wrap {    display: block;}.videospeed__wrap {    display: none;    margin: 0;    padding: 0;    border: 1px solid #e5e5e5;    background: #fff;    position: absolute;    left: 201px;    min-width: 100px;    top: 120px;}.videospeed__panel {    position: absolute;    border: 1px solid #000;    border-radius: 4px;    transform: translateY(calc(-4px - 100%)) translateX(-50%);    left: 33%;    background-color: #000;    opacity: .75;    width: 70px;}.videospeed__panel li {    padding: 0 2px;    white-space: nowrap;    color: #fff;    text-align: center;    cursor: pointer;}.videospeed__panel li:hover {    background-color: rgb(85, 85, 85);}  #ex-videosync {    float: left;    width: 24px;    height: 24px;    margin-left: 20px;    cursor: pointer;    background-size: contain;}.menu-da2a9e {  z-index: 999 !important;}.weeklypanel__panel-wrap {    width: 100%;    height: 100%;    z-index: 999;    background-color: rgba(0, 0, 0, 0.9);    position: absolute;    top: 0;    left: 0;    display: flex;    justify-content: center;    align-items: center;}.weeklypanel__panel {    height: 600px;    width: 500px;    background-color: white;    border-radius: 20px;    position: fixed;    top: 0;    left: 0;    right: 0;    bottom: 0;    margin: auto;}.weeklypanel__content {    position: relative;    top: 50%;    transform: translateY(-50%);    text-align: center;}.weeklypanel__text {    font-size: 18px;}.weeklypanel__text a {    font-weight: bold;    font-size: 24px;}.weeklypanel__close {    font-size: 30px;    font-weight: bold;    position: absolute;    right: 15px;    cursor: pointer;}.noticejs-top{top:0;width:100% !important}.noticejs-top .item{border-radius:0 !important;margin:0 !important}.noticejs-topRight{top:10px;right:10px}.noticejs-topLeft{top:10px;left:10px}.noticejs-topCenter{top:10px;left:50%;transform:translate(-50%)}.noticejs-middleLeft,.noticejs-middleRight{right:10px;top:50%;transform:translateY(-50%)}.noticejs-middleLeft{left:10px}.noticejs-middleCenter{top:50%;left:50%;transform:translate(-50%,-50%)}.noticejs-bottom{bottom:0;width:100% !important}.noticejs-bottom .item{border-radius:0 !important;margin:0 !important}.noticejs-bottomRight{bottom:10px;right:10px}.noticejs-bottomLeft{bottom:10px;left:10px}.noticejs-bottomCenter{bottom:10px;left:50%;transform:translate(-50%)}.noticejs{font-family:Helvetica Neue,Helvetica,Arial,sans-serif}.noticejs .item{margin:0 0 10px;border-radius:3px;overflow:hidden}.noticejs .item .close{float:right;font-size:18px;font-weight:700;line-height:1;color:#fff;text-shadow:0 1px 0 #fff;opacity:1;margin-right:7px}.noticejs .item .close:hover{opacity:.5;color:#000}.noticejs .item a{color:#fff;border-bottom:1px dashed #fff}.noticejs .item a,.noticejs .item a:hover{text-decoration:none}.noticejs .success{background-color:#64ce83}.noticejs .success .noticejs-heading{background-color:#3da95c;color:#fff;padding:10px}.noticejs .success .noticejs-body{color:#fff;padding:10px}.noticejs .success .noticejs-body:hover{visibility:visible !important}.noticejs .success .noticejs-content{visibility:visible}.noticejs .info{background-color:#3ea2ff}.noticejs .info .noticejs-heading{background-color:#067cea;color:#fff;padding:10px}.noticejs .info .noticejs-body{color:#fff;padding:10px}.noticejs .info .noticejs-body:hover{visibility:visible !important}.noticejs .info .noticejs-content{visibility:visible}.noticejs .warning{background-color:#ff7f48}.noticejs .warning .noticejs-heading{background-color:#f44e06;color:#fff;padding:10px}.noticejs .warning .noticejs-body{color:#fff;padding:10px}.noticejs .warning .noticejs-body:hover{visibility:visible !important}.noticejs .warning .noticejs-content{visibility:visible}.noticejs .error{background-color:#e74c3c}.noticejs .error .noticejs-heading{background-color:#ba2c1d;color:#fff;padding:10px}.noticejs .error .noticejs-body{color:#fff;padding:10px}.noticejs .error .noticejs-body:hover{visibility:visible !important}.noticejs .error .noticejs-content{visibility:visible}.noticejs .progressbar{width:100%}.noticejs .progressbar .bar{width:1%;height:30px;background-color:#4caf50}.noticejs .success .noticejs-progressbar{width:100%;background-color:#64ce83;margin-top:-1px}.noticejs .success .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#3da95c}.noticejs .info .noticejs-progressbar{width:100%;background-color:#3ea2ff;margin-top:-1px}.noticejs .info .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#067cea}.noticejs .warning .noticejs-progressbar{width:100%;background-color:#ff7f48;margin-top:-1px}.noticejs .warning .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#f44e06}.noticejs .error .noticejs-progressbar{width:100%;background-color:#e74c3c;margin-top:-1px}.noticejs .error .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:#ba2c1d}@keyframes noticejs-fadeOut{0%{opacity:1}to{opacity:0}}.noticejs-fadeOut{animation-name:noticejs-fadeOut}@keyframes noticejs-modal-in{to{opacity:.3}}@keyframes noticejs-modal-out{to{opacity:0}}.noticejs-rtl .noticejs-heading{direction:rtl}.noticejs-rtl .close{float:left !important;margin-left:7px;margin-right:0 !important}.noticejs-rtl .noticejs-content{direction:rtl}.noticejs{position:fixed;z-index:10050;width:320px}.noticejs::-webkit-scrollbar{width:8px}.noticejs::-webkit-scrollbar-button{width:8px;height:5px}.noticejs::-webkit-scrollbar-track{border-radius:10px}.noticejs::-webkit-scrollbar-thumb{background:hsla(0,0%,100%,.5);border-radius:10px}.noticejs::-webkit-scrollbar-thumb:hover{background:#fff}.noticejs-modal{position:fixed;width:100%;height:100%;background-color:#000;z-index:10000;opacity:.3;left:0;top:0}.noticejs-modal-open{opacity:0;animation:noticejs-modal-in .3s ease-out}.noticejs-modal-close{animation:noticejs-modal-out .3s ease-out;animation-fill-mode:forwards}.noticejs .special{background-color:rgb(160,37,160)}.noticejs .special .noticejs-heading{background-color:rgb(110,26,110);color:#fff;padding:10px}.noticejs .special .noticejs-body{color:#fff;padding:10px}.noticejs .special .noticejs-body:hover{visibility:visible !important}.noticejs .special .noticejs-content{visibility:visible}.noticejs .special .noticejs-progressbar{width:100%;background-color:rgb(160,37,160);margin-top:-1px}.noticejs .special .noticejs-progressbar .noticejs-bar{width:100%;height:5px;background:rgb(110,26,110)}/** * PostbirdAlertBox.js * -    原生javascript弹框插件 * Author:  Postbird - http://www.ptbird.cn * License: MIT * Date:    2017-09-23 */.postbird-box-container {    width: 100%;    height: 100%;    overflow: hidden;    position: fixed;    top: 0;    left: 0;    z-index: 9999;    background-color: rgba(0, 0, 0, 0.2);    display: block;    -webkit-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none}.postbird-box-container.active {    display: block}.postbird-box-content {    min-width: 400px;    max-width: 600px;    min-height: 150px;    background-color: #fff;    border: solid 1px #dfdfdf;    position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    margin-top: -100px}.postbird-box-header {    width: 100%;    padding: 10px 15px;    position: relative;    font-size: 1.1em;    letter-spacing: 2px}.postbird-box-close-btn {    cursor: pointer;    font-weight: 700;    color: #000;    float: right;    opacity: .5;    font-size: 1.3em;    margin-top: -3px;    display: none}.postbird-box-close-btn:hover {    opacity: 1}.postbird-box-text {    box-sizing: border-box;    width: 100%;    padding: 0 10%;    text-align: center;    line-height: 40px;    font-size: 20px;    letter-spacing: 1px}.postbird-box-footer {    width: 100%;    position: absolute;    padding: 0;    margin: 0;    bottom: 0;    display: flex;    display: -webkit-flex;    justify-content: space-around;    border-top: solid 1px #dfdfdf;    align-items: flex-end}.postbird-box-footer .btn-footer {    line-height: 44px;    border: 0;    cursor: pointer;    background-color: #fff;    color: #0e90d2;    font-size: 1.1em;    letter-spacing: 2px;    transition: background-color .5s;    -webkit-transition: background-color .5s;    -o-transition: background-color .5s;    -moz-transition: background-color .5s;    outline: 0}.postbird-box-footer .btn-footer:hover {    background-color: #e5e5e5}.postbird-box-footer .btn-block-footer {    width: 100%}.postbird-box-footer .btn-left-footer,.postbird-box-footer .btn-right-footer {    position: relative;    width: 100%}.postbird-box-footer .btn-left-footer::after {    content: "";    position: absolute;    right: 0;    top: 0;    background-color: #e5e5e5;    height: 100%;    width: 1px}.postbird-box-footer .btn-footer-cancel {    color: #333}.postbird-prompt-input {    width: 100%;    padding: 5px;    font-size: 16px;    border: 1px solid #ccc;    outline: 0}.onoffswitch {    position: relative; width: 45px;    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;}.onoffswitch-checkbox {    position: absolute;    opacity: 0;    pointer-events: none;}.onoffswitch-label {    display: block; overflow: hidden; cursor: pointer;    height: 20px; padding: 0; line-height: 20px;    border: 2px solid #E3E3E3; border-radius: 20px;    background-color: #FFFFFF;    transition: background-color 0.3s ease-in;}.onoffswitch-label:before {    content: "";    display: block; width: 20px; margin: 0px;    background: #FFFFFF;    position: absolute; top: 0; bottom: 0;    right: 23px;    border: 2px solid #E3E3E3; border-radius: 20px;    transition: all 0.3s ease-in 0s; }.onoffswitch-checkbox:checked + .onoffswitch-label {    background-color: #3AAD38;}.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {   border-color: #3AAD38;}.onoffswitch-checkbox:checked + .onoffswitch-label:before {    right: 0px; }.layui-timeline {    padding-left: 5px;}.layui-timeline-item {    position: relative;    padding-bottom: 20px;}li {    list-style: none;}.layui-timeline-item:first-child::before {    display: block;}.layui-timeline-item:last-child::before {    content: '';    position: absolute;    left: 5px;    top: 0;    z-index: 0;    width: 0;    height: 100%;}.layui-timeline-item::before {    content: '';    position: absolute;    left: 5px;    top: 0;    z-index: 0;    width: 1px;    height: 100%;}.layui-timeline-item::before,hr {    background-color: #e6e6e6;}.layui-timeline-axis {    position: absolute;    left: -5px;    top: 0;    z-index: 10;    width: 20px;    height: 20px;    line-height: 20px;    background-color: #fff;    color: #5FB878;    border-radius: 50%;    text-align: center;    cursor: pointer;}.layui-icon {    font-family: layui-icon !important;    font-size: 16px;    font-style: normal;}.layui-timeline-content {    padding-left: 25px;}.layui-text {    line-height: 22px;    font-size: 14px;    color: rgb(85,85,85);}.layui-timeline-title {    position: relative;}`));
 	document.head.appendChild(style);
 }
 
@@ -119,16 +134,23 @@ url = null;
 urlLen = null;
 ridPos = null;
 var my_uid = getCookieValue("acf_uid"); // 自己的uid
+var myName = "";
 var dyToken = getToken();
+// 功能条的显示定时器
+var exPanelTimer = null;
 
 function showExPanel() {
 	// 显示功能条
 	let a = document.getElementsByClassName("ex-panel")[0];
-	if (a.style.display != "block") {
-		a.style.display = "block";
-	} else {
-		a.style.display = "none";
-	}
+	if (a.style.visibility !== 'visible') {
+        a.style.visibility = 'visible';
+        a.style.opacity = '1';
+        clearTimeout(exPanelTimer);
+    } else {
+        a.style.visibility = 'hidden';
+        a.style.opacity = '0';
+        clearTimeout(exPanelTimer);
+    }
 }
 
 function sleep(time) {
@@ -520,6 +542,42 @@ function sheet2blob(sheet, sheetName) {
 	}
 	return blob;
 }
+
+function downloadFile(name, data) {
+    var urlObject = unsafeWindow.URL || unsafeWindow.webkitURL || unsafeWindow;
+    var export_blob = new Blob([data]);
+    var save_link = document.createElementNS("http://www.w3.org/1999/xhtml", "a")
+    save_link.href = urlObject.createObjectURL(export_blob);
+    save_link.download = name;
+
+	var ev = document.createEvent("MouseEvents");
+    ev.initMouseEvent("click", true, false, unsafeWindow, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    save_link.dispatchEvent(ev);
+} 
+
+function timeText2Ms(text) {
+	let ret = 0;
+	let arr = text.split(":");
+	if (arr.length === 1) {
+		ret = Number(arr[0]);
+	} else if (arr.length === 2) {
+		ret = Number(arr[0]) * 60 + Number(arr[1]);
+	} else if (arr.length === 3) {
+		ret = Number(arr[0]) * 3600 + Number(arr[1]) * 60 + Number(arr[2]);
+	}
+	return ret * 1000;
+}
+
+function resizeWindow() {
+  const resizeEvent = new Event("resize");
+  window.dispatchEvent(resizeEvent);
+}
+
+function isValidImageFile(filename) {
+  const validExtensions = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".bmp", ".ico", ".tiff", ".tif"];
+  const ext = filename.substring(filename.lastIndexOf(".")).toLowerCase();
+  return validExtensions.includes(ext);
+}
 let svg_accountList = `<svg t="1613993967937" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2122" width="16" height="16"><path d="M217.472 311.808l384.64 384.64-90.432 90.56-384.64-384.64z" fill="#8A8A8A" p-id="2123"></path><path d="M896.32 401.984l-384.64 384.64-90.56-90.496 384.64-384.64z" fill="#8A8A8A" p-id="2124"></path></svg>`
 let cleanOverTimes = 0; // 用于判断是否全部清空并跳转
 function initPkg_AccountList() {
@@ -630,6 +688,7 @@ function renderAccountList(obj) {
         let item = items[i];
         let uid = item.getAttribute("uid");
         item.addEventListener("click", () => {
+            showMessage("【账号管理】正在切换账号，请耐心等待...", "info");
             switchAccount(uid, () => {});
             setPassportCmd("switch", uid);
             setYubaAndMsgAndVideoClean();
@@ -907,7 +966,7 @@ function initPkg_AdVideo() {
     initPkg_Sign_Ad_FishPond();
 }
 function initPkg_AdVideo_Xiaoxiaole() {
-	startGetXiaoxiaoleFishBall();
+    // startGetXiaoxiaoleFishBall()
 }
 async function startGetXiaoxiaoleFishBall() {
     let status = await getXiaoxiaoleStatus();
@@ -955,6 +1014,7 @@ function getXiaoxiaoleStatus() {
         })
     })
 }
+
 function initPkg_Sign_Ad_FishPond() {
 	getFishBall_Ad_FishPond();
 }
@@ -1486,14 +1546,9 @@ function initPkg_BagInfo_Func() {
                             expiryDiv.innerHTML = expiry - 1;
                             chunk.insertBefore(expiryDiv, chunk.childNodes[0]);
                         }
-                        document.getElementsByClassName("Backpack-space")[0].innerText = "总价值：" + String(Number(totalPrice / 100).toFixed(2)) + " 总亲密度：" + String(totalIntimate);
+                        let html = document.getElementsByClassName("BackpackHeader-extInfo")[0].innerHTML;
+                        document.getElementsByClassName("BackpackHeader-extInfo")[0].innerHTML = `<span style="float: left">` + "总价值：" + String(Number(totalPrice / 100).toFixed(2)) + " 总亲密度：" + String(totalIntimate) + `<span class="bag-button" id="Backpack__clearbag">清空背包</span></span>` + html;
                         
-                        let a = document.getElementsByClassName("Backpack-title")[0];
-                        let b = document.createElement("div");
-                        b.className = "bag-button";
-                        b.id = "Backpack__clearbag";
-                        b.innerText = "清空背包";
-                        a.appendChild(b);
                         document.getElementById("Backpack__clearbag").addEventListener("click", () => {
                             if (confirm("确认清空？") != true) {
                                 return;
@@ -1545,6 +1600,7 @@ let barrageColorOffset = 0;
 let isChangeColor = true;
 let isMatch = false; //是否为赛事直播间
 let bloopStopTimer;
+let barrageOptions = [];
 
 function initPkg_BarrageLoop() {
 	initPkg_BarrageLoop_Dom();
@@ -1557,11 +1613,17 @@ function BarrageLoop_insertModal() {
 	let a = document.createElement("div");
 	a.className = "bloop";
 	html += '<div style="display:inline-block"><label>弹幕：</label></div>';
-	html += '<div class="bloop__mode"><label><input id="bloop__checkbox_tiangou" type="checkbox">舔狗模式</label></div>';
+	html += `
+	<span style="float:right;margin-right:15px;">
+		<select id="bloop__select"></select>
+		<input style="width:40px;margin-left:10px;" type="button" id="bloop__save" value="保存"/>
+		<input style="width:40px;margin-left:10px;" type="button" id="bloop__delete" value="删除"/>
+	</span>
+	`;
 	html += '<textarea placeholder="一行一个，开启舔狗模式后此处不需要输入" id="bloop__textarea" rows="5" cols="50"></textarea>';
 	html += '<div><label>速度(ms)：</label><input id="bloop__text_speed1" type="text" style="width:50px;text-align:center;" value="2000" />~<input id="bloop__text_speed2" type="text" style="width:50px;text-align:center;" value="3000" /></div>';
 	html += '<div><label>限时(min)：</label><input id="bloop__text_stoptime" type="text" style="width:50px;text-align:center;" value="1" /></div>';
-	html += '<div><label><input id="bloop__checkbox_changeColor" type="checkbox" name="checkbox_changeColor" checked>自动变色</label></div>';
+	html += '<div><label><input id="bloop__checkbox_changeColor" type="checkbox" name="checkbox_changeColor" checked>自动变色</label><label><input id="bloop__checkbox_tiangou" type="checkbox">舔狗模式</label></div>';
 	html += '<div class="bloop__switch"><label><input id="bloop__checkbox_startSend" type="checkbox">开始发送</label></div>';
 	
 	a.innerHTML = html;
@@ -1671,7 +1733,7 @@ function saveData_BarrageLoop() {
 		stopTime = 5;
 	}
 	let data = {
-		text: document.getElementById("bloop__textarea").value,
+		text: barrageOptions,
 		speed1: speed1,
 		speed2: speed2,
 		stopTime: stopTime,
@@ -1679,7 +1741,7 @@ function saveData_BarrageLoop() {
 		isTiangouMode: tiangouMode,
 	}
 	
-	localStorage.setItem("ExSave_BarrageLoop", JSON.stringify(data)); // 存储弹幕列表
+	localStorage.setItem("ExSave_BarrageLoopOptions", JSON.stringify(data).replace(/\\n/g, "\\r")); // 存储弹幕列表
 }
 
 
@@ -1754,7 +1816,38 @@ function initPkg_BarrageLoop_Func() {
 		}
 		saveData_BarrageLoop();
 	});
+
+  document.getElementById("bloop__select").onclick = function() {
+    if (this.options.length == 0) {
+      return;
+    }
+    let area = document.getElementById("bloop__textarea");
+    let text = this.options[this.selectedIndex].text;
+    area.value = text;
+    area.value = area.value.replace(/\\r/g, "\r");
+  };
+
+	document.getElementById("bloop__save").addEventListener("click", () => {
+		// ExSave_BarrageLoopOptions
+    let select_bloop = document.getElementById("bloop__select");
+    let text = document.getElementById("bloop__textarea").value;
+    if (text == "") return;
+    barrageOptions.push(text);
+    select_bloop.options.add(new Option(text.replace(/\n/g, "\\r"), true));
+    saveData_BarrageLoop();
+	});
+
+	document.getElementById("bloop__delete").addEventListener("click", () => {
+		let select_bloop = document.getElementById("bloop__select");
+    let index = select_bloop.options[select_bloop.selectedIndex];
+    if (!index) return;
+    let text = index.text;
+    barrageOptions = barrageOptions.filter(item => item === text);
+    select_bloop.options.remove(select_bloop.selectedIndex);
+    saveData_BarrageLoop();
+	});
 }
+
 
 function initPkg_BarrageLoop_Dom() {
 	// Dom初始化
@@ -1764,7 +1857,7 @@ function initPkg_BarrageLoop_Dom() {
 
 function initPkg_BarrageLoop_Set() {
 	// 设置初始化
-	let ret = localStorage.getItem("ExSave_BarrageLoop");
+	let ret = localStorage.getItem("ExSave_BarrageLoopOptions");
 	
 	if (ret != null) {
 		let retJson = JSON.parse(ret);
@@ -1780,7 +1873,11 @@ function initPkg_BarrageLoop_Set() {
 		if ("isTiangouMode" in retJson == false) {
 			retJson.isTiangouMode = false;
 		}
-		document.getElementById("bloop__textarea").value = retJson.text;
+    let select_bloop = document.getElementById("bloop__select");
+    retJson.text.forEach(item => {
+      select_bloop.options.add(new Option(item.replace(/\r/g, "\\r"), ""));
+    });
+    barrageOptions = retJson.text;
 		document.getElementById("bloop__checkbox_changeColor").checked = retJson.isChangeColor;
 		isChangeColor = Boolean(retJson.isChangeColor);
 		document.getElementById("bloop__text_speed1").value = retJson.speed1;
@@ -1798,13 +1895,11 @@ function getBarrageTxt_Tiangou() {
 	return new Promise(resolve => {
 		GM_xmlhttpRequest({
             method: "GET",
-            url: "https://chp.shadiao.app/api.php",
-            responseType: "text",
+            url: "https://api.shadiao.app/chp",
+            responseType: "json",
             onload: function(response) {
                 let ret = response.response;
-                if (ret != "") {
-					resolve(ret);
-				}
+                resolve(ret.data.text);
             }
         });
 	})
@@ -1871,11 +1966,23 @@ function setBarragePanelCallBack() {
                     setReplyBarrageButton(barragePanel);
                     setBarrgePanelFunc(barragePanel, id);
                 }
-
+                const contentDom = document.getElementsByClassName("danmuContent-25f266")[0];
+                if (!contentDom) return;
+                if (!contentDom.innerHTML.includes(`[DouyuEx图片`)) return;
+                let newText = contentDom.innerHTML.replace(/\[DouyuEx图片(.*?)\]/g, (match, str) => getImageDanmakuHtml(str));
+                contentDom.innerHTML = newText;
             }
-            
         }
     });
+
+    new DomHook("#Ex_BarragePanel", false, (m) => {
+        const contentDom = document.getElementsByClassName("danmuContent-25f266")[0];
+        if (!contentDom) return;
+        if (!contentDom.innerHTML.includes(`[DouyuEx图片`)) return;
+        let newText = contentDom.innerHTML.replace(/\[DouyuEx图片(.*?)\]/g, (match, str) => getImageDanmakuHtml(str));
+        contentDom.innerHTML = newText;
+    })
+    
 }
 
 function getUserFansMedal(userName) {
@@ -2017,48 +2124,9 @@ function setBarrgePanelFunc(parentDom, id) {
     };
     
     document.getElementById("barragePanel__search").onclick = async () => {
-        insertBarragePanel_SearchBarrage_Dom(parentDom);
-        let barragePanelLastName = id;
-        let ret = await getUserRecentBarrage(id);
-        let retJson = JSON.parse(ret.data);
-        let panel = document.getElementById("barragePanel__searchPanel");
-        if(retJson.msg == "成功") {
-            if ("danmuVoList" in retJson.data == false) {
-                return;
-            }
-            for (let i = 0; i < retJson.data.danmuVoList.length; i++) {
-                let item = retJson.data.danmuVoList[i];
-                let a = document.createElement("li");
-                a.className = "layui-timeline-item";
-                a.innerHTML = `
-                <i class="layui-icon layui-timeline-axis"></i>
-                <div class="layui-timeline-content layui-text">
-                    <h3 class="layui-timeline-title">${item.time}</h3>
-                    <p>
-                        <span style="font-size:12px">${item.anchorName}：</span><br/>
-                        ${item.txt}
-                    </p>
-                </div>
-                `;
-                if (panel != null || panel != undefined) {
-                    panel.appendChild(a);
-                }
-            }
-            let end = document.createElement("li");
-            end.className = "layui-timeline-item";
-            end.innerHTML = `
-            <i class="layui-icon layui-timeline-axis"></i>
-            <div class="layui-timeline-content layui-text">
-                <div class="layui-timeline-title"></div>
-            </div>
-            `;
-            if (panel != null || panel != undefined) {
-                panel.appendChild(end);
-            }
-            
-
-        } else {
-            showMessage("【查弹幕】查询失败", "error");
+        let uid = await getUserUid(id);
+        if (uid !== "") {
+            openPage(`https://www.doseeing.com/data/fan/${uid}?type=chat&dt=0`, true);
         }
     };
 }
@@ -2101,6 +2169,36 @@ function getUserRecentBarrage(name) {
         });
     });
 }
+
+function getUserUid(name) {
+    return new Promise(resolve => {
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: "https://www.doseeing.com/api/suggest_all?type=room&nickname=" + encodeURIComponent(name),
+            responseType: "json",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            onload: function(response) {
+                let ret = response.response;
+                let success = true;
+                if (!ret.suggest) success = false;
+                if (!ret.suggest.fan) success = false;
+                if (ret.suggest.fan.length === 0) success = false;
+                if (ret.suggest.fan[0].nickname !== name) success = false;
+                if (success) {
+                    resolve(ret.suggest.fan[0].user_id);
+                } else {
+                    resolve("");
+                    return;
+                }
+            }
+        });
+    });
+}
+
+
+
 function initPkg_BarragePanel_Tip() {
     setBarragePanelTipCallBack();
 }
@@ -2139,8 +2237,15 @@ function renderBarragePanelTip(dom) {
 
 function setBarragePanelTipFunc() {
     document.getElementById("barrage-panel-tip__+1").onclick = () => {
-        let txt = document.getElementById("comment-higher-container").innerText;
-        sendBarrage(txt);
+        const dom = document.getElementById("comment-higher-container");
+        if (dom.getElementsByClassName("ex-image-danmaku").length > 0) {
+            const textDom = dom.getElementsByClassName("text-879f3e")[0];
+            sendBarrage(textDom.innerHTML.replace(/<a[^>]*><img\s+(?:.*?\s+)?src="(.*?)"[^>]*?\/?><\/a>/g, (match, src) => {
+                return getImageDanmakuFromImgSrc(src);
+            }));
+        } else {
+            sendBarrage(dom.innerText);
+        }
     }
 }
 
@@ -2241,33 +2346,49 @@ function CopyRealLive_insertIcon() {
     }
 }
 
+function CopyRealLive_getQn(qnName) {
+    if (String(qnName).includes("蓝光8M")) return 8;
+    if (String(qnName).includes("蓝光4M")) return 4;
+    if (String(qnName).includes("超清")) return 3;
+    if (String(qnName).includes("高清")) return 2;
+    return 0;
+}
+
+function CopyRealLive_copyUrl(qn) {
+    getRealLive_Douyu(rid, true, false, qn, (lurl) => {
+        if (lurl == "None") {
+            showMessage("房间未开播或其他错误", "error");
+        } else {
+            let str = String(lurl);
+            // GM_setClipboard(String(lurl).replace("https", "http"));
+            GM_setClipboard(str);
+            showMessage("复制成功", "success");
+        }
+    })
+}
+
 function initPkg_CopyRealLive_Func() {
 	document.getElementById("copy-real-live").addEventListener("click", function() {
-        getRealLive_Douyu(rid, true, false, "1015", (lurl) => {
-            if (lurl == "None") {
-                showMessage("房间未开播或其他错误", "error");
-            } else {
-                let str = String(lurl);
-                // GM_setClipboard(String(lurl).replace("https", "http"));
-                GM_setClipboard(str);
-                showMessage("复制成功", "success");
-            }
-            
-        })
+        if (document.querySelectorAll(".tipItem-898596 > ul > li").length > 0) {
+            document.querySelectorAll(".tipItem-898596 > ul > li").forEach(item => {
+                if (item.className.includes("selected")) {
+                    CopyRealLive_copyUrl(CopyRealLive_getQn(item.innerText));
+                }
+            })
+        } else {
+            CopyRealLive_copyUrl(0);
+        }
     });
     document.getElementsByClassName("Title-header")[0].addEventListener("click", function() {
-        getRealLive_Douyu(rid, true, false, "1015", (lurl) => {
-            if (lurl == "None") {
-                showMessage("房间未开播或其他错误", "error");
-            } else {
-                // // GM_setClipboard(String(lurl).replace("https", "http"));
-                // GM_setClipboard(String(lurl));
-                let str = String(lurl);
-                GM_setClipboard(str);
-                showMessage("复制成功", "success");
-            }
-            
-        })
+        if (document.querySelectorAll(".tipItem-898596 > ul > li").length > 0) {
+            document.querySelectorAll(".tipItem-898596 > ul > li").forEach(item => {
+                if (item.className.includes("selected")) {
+                    CopyRealLive_copyUrl(CopyRealLive_getQn(item.innerText));
+                }
+            })
+        } else {
+            CopyRealLive_copyUrl(0);
+        }
     });
 
     let titNode = document.getElementsByClassName("RecommendViewTit-04ebd8");
@@ -2279,13 +2400,290 @@ function initPkg_CopyRealLive_Func() {
     document.getElementsByClassName("Title-header")[0].style.cursor = "pointer";
     document.getElementsByClassName("Title-header")[0].title = tit + "点击复制直播流";
 }
+function initPkg_DanmakuCollect() {
+  initPkg_DanmakuCollect_Dom();
+  const textarea = document.getElementsByClassName("ChatSend-txt")[0];
+  const collectButton = document.getElementsByClassName("ChatBarrageCollect")[0];
+  textarea.addEventListener("keyup", () => {
+    const length = textarea.value.length;
+    if (length > 25) {
+      collectButton.style.display = "none";
+    } else {
+      collectButton.style.display = "";
+    }
+  });
+  document.getElementsByClassName("ChatSend-button")[0].addEventListener("click", () => {
+    collectButton.style.display = "";
+  });
+  responseHook((url, text) => {
+    if (url.includes(`bulletscreen/query`)) {
+      let obj = JSON.parse(text);
+      obj.data.list.unshift(...getLocalDanmakuCollect().map(item => {
+        return {
+          content: item.content,
+          type: 2,
+          id: item.id
+        }
+      }));
+      return JSON.stringify(obj);
+    }
+  });
+
+  responseHook((url, text, body) => {
+    if (url.includes(`bulletscreen/add`)) {
+      let obj = JSON.parse(text);
+      if (obj.error == 0) return text;
+      let { content } = JSON.parse(body);
+      addLocalDanmakuCollect(content);
+      obj.msg = "收藏成功，云收藏已达上限，将收藏至本地（由DouyuEx插件实现无限收藏）";
+      return JSON.stringify(obj);
+    }
+  });
+
+  responseHook((url, text, body) => {
+    if (url.includes(`bulletscreen/del`)) {
+      let { id } = JSON.parse(body);
+      delLocalDanmakuCollect(id);
+    }
+  });
+}
+
+function initPkg_DanmakuCollect_Dom() {
+  let timer = setInterval(() => {
+    if (typeof document.getElementsByClassName("ChatBarrageCollect")[0] != "undefined") {
+      clearInterval(timer);
+      new DomHook(".ChatBarrageCollect", false, (m) => {
+        const titleDom = document.getElementsByClassName("ChatBarrageCollectPop-title");
+        if (!titleDom) {
+          document.getElementById("ex-danmaku-collect-search").removeEventListener("input", searchCollectDanmaku);
+          return;
+        }
+        if (titleDom.length === 0) return;
+        let inputDom = document.createElement("input");
+        inputDom.id = "ex-danmaku-collect-search";
+        inputDom.placeholder = "搜索弹幕";
+        inputDom.style.marginLeft = "6px";
+        titleDom[0].appendChild(inputDom);
+
+        inputDom.addEventListener("input", searchCollectDanmaku);
+      });
+    }
+  }, 1000);
+}
+
+function searchCollectDanmaku(e) {
+  const searchText = e.target.value;
+  let parentDom = document.getElementsByClassName("ChatBarrageCollectPop-barrageContent")[0].parentElement;
+  let danmakuDoms = parentDom.getElementsByClassName("TagItem");
+  // 找出所有doms里面包含searchText的dom，其他全部display为none，如果searchText为空，则全部显示
+  for (let i = 0; i < danmakuDoms.length; i++) {
+    let danmakuDom = danmakuDoms[i];
+    if (danmakuDom.innerText.includes(searchText)) {
+      danmakuDom.style.display = "";
+    } else {
+      danmakuDom.style.display = "none";
+    }
+  }
+}
+
+function getLocalDanmakuCollect() {
+  let ret = localStorage.getItem("ExSave_DanmakuCollect");
+  try {
+    ret = JSON.parse(ret) || [];
+  } catch (error) {
+    ret = [];
+  }
+  return ret;
+}
+
+function addLocalDanmakuCollect(content) {
+  let ret = getLocalDanmakuCollect();
+  ret.unshift({
+    content,
+    id: new Date().getTime()
+  });
+  localStorage.setItem("ExSave_DanmakuCollect", JSON.stringify(ret));
+}
+
+function delLocalDanmakuCollect(id) {
+  let ret = getLocalDanmakuCollect();
+  localStorage.setItem("ExSave_DanmakuCollect", JSON.stringify(ret.filter(item => item.id !== id)));
+}
+function initPkg_DisableCloseJump_Timer() {
+  setInterval(() => {
+    let x = document.getElementsByClassName("dy-ModalRadius-close-x");
+    if (x.length > 0) {
+      x[0].click();
+    }
+  }, 1000);
+}
+function getVideoStreamUrl(vid, sign) {
+  return new Promise(resolve => {
+      fetch("https://v.douyu.com/api/stream/getStreamUrl", {
+          method: 'POST',
+          mode: 'no-cors',
+          credentials: 'include',
+          headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
+          body: `${sign}&vid=${vid}`
+      }).then(result => {
+          return result.json();
+      }).then(ret => {
+          resolve(ret);
+      }).catch(err => {
+          console.log("请求失败!", err);
+      })
+  })
+}
+
+function getVideoBarrageByTime(vid, pre = 0) {
+  // pre来自接口返回值data.pre中
+  // 若为-1则不再获取
+  if (pre < 0) {
+      return;
+  }
+  return new Promise(resolve => {
+      fetch(`https://v.douyu.com/wgapi/vod/center/getBarrageListByPage?vid=${vid}&offset=${pre}`, {
+          method: 'GET',
+          mode: 'no-cors',
+          credentials: 'include',
+      }).then(result => {
+          return result.json();
+      }).then(ret => {
+          resolve(ret);
+      }).catch(err => {
+          console.log("请求失败!", err);
+      })
+  })
+}
+let dyVideoBarrage_domhook_videoChange = null;
+let dyVideoBarrage_hasRendered = false;
+const dyVideoBarrage_domName = "ex-barrageLine";
+const dyVideoBarrage_switchDomName = "ex-barrageLine-switch";
+function initPkg_DyVideoBarrageLine() {
+    let timer = setInterval(() => {
+        let progress = document.getElementsByTagName("demand-video")[0].shadowRoot.getElementById("demandcontroller-bar").shadowRoot.querySelector("demand-video-controller-progress").shadowRoot.querySelector(".ProgressBar-Safearea");
+        let hashidShadow = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot;
+        let hashIdDom = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot;
+        if (progress && hashidShadow && hashIdDom) {
+            clearInterval(timer);
+            initPkg_DyVideoBarrageLine_Dom();
+            renderVideoBarrageLine();
+            let shareHoverDom = hashIdDom.querySelector("share-hover");
+            dyVideoBarrage_domhook_videoChange = new MutationObserver(function(mutations) {
+                renderVideoBarrageLine();
+            });
+            dyVideoBarrage_domhook_videoChange.observe(shareHoverDom, { attributes: true, childList: true, subtree: false });
+        }
+    }, 1000);
+}
+
+function initPkg_DyVideoBarrageLine_Dom() {
+    let a = document.createElement("style");
+    a.innerHTML = `.no-hasLR #ex-barrageLine {
+        display: none !important;
+    }`;
+    
+    let b = document.getElementsByTagName("demand-video")[0].shadowRoot.getElementById("demandcontroller-bar").shadowRoot.querySelector("demand-video-controller-progress").shadowRoot;
+    b.append(a);
+}
+
+
+async function renderVideoBarrageLine() {
+    if (dyVideoBarrage_hasRendered) return;
+    dyVideoBarrage_hasRendered = true;
+    setTimeout(() => {
+        dyVideoBarrage_hasRendered = false;
+    }, 1000);
+    showMessage("弹幕高能进度条加载中，请耐心等待", "info");
+    let progress = document.getElementsByTagName("demand-video")[0].shadowRoot.getElementById("demandcontroller-bar").shadowRoot.querySelector("demand-video-controller-progress").shadowRoot;
+    let progressBar = progress.querySelector(".ProgressBar");
+    let barrageLineDom = progress.querySelector("#" + dyVideoBarrage_domName);
+    if (barrageLineDom) barrageLineDom.remove();
+    let hashid = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector("share-hover").getAttribute("hashid");
+    let xAxisStepNum = 100;
+    let progressTimeText = document.getElementsByTagName("demand-video")[0].shadowRoot.getElementById("demandcontroller-bar").shadowRoot.querySelector("#time-label").innerText;
+    let arr = progressTimeText.split("/");
+    if (arr.length <= 0) return;
+    let totalMs = timeText2Ms(arr[1]);
+    let msStep = totalMs / (xAxisStepNum - 1);
+    
+    let list = new Array(xAxisStepNum).fill(0, 0, xAxisStepNum);
+    let pre = 0;
+    do {
+        let data = await getVideoBarrageByTime(hashid, pre);
+        pre = data.data.pre;
+        if (data.data.list) {
+            for (let i = 0; i < data.data.list.length; i++) {
+                let item = data.data.list[i];
+                let index = Math.floor(item.tl / msStep);
+                list[index]++;
+            }
+        }
+    } while (pre >= 0);
+
+
+    // viewbox 长1000 高100
+    let xStep = 1000 / list.length;
+    let yStep = Math.max(...list) / 100;
+
+    let positionArray = [];
+
+    for (let i = 0; i < list.length; i++) {
+        let barrageNum = list[i];
+        let x = i * xStep;
+        let y = barrageNum / yStep;
+        positionArray.push([x, y]);
+    }
+
+    let d = "M 0 100 L 0 80 ";
+    let c = "";
+    for (let i = 0; i < positionArray.length - 1; i++) {
+        let current = positionArray[i];
+        let next = positionArray[i + 1];
+        let [x1, y1] = current;
+        let [x2, y2] = next;
+
+        let cx1 = x1;
+        let cy1 = (y1 + y2) / 2;
+        let cx2 = x2;
+        let cy2 = (y1 + y2) / 2;
+        c += "C ";
+        c += `${cx1} ${80 - cy1}, ${cx2} ${80 - cy2}, ${x2} ${80 - y2} `;
+        // let smoothArr = smooth([current, next]);
+        // for (let j = 1; j < smoothArr.length; j++) {
+        //     c += `${smoothArr[j][0]} ${100 - smoothArr[j][1]}`;
+        //     if (j === smoothArr.length - 1) {
+        //         c += " ";
+        //     } else {
+        //         c += ", "
+        //     }
+        // }
+    }
+    c += "L 1000 100 Z";
+    let path = d + c;
+    let html = `
+    <svg preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 1000 100" >
+        <path fill="rgba(255,255,255,0.3)" d="${path}" />
+    </svg>`;
+    if (path.indexOf("NaN") !== -1) {
+        console.log(path)
+        showMessage("弹幕高能进度条加载失败", "error");
+    }
+    let a = document.createElement("div");
+	a.id = dyVideoBarrage_domName;
+    a.style = "position:absolute;width:100%;height:30px;bottom:0px;pointer-events:none;cursor: default;";
+	a.innerHTML = html;
+	
+    progressBar.insertBefore(a, progressBar.childNodes[0]);
+}
 function initPkg_DyVideoDownload() {
     let timer = setInterval(() => {
-        let toolBar = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector(".ToolBar-positiveUl");
-        if (toolBar) {
+        let toolBarShadow = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot;
+        if (toolBarShadow) {
             clearInterval(timer);
+            let toolbar = toolBarShadow.querySelector(".ToolBar-positiveUl");
             initPkg_DyVideoDownload_Style();
-            initPkg_DyVideoDownload_Dom(toolBar);
+            initPkg_DyVideoDownload_Dom(toolbar);
             initPkg_DyVideoDownload_Func();
         }
     }, 1000);
@@ -2330,8 +2728,11 @@ function initPkg_DyVideoDownload_Dom(dom) {
         <div class="download__item" id="download__copy" title="可将链接填至第三方下载器中下载">
             <span class="ToolBar-iconText">复制m3u8链接</span>
         </div>
-        <div class="download__item" id="download__barrage" title="下载弹幕">
-            <span class="ToolBar-iconText">下载弹幕</span>
+        <div class="download__item" id="download__barrage" title="下载弹幕(.xlsx)">
+            <span class="ToolBar-iconText">下载弹幕(.xlsx)</span>
+        </div>
+        <div class="download__item" id="download__barrageass" title="下载弹幕(.ass)">
+            <span class="ToolBar-iconText">下载弹幕(.ass)</span>
         </div>
     </div>
     <span class="ToolBar-icon ">
@@ -2464,47 +2865,29 @@ function initPkg_DyVideoDownload_Func() {
         } while (pre >= 0);
 
         exportJsonToExcel(header, body, `【${videoTitle}】弹幕数据.xlsx`);
-
-        // domDownloadPanel.style.display = "none";
     })
-}
 
-function getVideoStreamUrl(vid, sign) {
-    return new Promise(resolve => {
-        fetch("https://v.douyu.com/api/stream/getStreamUrl", {
-            method: 'POST',
-            mode: 'no-cors',
-            credentials: 'include',
-            headers: {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"},
-            body: `${sign}&vid=${vid}`
-        }).then(result => {
-            return result.json();
-        }).then(ret => {
-            resolve(ret);
-        }).catch(err => {
-            console.log("请求失败!", err);
-        })
-    })
-}
-
-function getVideoBarrageByTime(vid, pre = 0) {
-    // pre来自接口返回值data.pre中
-    // 若为-1则不再获取
-    if (pre < 0) {
-        return;
-    }
-    return new Promise(resolve => {
-        fetch(`https://v.douyu.com/wgapi/vod/center/getBarrageListByPage?vid=${vid}&offset=${pre}`, {
-            method: 'GET',
-            mode: 'no-cors',
-            credentials: 'include',
-        }).then(result => {
-            return result.json();
-        }).then(ret => {
-            resolve(ret);
-        }).catch(err => {
-            console.log("请求失败!", err);
-        })
+    document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector("#download__barrageass").addEventListener("click", async () => {
+        let videoTitle = document.getElementsByTagName("demand-video-title")[0].shadowRoot.querySelector(".Title-Main").innerText;
+        let hashid = document.getElementsByTagName("demand-video-toolbar")[0].shadowRoot.querySelector("share-hover").getAttribute("hashid");
+        showMessage("正在获取弹幕数据，请勿切换页面...", "info");
+        let pre = 0;
+        let ass = new ASS({title: videoTitle});
+        let list = [];
+        do {
+            let data = await getVideoBarrageByTime(hashid, pre);
+            pre = data.data.pre;
+            for (let i = 0; i < data.data.list.length; i++) {
+                let item = data.data.list[i];
+                list.push({
+                    time: Number(item.tl),
+                    txt: item.ctt,
+                    color: item.col,
+                });
+            }
+        } while (pre >= 0);
+        let result = ass.generate(list);
+        downloadFile(`${videoTitle}.ass`, result);
     })
 }
 function initPkg_ExIcon() {
@@ -2514,7 +2897,20 @@ function initPkg_ExIcon() {
 function initPkg_ExIcon_insertDom() {
 	let a = document.createElement("div");
 	a.className = "ex-icon";
-	a.innerHTML = '<a title="～ (´• ᵕ •`)*✲"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><image width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABdFBMVEUAAAAzNjozNjozNjoz NjozNjozNjozNjozNjozNjozNjozNjozNjo0NjpCMjY0NjozNjozNjo9MzczNjozNjo4NThBMjZR U1eusLHQ0dKWmJozNjozNjpTVVl3eXxWWVxnaWyDhYi+v8BWWFzf3+AzNjptb3L09PTv7++Fh4ro 6OlER0rGx8iGh4pOUVQ+QUVXWVyWmJkzNjpxc3bZ2tv39/fX19jHyMnf4OBSVVg+QUWPkZOPkJM5 PEDo6Oja2tthZGeXmJrp6epTVVg0NzttcHKMjY+cnp+Ehog0NztjKSx7IyWIHyF1JCd8IiSpFRfN DAzWCQlmKCt+IiTEDg/UCgq5EhJ+ISTJDQ2WGxyjFxhaLC/SCgp2JCZJMDM8MzdQLjGFICJiKSx1 JCbPCwvFDg56IyVKMDOqq61rbXDNzs+2EhNOLzJrJypRLjE5NTg2OT2Ympw4NTheKy5PLzI5PED+ /v7////d3t/39/f8/Pz5+vpEN+40AAAASnRSTlMAAxorEg1Al7e/swd55v7QI4356Fvz/v7+/f4C Ff7+/v79/f7+Cf7+/v39/f39/v7+/ND8/f7+/v7++P398/79/fz9/uX9/f390Kmu6iUAAAABYktH RHdGZPnXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5AUdCCsAU/Ff1wAAAWNJREFUKM9j YCAIGJmYmVkYMYRZ2dg5ODm52Nm4UYV5ePm8vH18fL34+HlYEeICgkJ+/gGBQBDgHyQkyAJXLygc HBIaCAahYcHCIjA9PELBgUggXJQHqoHXLwTIj4j084uKADJConkhWtjE/IHmxMTGxccnxMYATUvk YwO7nz0JaG9ErLiEpKSUeHJKYGCqF7s0UIKJIw2oPzJdIiMzM0siLhvI8eMAmcXMmZObm5uXL5lZ UFAoWVQM5JRwyoAlZOXk5ORLIRKlCkCOLFiChUuxrLxcSVkqq7CwQkpZpby8TJFLFWy5mnp5uYYm xHLNyvJyLTWw5Qxs2jpV5eXVunr6+ga61eXlVYbaYOcycBsZm5SXl5uamZtbmAIZJpZG0CDmsbIu RwI2tjyIQLSxq4KIVtnbIAKRgUXE1sHRCei2MidHZ1sRVeSIctF2dXN393DV9kSOKNxRCwLSrDIy qtKEEw0AQgtYsEqTgPQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDUtMjlUMDg6NDM6MDArMDA6 MDA6vG69AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA1LTI5VDA4OjQzOjAwKzAwOjAwS+HWAQAA AABJRU5ErkJggg=="/></svg><i id="ex-icon__tip" class="ex-panel__tip"></i></a>';
+	a.innerHTML = `<a title="DouyuEx ver.${curVersion}"><svg class="icon" width="24" height="24" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="精灵球" transform="translate(0.830769, 0.830769)" fill-rule="nonzero">
+            <path d="M53.1692307,106.338461 C23.8276922,106.338461 0,82.5107692 0,53.1692307 C0,51.0030769 1.77230775,49.2307692 3.9384615,49.2307692 L33.476923,49.2307692 C35.6430769,49.2307692 37.4153845,51.003077 37.4153846,53.1692307 C37.4153846,61.8338461 44.5046154,68.9230769 53.1692307,68.9230769 C61.8338461,68.9230769 68.9230769,61.8338461 68.9230769,53.1692307 C68.9230769,51.0030769 70.6953846,49.2307692 72.8615385,49.2307692 L102.4,49.2307692 C104.566154,49.2307692 106.338461,51.003077 106.338461,53.1692307 C106.338461,82.5107692 82.5107692,106.338461 53.1692307,106.338461 Z" id="路径" fill="#33363A"></path>
+            <path d="M8.07384612,57.1076922 C10.0430769,80.2461537 29.5384615,98.4615385 53.1692307,98.4615385 C76.8,98.4615385 96.2953846,80.2461539 98.2646154,57.1076922 L76.5046154,57.1076922 C74.6338461,68.2338461 64.8861539,76.8 53.1692307,76.8 C41.4523076,76.8 31.7046154,68.2338461 29.8338461,57.1076922 L8.07384612,57.1076922 Z" id="路径" fill="#FFFFFF"></path>
+            <path d="M53.1692308,3.9384615 C25.9938461,3.9384615 3.9384615,25.9938461 3.9384615,53.1692307 L33.476923,53.1692307 C33.476923,42.3384615 42.3384615,33.476923 53.1692308,33.476923 C64,33.476923 72.8615385,42.3384615 72.8615385,53.1692307 L102.4,53.1692307 C102.4,25.9938461 80.3446154,3.9384615 53.1692308,3.9384615 Z" id="路径" fill="#D60909"></path>
+            <path d="M102.4,57.1076922 L72.8615385,57.1076922 C70.6953846,57.1076922 68.923077,55.3353845 68.9230769,53.1692307 C68.9230769,44.5046154 61.8338461,37.4153846 53.1692307,37.4153846 C44.5046154,37.4153846 37.4153846,44.5046154 37.4153846,53.1692307 C37.4153846,55.3353846 35.6430769,57.1076922 33.476923,57.1076922 L3.9384615,57.1076922 C1.77230762,57.1076922 0,55.3353845 0,53.1692307 C0,23.8276922 23.8276923,0 53.1692307,0 C82.5107692,0 106.338461,23.8276922 106.338461,53.1692307 C106.338461,55.3353846 104.566154,57.1076922 102.4,57.1076922 Z" id="路径" fill="#33363A"></path>
+            <path d="M76.5046154,49.2307693 L98.3630769,49.2307693 C96.2953846,26.0923076 76.8,7.876923 53.1692307,7.876923 C29.5384615,7.876923 10.0430769,26.0923076 8.07384612,49.2307693 L29.9323076,49.2307693 C31.7046154,38.1046154 41.4523076,29.5384615 53.1692307,29.5384615 C64.8861539,29.5384615 74.6338461,38.1046154 76.5046154,49.2307693 L76.5046154,49.2307693 Z" id="路径" fill="#D60909"></path>
+            <path d="M53.1692307,76.8 C40.1723076,76.8 29.5384615,66.1661539 29.5384615,53.1692307 C29.5384615,40.1723076 40.1723076,29.5384615 53.1692307,29.5384615 C66.1661539,29.5384615 76.8,40.1723076 76.8,53.1692307 C76.8,66.1661539 66.1661539,76.8 53.1692307,76.8 Z" id="路径" fill="#33363A"></path>
+            <path d="M53.1692307,37.4153846 C44.5046154,37.4153846 37.4153846,44.5046154 37.4153846,53.1692307 C37.4153846,61.8338461 44.5046154,68.9230769 53.1692307,68.9230769 C61.8338461,68.9230769 68.9230769,61.8338461 68.9230769,53.1692307 C68.9230769,44.5046154 61.8338461,37.4153846 53.1692307,37.4153846 L53.1692307,37.4153846 Z" id="路径" fill="#FFFFFF"></path>
+            <path d="M43.3230769,53.1692307 C43.3230769,58.6071114 47.7313501,63.0153846 53.1692307,63.0153846 C58.6071114,63.0153846 63.0153846,58.6071114 63.0153846,53.1692307 C63.0153846,47.7313501 58.6071114,43.3230769 53.1692307,43.3230769 C47.7313501,43.3230769 43.3230769,47.7313501 43.3230769,53.1692307 Z" id="路径" fill="#33363A"></path>
+        </g>
+    </g>
+</svg><i id="ex-icon__tip" class="ex-panel__tip"></i></a>`;
 	
 	let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
 	b.insertBefore(a, b.childNodes[0]);
@@ -2543,9 +2939,13 @@ function initPkg_ExpandTool_Module() {
 	initPkg_ExpandTool_Treasure();
 	initPkg_ExpandTool_Gold();
 	initPkg_ExpandTool_RedPacket_Room();
+	initPkg_ExpandTool_AutoFish();
 	initPkg_ExpandTool_ClearBag();
     initPkg_ExpandTool_SendGift();
     // initPkg_ExpandTool_BarrageSize();
+	initPkg_ExpandTool_TabSwitch();
+	initPkg_ExpandTool_P2P();
+	initPkg_ExpandTool_FullScreen();
 }
 
 function initPkg_ExpandTool_Dom() {
@@ -2579,6 +2979,233 @@ function initPkg_ExpandTool_Func() {
 	document.getElementsByClassName("extool-icon")[0].addEventListener("click", function() {
 		showExRightPanel("扩展功能");
 	});
+}
+
+let autoFishInfo = [];
+let baitId = null;
+let nextFishEndTime = 0;
+let isFishing = false;
+let timerAutoFish = 0;
+
+function initPkg_ExpandTool_AutoFish() {
+  ExpandTool_AutoFish_insertDom();
+  ExpandTool_AutoFish_insertFunc();
+  ExpandTool_AutoFish_Set();
+}
+
+function ExpandTool_AutoFish_insertDom() {
+  let html = "";
+  html += '<label><input style="margin-top:5px;" id="extool__autofish_start" type="checkbox">自动钓鱼</label>';
+
+  let a = document.createElement("div");
+  a.className = "extool__autofish";
+  a.innerHTML = html;
+  let b = document.getElementsByClassName("extool")[0];
+  b.insertBefore(a, b.childNodes[0]);
+}
+function ExpandTool_AutoFish_insertFunc() {
+  document.getElementById("extool__autofish_start").addEventListener("click", async () => {
+    saveData_AutoFish();
+    const isStart = document.getElementById("extool__autofish_start").checked;
+    if (!isStart) return clearInterval(timerAutoFish);
+    showMessage("【自动钓鱼】开始自动钓鱼", "info");
+    autoFishInfo = await AutoFish_getFishInfo();
+    const homepageRes = await AutoFish_getHomepageData();
+    if (homepageRes.data) {
+      baitData = homepageRes.data.baits.find((item) => item.inUse);
+      if (!baitData) {
+        document.getElementById("extool__autofish_start").checked = false;
+        return showMessage("【自动钓鱼】请设置鱼饵", "error");
+      }
+      baitId = baitData.id;
+
+      const myCh = homepageRes.data.myCh;
+      if (!myCh) {
+        document.getElementById("extool__autofish_start").checked = false;
+        return showMessage("【自动钓鱼】请设置形象", "error");
+      }
+    } else {
+      document.getElementById("extool__autofish_start").checked = false;
+      return showMessage("【自动钓鱼】未能获取活动信息", "error");
+    }
+    saveData_AutoFish();
+
+    if (homepageRes.data.fishing.stat == 0) {
+      // 未开始钓鱼
+      isFishing = false;
+      nextFishEndTime = 0;
+    }
+
+    if (homepageRes.data.fishing.stat == 1) {
+      // 还在钓鱼中
+      isFishing = true;
+      nextFishEndTime = homepageRes.data.fishing.fishEtMs;
+    }
+
+    if (homepageRes.data.fishing.stat == 2) {
+      // 上一次未收杆
+      await endFish();
+      await sleep(1000);
+    }
+
+    timerAutoFish = setInterval(async () => {
+      if (isFishing) {
+        // 正在钓鱼中，检测是否到时间收杆
+        const now = new Date().getTime();
+        if (now <= nextFishEndTime) return;
+        await endFish();
+      } else {
+        const fishRes = await AutoFish_startFish();
+        if (fishRes.error !== 0) {
+          showMessage(`【自动钓鱼】${fishRes.msg}`, "error");
+          console.log(fishRes, "钓鱼失败");
+          if (fishRes.error == 1001007) {
+            // 操作失败
+            await endFish();
+          }
+          if (fishRes.error == 1005003) {
+            // 鱼饵不足
+            clearInterval(timerAutoFish);
+          }
+          return;
+        }
+        isFishing = true;
+
+        nextFishEndTime = fishRes.data.fishing.fishEtMs;
+      }
+    }, 1500);
+  });
+}
+
+async function endFish() {
+  const fishRes = await AutoFish_endFish();
+  if (fishRes.error !== 0) {
+    console.log(fishRes, "收杆失败");
+    const homepageRes = await AutoFish_getHomepageData();
+    if (homepageRes.data.fishing.stat == 0) {
+      // 钓鱼已完成
+      isFishing = false;
+      nextFishEndTime = 0;
+    }
+    return;
+  }
+  let str = `【自动钓鱼】`;
+  let fishData = autoFishInfo.find((item) => item.fishId == fishRes.data.fish.id);
+  if (fishData) {
+    str += `获得${fishData.name}${fishRes.data.fish.wei}斤`;
+  }
+  if (fishRes.data.awards && fishRes.data.awards.length > 0) {
+    for (let i = 0; i < fishRes.data.awards.length; i++) {
+      let award = fishRes.data.awards[i];
+      str += `${fishData ? "，" : ""}获得${award.awardName}x${award.awardNum}`;
+    }
+  }
+  if (str !== "【自动钓鱼】") showMessage(str, "success");
+  isFishing = false;
+}
+
+function saveData_AutoFish() {
+  let value = document.getElementById("extool__autofish_start").checked;
+  let data = {
+    isAutoFish: value
+  };
+  localStorage.setItem("ExSave_AutoFish", JSON.stringify(data)); // 存储弹幕列表
+}
+
+function ExpandTool_AutoFish_Set() {
+  // 设置初始化
+  let ret = localStorage.getItem("ExSave_AutoFish");
+  if (ret != null) {
+    let retJson = JSON.parse(ret);
+    if (!retJson.isAutoFish) return;
+    document.getElementById("extool__autofish_start").click();
+  }
+}
+
+function AutoFish_getFishInfo() {
+  return new Promise((resolve) => {
+    fetch(`https://www.douyu.com/japi/revenuenc/web/actfans/achieve/accList?rid=${rid}&type=1&period=1`, {
+      method: "GET",
+      mode: "no-cors",
+      cache: "default",
+      credentials: "include"
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        if (ret.data) {
+          resolve(ret.data.accList);
+        } else {
+          resolve([]);
+        }
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+      });
+  });
+}
+
+function AutoFish_getHomepageData() {
+  return new Promise((resolve) => {
+    fetch(`https://www.douyu.com/japi/revenuenc/web/actfans/fishing/homePage?rid=${rid}&opt=1`, {
+      method: "GET",
+      mode: "no-cors",
+      cache: "default",
+      credentials: "include"
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+      });
+  });
+}
+
+function AutoFish_startFish() {
+  return new Promise((resolve) => {
+    fetch("https://www.douyu.com/japi/revenuenc/web/actfans/fishing/fishing", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `ctn=${getCCN()}&rid=${rid}&baitId=${baitId}`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+      });
+  });
+}
+
+function AutoFish_endFish() {
+  return new Promise((resolve) => {
+    fetch("https://www.douyu.com/japi/revenuenc/web/actfans/fishing/reelIn", {
+      method: "POST",
+      mode: "no-cors",
+      credentials: "include",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `ctn=${getCCN()}&rid=${rid}`
+    })
+      .then((res) => {
+        return res.json();
+      })
+      .then((ret) => {
+        resolve(ret);
+      })
+      .catch((err) => {
+        console.log("请求失败!", err);
+      });
+  });
 }
 
 function initPkg_ExpandTool_BarrageSize() {
@@ -2715,6 +3342,126 @@ function getBagGifts(room_id, callback) {
     }).catch(err => {
         console.log("请求失败!", err)
     })
+}
+function initPkg_ExpandTool_FullScreen() {
+    ExpandTool_FullScreen_insertDom();
+    ExpandTool_FullScreen_insertFunc();
+    ExpandTool_HighestVideoQuality_insertFunc();
+    initPkg_ExpandTool_FullScreen_Set();
+    initPkg_ExpandTool_HighestVideoQuality_Set();
+}
+
+function ExpandTool_FullScreen_insertDom() {
+    let a = document.createElement("span");
+    // a.className = "extool__bsize";
+    a.innerHTML = '<label title="自动网页全屏"><input style="margin-top:5px;" id="extool__fullscreen" type="checkbox">自动网页全屏</label><label title="自动最高画质"><input id="extool__highestvideoquality" type="checkbox">自动最高画质</label>';
+    
+    let b = document.getElementsByClassName("extool")[0];
+    b.insertBefore(a, b.childNodes[0]);
+}
+
+
+function getFullScreen() {
+    return document.getElementById("extool__fullscreen").checked;
+}
+function ExpandTool_FullScreen_insertFunc() {
+    document.getElementById("extool__fullscreen").addEventListener("click", function() {
+        saveData_FullScreen();
+        if (getFullScreen()) {
+            showMessage("刷新页面生效", "success");
+        }
+    });
+}
+
+function saveData_FullScreen() {
+	let data = {
+		isFullScreen: getFullScreen()
+	}
+	localStorage.setItem("ExSave_FullScreen", JSON.stringify(data));
+}
+function initPkg_ExpandTool_FullScreen_Set() {
+	// 设置初始化
+	let ret = localStorage.getItem("ExSave_FullScreen");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isFullScreen) {
+            document.getElementById("extool__fullscreen").checked = retJson.isFullScreen;
+        }
+	}
+}
+
+
+function initFullScreen() {
+	let ret = localStorage.getItem("ExSave_FullScreen");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isFullScreen) {
+            fullScreen();
+        }
+	}
+}
+
+function fullScreen() {
+    let count = 0;
+    let intID1 = setInterval(() => {
+        count++;
+        if (count > 100) clearInterval(intID1);
+        if (document.getElementsByClassName("wfs-2a8e83").length > 0) {
+            clearInterval(intID1);
+            document.querySelector("div.wfs-2a8e83").click();
+        }
+    }, 1000);
+}
+
+function getHighestVideoQuality() {
+    return document.getElementById("extool__highestvideoquality").checked;
+}
+function ExpandTool_HighestVideoQuality_insertFunc() {
+    document.getElementById("extool__highestvideoquality").addEventListener("click", function() {
+        saveData_HighestVideoQuality();
+        if (getHighestVideoQuality()) {
+            showMessage("刷新页面生效", "success");
+        }
+    });
+}
+
+function saveData_HighestVideoQuality() {
+	let data = {
+		isHighestVideoQuality: getHighestVideoQuality()
+	}
+	localStorage.setItem("ExSave_HighestVideoQuality", JSON.stringify(data));
+}
+function initPkg_ExpandTool_HighestVideoQuality_Set() {
+	// 设置初始化
+	let ret = localStorage.getItem("ExSave_HighestVideoQuality");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isHighestVideoQuality) {
+            document.getElementById("extool__highestvideoquality").checked = retJson.isHighestVideoQuality;
+        }
+	}
+}
+
+function initHighestVideoQuality() {
+	let ret = localStorage.getItem("ExSave_HighestVideoQuality");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isHighestVideoQuality) {
+            highestVideoQuality();
+        }
+	}
+}
+
+function highestVideoQuality() {
+    let count = 0;
+    let intID1 = setInterval(() => {
+        count++;
+        if (count > 100) clearInterval(intID1);
+        if (document.getElementsByClassName("tipItem-898596").length > 0) {
+            clearInterval(intID1);
+            document.querySelectorAll(".tipItem-898596 > ul > li")[0].click();
+        }
+    }, 1000);
 }
 let user_name;
 let animationNum = 0;
@@ -3010,6 +3757,78 @@ function fansToSuperRocket(m) {
 }
 
 
+function initPkg_ExpandTool_P2P() {
+    ExpandTool_P2P_insertDom();
+    ExpandTool_P2P_insertFunc();
+    initPkg_ExpandTool_P2P_Set();
+}
+
+function ExpandTool_P2P_insertDom() {
+    let a = document.createElement("span");
+    // a.className = "extool__bsize";
+    a.innerHTML = '<label title="阻止p2p在后台占用网速，开启后直播画面会在刚进入页面时卡一下"><input style="margin-top:5px;" id="extool__p2p" type="checkbox">阻止p2p上传</label>';
+    
+    let b = document.getElementsByClassName("extool")[0];
+    b.insertBefore(a, b.childNodes[0]);
+}
+
+
+function getP2P() {
+    return document.getElementById("extool__p2p").checked;
+}
+function ExpandTool_P2P_insertFunc() {
+    document.getElementById("extool__p2p").addEventListener("click", function() {
+        saveData_P2P();
+        if (getP2P()) {
+            showMessage("阻止p2p上传成功，刷新页面生效", "success");
+        }
+    });
+}
+
+function saveData_P2P() {
+	let data = {
+		isKillP2P: getP2P()
+	}
+	localStorage.setItem("ExSave_P2P", JSON.stringify(data)); // 存储弹幕列表
+}
+function initPkg_ExpandTool_P2P_Set() {
+	// 设置初始化
+	let ret = localStorage.getItem("ExSave_P2P");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isKillP2P) {
+            document.getElementById("extool__p2p").checked = retJson.isKillP2P;
+        }
+	}
+}
+
+
+function initKillP2P() {
+	let ret = localStorage.getItem("ExSave_P2P");
+	if (ret != null) {
+		let retJson = JSON.parse(ret);
+        if (retJson.isKillP2P) {
+            killP2P();
+        }
+	}
+}
+
+function killP2P() {
+    let funNameList = [
+        'RTCPeerConnection',
+        'webkitRTCPeerConnection',
+        'mozRTCPeerConnection',
+        'msRTCPeerConnectio',
+    ]
+    funNameList.forEach(name => {
+        if (typeof unsafeWindow.RTCPeerConnection === "undefined") unsafeWindow.RTCPeerConnection = unsafeWindow[name];
+        if (typeof unsafeWindow[name] !== "undefined") unsafeWindow[name] = MyPeerConnection;
+    })
+
+    function MyPeerConnection() {
+        return undefined;
+    }
+}
 let redpackets_room_arr = [];
 let redpacket_room_timer; // 时钟句柄
 function initPkg_ExpandTool_RedPacket_Room() {
@@ -3214,6 +4033,65 @@ function sendGift_any(gid, count, rid) {
 		return res.json();
 	})
 }
+function initPkg_ExpandTool_TabSwitch() {
+  ExpandTool_TabSwitch_insertDom();
+  ExpandTool_TabSwitch_insertFunc();
+  initPkg_ExpandTool_TabSwitch_Set();
+}
+
+function ExpandTool_TabSwitch_insertDom() {
+  let a = document.createElement("span");
+  // a.className = "extool__bsize";
+  a.innerHTML = '<label title="阻止页面后台挂机检测"><input style="margin-top:5px;" id="extool__tabSwitch" type="checkbox">页面防挂机</label>';
+  
+  let b = document.getElementsByClassName("extool")[0];
+  b.insertBefore(a, b.childNodes[0]);
+}
+
+
+function getTabSwitch() {
+  return document.getElementById("extool__tabSwitch").checked;
+}
+function ExpandTool_TabSwitch_insertFunc() {
+  document.getElementById("extool__tabSwitch").addEventListener("click", function() {
+      saveData_TabSwitch();
+      if (getTabSwitch()) {
+        enableTabSwitch();
+      } else {
+        showMessage("已关闭页面防挂机，请刷新页面生效", "info");
+      }
+  });
+}
+
+function saveData_TabSwitch() {
+  let data = {
+    isEnableTabSwitch: getTabSwitch()
+  }
+  localStorage.setItem("ExSave_TabSwitch", JSON.stringify(data)); // 存储弹幕列表
+}
+function initPkg_ExpandTool_TabSwitch_Set() {
+  // 设置初始化
+  let ret = localStorage.getItem("ExSave_TabSwitch");
+  if (ret != null) {
+    let retJson = JSON.parse(ret);
+        if (retJson.isEnableTabSwitch) {
+            document.getElementById("extool__tabSwitch").checked = retJson.isEnableTabSwitch;
+            enableTabSwitch();
+        }
+  }
+}
+
+function enableTabSwitch() {
+  Object.defineProperty(document, 'hidden', {value: false, writable: false});
+  Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: false});
+  Object.defineProperty(document, 'webkitVisibilityState', {value: 'visible', writable: false});
+  document.dispatchEvent(new Event('visibilitychange'));
+  document.hasFocus = function () { return true; };
+  
+  document.addEventListener('visibilitychange', function(e) {
+      e.stopImmediatePropagation();
+  }, true, true);
+}
 var isGetTreasure = false;
 function initPkg_ExpandTool_Treasure() {
     ExpandTool_Treasure_insertDom();
@@ -3352,7 +4230,16 @@ function getTslist(callback) {
 }
 
 function initPkg_ExPanel() {
-	initPkg_ExPanel_insertDom();
+    initPkg_ExPanel_insertDom();
+
+    let exPanelDOM = document.querySelector('.ex-panel');
+    exPanelDOM.addEventListener('mouseenter', () => {
+        clearTimeout(exPanelTimer);
+    });
+    exPanelDOM.addEventListener('mouseleave', () => {
+        clearTimeout(exPanelTimer);
+        exPanelTimer = setTimeout(autoCloseExPanelHandle, 800);
+    });
 }
 function initPkg_ExPanel_insertDom() {
 	let a = document.createElement("div");
@@ -3362,6 +4249,12 @@ function initPkg_ExPanel_insertDom() {
 	let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
 	b.insertBefore(a, b.childNodes[0]);
 	
+}
+function autoCloseExPanelHandle() {
+    let exPanelDOM = document.querySelector('.ex-panel');
+    exPanelDOM.style.visibility = 'hidden';
+    exPanelDOM.style.opacity = '0';
+    exPanelTimer = null;
 }
 
 function initPkg_FansBadgeList() {
@@ -3416,38 +4309,60 @@ function initPkg_FansContinue_Func() {
 		if (sendNum == "") {
 			return;
 		}
-		fetch('https://www.douyu.com/member/cp/getFansBadgeList',{
-			method: 'GET',
-			mode: 'no-cors',
-			cache: 'default',
-			credentials: 'include',
-		}).then(res => {
-			return res.text();
-		}).then(async (doc) => {
-			doc = (new DOMParser()).parseFromString(doc, 'text/html');
-			let a = doc.getElementsByClassName("fans-badge-list")[0].lastElementChild;
-			let n = a.children.length;
-			for (let i = 0; i < n; i++) {
-				let rid = a.children[i].getAttribute("data-fans-room"); // 获取房间号
-				await sleep(250).then(() => {
-					sendGift_bag(268, Number(sendNum), rid).then(data => {
-						if (data.msg == "success") {
-							showMessage("【续牌】" + rid + "赠送荧光棒成功", "success");
-							// console.log(rid + "赠送一根荧光棒成功");
-						} else {
-							showMessage("【续牌】" + rid + "赠送失败 " + data.msg, "error");
-							// console.log(rid + "赠送失败");
-							console.log(rid, data);
-						}
-					}).catch(err => {
-						showMessage("【续牌】" + rid + "赠送失败", "error");
-						console.log(rid, err);
-					})
-				});
+		let giftId = 0;
+		getBagGifts(rid, (ret) => {
+			let chunkNum = ret.data.list.length;
+			if (chunkNum > 0) {
+				for (let i = 0; i < chunkNum; i++) {
+					if (ret.data.list[i].id == 268) {
+						giftId = 268;
+						break;
+					}
+					if (ret.data.list[i].id == 2358) {
+						giftId = 2358;
+					}
+				}
+				if (giftId == 0) {
+					showMessage("没有足够的道具", "error");
+					return;
+				};
+				fetch('https://www.douyu.com/member/cp/getFansBadgeList',{
+					method: 'GET',
+					mode: 'no-cors',
+					cache: 'default',
+					credentials: 'include',
+				}).then(res => {
+					return res.text();
+				}).then(async (doc) => {
+					doc = (new DOMParser()).parseFromString(doc, 'text/html');
+					let a = doc.getElementsByClassName("fans-badge-list")[0].lastElementChild;
+					let n = a.children.length;
+					for (let i = 0; i < n; i++) {
+						let rid = a.children[i].getAttribute("data-fans-room"); // 获取房间号
+						await sleep(250).then(() => {
+							sendGift_bag(giftId, Number(sendNum), rid).then(data => {
+								if (data.msg == "success") {
+									showMessage("【续牌】" + rid + "赠送荧光棒成功", "success");
+									// console.log(rid + "赠送一根荧光棒成功");
+								} else {
+									showMessage("【续牌】" + rid + "赠送失败 " + data.msg, "error");
+									// console.log(rid + "赠送失败");
+									console.log(rid, data);
+								}
+							}).catch(err => {
+								showMessage("【续牌】" + rid + "赠送失败", "error");
+								console.log(rid, err);
+							})
+						});
+					}
+				}).catch(err => {
+					console.log("请求失败!", err);
+				})
+			} else {
+				showMessage("背包礼物为空", "error");
 			}
-		}).catch(err => {
-			console.log("请求失败!", err);
-		})
+		});
+		
 	});
 }
 
@@ -3504,629 +4419,6 @@ function initPkg_FirePower_Func() {
 	});
 }
 
-
-function initPkg_FishFood() {
-	initPkg_FishFood_Dom();
-	initPkg_FishFood_Func();
-}
-
-function initPkg_FishFood_Dom() {
-	FishFood_insertIcon();
-}
-function FishFood_insertIcon() {
-	let a = document.createElement("div");
-	a.className = "fish-food";
-	a.innerHTML = '<a class="ex-panel__icon" title="一键鱼塘寻宝"><svg t="1578588143670" style="display: block;" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="41610" width="36" height="36"><path d="M961.40146484375 293.77460937500007c0-75.01376953125-60.809765625-135.8244140625-135.82792968750002-135.8244140625H197.86572265625006C122.85107421875006 157.9501953125 62.0439453125 218.76171875000006 62.0439453125 293.77460937500007c0 3.0392578125000003 0.140625 6.0380859375 0.3322265625 9.024609375-0.021093749999999998 0.7083984375-0.09316406249999999 1.4080078125000002-0.09316406249999999 2.13310546875v501.1171875c0 32.4544921875 24.837890625000004 58.78212890625 55.48447265625 58.78212890625h787.9060546875c30.650097656249994 0 55.4888671875-26.32763671875 55.4888671875-58.78212890625v-501.1171875c0-0.71982421875-0.07910156249999999-1.4097656250000001-0.0984375-2.1128906250000004 0.193359375-2.99619140625 0.33749999999999997-6.005566406250001 0.33749999999999997-9.044824218750001z m0 0" fill="#F0B417" p-id="41611"></path><path d="M747.34296875 157.9501953125H276.1033203125c-54.37353515625 0-98.66513671875 42.581250000000004-101.66748046875 96.2033203125h674.56845703125c-3.0005859375-53.62119140625-47.29306640625-96.2033203125-101.661328125-96.2033203125z m0 0" fill="#E13633" p-id="41612"></path><path d="M174.30751953125002 268.28984375000005v154.06259765625h674.8303710937499V268.28984375000005c0-0.53525390625-0.06855468749999999-1.05556640625-0.08964843749999998-1.58642578125 0.144140625-2.0759765625 0.22851562500000003-4.180957031249999 0.23818359375000003-6.30263671875h-675.1318359375c0.00791015625 2.1181640625000004 0.09755859375 4.215234375 0.22587890625 6.28330078125-0.007031249999999999 0.5396484374999999-0.07294921875 1.06171875-0.07294921875 1.6057617187500002z m0 310.728515625v154.07138671875h674.8303710937499V579.0183593749999c0-0.530859375-0.06855468749999999-1.0520507812500002-0.08964843749999998-1.57236328125 0.144140625-2.0926757812499996 0.22851562500000003-4.19501953125 0.23818359375000003-6.317578125h-675.1318359375c0.00791015625 2.1216796875 0.09755859375 4.21435546875 0.22587890625 6.2964843749999995-0.007031249999999999 0.54140625-0.07294921875 1.0529296874999998-0.07294921875 1.59345703125z m0 0" fill="#C91111" p-id="41613"></path><path d="M62 476.5080078125h899.44189453125v44.38740234375H62z" fill="#9F7D0F" p-id="41614"></path><path d="M617.06357421875 349.27314453125l65.11025390625001 200.38271484375002-170.45068359375 123.83613281249998-170.45683593750002-123.83613281249998 65.10673828125-200.38271484375002h210.69052734374998z m0 0" fill="#E9BF53" p-id="41615"></path><path d="M608.48984375 362.46376953125l59.81396484375 184.07285156249998-156.5806640625 113.77177734374999-156.5859375-113.77177734374999 59.808691406250006-184.07285156249998h193.5439453125z m0 0" fill="#F0B417" p-id="41616"></path><path d="M558.7578125 481.31738281249994c0-26.054296875-21.11923828125-47.162988281249994-47.16826171875-47.162988281249994-26.043750000000003 0-47.16474609375 21.10869140625-47.16474609375 47.162988281249994 0 22.40859375 15.650683593749998 41.1275390625 36.60205078125001 45.92900390625l-24.581249999999997 60.795703124999996h69.359765625l-23.90185546875-60.732421875c21.084960937499996-4.70478515625 36.854296875-23.49228515625 36.854296875-45.992285156250006z m0 0" fill="#715F39" p-id="41617"></path></svg><i id="fish-food__tip" class="ex-panel__tip"></i></a>';
-	
-	let b = document.getElementsByClassName("ex-panel__wrap")[0];
-	b.insertBefore(a, b.childNodes[0]);
-	
-}
-
-function initPkg_FishFood_Func() {
-	// document.getElementsByClassName("fish-food")[0].addEventListener("click", function() {
-	// 	getFishFoodV2();
-	// 	fetch("https://www.douyu.com/japi/activepointnc/api/getActivePointInfo", {
-	// 		method: 'POST',
-	// 		mode: 'no-cors',
-	// 		credentials: 'include',
-	// 		headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-	// 	}).then(res => {
-	// 		return res.json();
-	// 	}).then(async (ret) =>{
-	// 		let cnt = Math.floor(Number(ret.data.userActivePoint) / Number(ret.data.onceLotteryActivePoint));
-	// 		if (cnt == 0) {
-	// 			showMessage("【寻宝】" + "鱼粮不足", "warning");
-	// 			return;
-	// 		}
-	// 		cnt = Number(ret.data.dailyMaxLotteryTimes) - Number(ret.data.usedLotteryCount);
-	// 		if (cnt == 0) {
-	// 			showMessage("【寻宝】" + "今日寻宝次数已到达上限", "warning");
-	// 			return;
-	// 		}
-	// 		for (let i = 0; i < cnt; i++) {
-	// 			await sleep(1500).then(() => {
-	// 				fetch("https://www.douyu.com/japi/activepointnc/api/dolottery", {
-	// 					method: 'POST',
-	// 					mode: 'no-cors',
-	// 					credentials: 'include',
-	// 					headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-	// 					body: 'rid=' + rid + '&ctn=' + getCCN()
-	// 				}).then(res => {
-	// 					return res.json();
-	// 				}).then(ret => {
-	// 					if (ret.data != null) {
-	// 						if (Object.keys(ret.data).length != 0) {
-	// 							showMessage("【寻宝】" + ret.data.msg, "success");
-	// 						}
-	// 					} else {
-	// 						showMessage("【寻宝】" + ret.msg, "warning");
-	// 					}
-	// 					// console.log("【寻宝】" + ret.data.msg);
-	// 				}).catch(err => {
-	// 					console.log("请求失败!", err);
-	// 				})
-	// 			})
-	// 		}
-	// 	})
-	// })
-	document.getElementsByClassName("fish-food")[0].addEventListener("click", function() {
-		getFishFoodV2();
-		fetch("https://www.douyu.com/japi/activepointnc/apinc/lotteryV2", {
-			method: 'POST',
-			mode: 'no-cors',
-			credentials: 'include',
-			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-		}).then(res => {
-			return res.json();
-		}).then(async (ret) =>{
-			let cnt = Math.floor(Number(ret.data.yuliang) / Number(ret.data.cost));
-			if (cnt == 0) {
-				showMessage("【寻宝】" + "鱼粮不足", "warning");
-				return;
-			}
-			cnt = Number(ret.data.leftChance);
-			if (cnt == 0) {
-				showMessage("【寻宝】" + "今日寻宝次数已到达上限", "warning");
-				return;
-			}
-			for (let i = 0; i < cnt; i++) {
-				await sleep(1500).then(() => {
-					fetch("https://www.douyu.com/japi/activepointnc/apinc/doLotteryV2", {
-						method: 'POST',
-						mode: 'no-cors',
-						credentials: 'include',
-						headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-						body: 'rid=' + rid + '&ctn=' + getCCN()
-					}).then(res => {
-						return res.json();
-					}).then(ret => {
-						if (ret.data != null) {
-							if (Object.keys(ret.data).length != 0) {
-								showMessage("【寻宝】" + ret.data.lotteryRes.data.msg, "success");
-							}
-						} else {
-							showMessage("【寻宝】" + ret.msg, "warning");
-						}
-						// console.log("【寻宝】" + ret.data.msg);
-					}).catch(err => {
-						console.log("请求失败!", err);
-					})
-				})
-			}
-		})
-	})
-}
-
-function getFishFoodV2() {
-	fetch("https://www.douyu.com/japi/activepointnc/apinc/seniorLotteryV2", {
-		method: 'POST',
-		mode: 'no-cors',
-		credentials: 'include',
-		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-		body: 'ctn=' + getCCN()
-	}).then(res => {
-		return res.json();
-	}).then(async (ret) =>{
-		if (ret.data == null) {
-			return;
-		}
-		let cnt = Number(ret.data.leftChance);
-		if (cnt == 0) {
-			showMessage("【高级寻宝】" + "今日寻宝次数已到达上限", "warning");
-			return;
-		}
-		if (Number(ret.data.yuliang) < Number(ret.data.cost)) {
-			showMessage("【高级寻宝】" + "鱼粮不足", "warning");
-			return;
-		}
-		for (let i = 0; i < cnt; i++) {
-			await sleep(1500).then(() => {
-				fetch("https://www.douyu.com/japi/activepointnc/apinc/doSeniorLotteryV2", {
-					method: 'POST',
-					mode: 'no-cors',
-					credentials: 'include',
-					headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-					body: 'rid=' + rid + '&ctn=' + getCCN()
-				}).then(res => {
-					return res.json();
-				}).then(ret => {
-					if (ret.data != null) {
-						if (Object.keys(ret.data).length != 0) {
-							showMessage("【高级寻宝】" + ret.data.lotteryRes.data.msg, "success");
-						}
-					} else {
-						showMessage("【高级寻宝】" + ret.msg, "warning");
-					}
-					// console.log("【寻宝】" + ret.data.msg);
-				}).catch(err => {
-					console.log("请求失败!", err);
-				})
-			})
-		}
-	})
-}
-function initPkg_FishPond() {
-	initPkg_FishPond_Dom();
-	initPkg_FishPond_Func();
-}
-
-function initPkg_FishPond_Timer() {
-	// 这里挂载每个子模块的时钟周期函数
-	initPkg_FishPond_Bubble_Timer();
-	initPkg_FishPond_Box_Timer();
-	// initPkg_FishPond_Task_Timer();
-	initPkg_FishPond_RoomSign_Timer();
-	initPkg_FishPond_Task2_Timer();
-}
-function initPkg_FishPond_Func() {
-}
-function initPkg_FishPond_Dom() {
-	FishPond_insertIcon();
-}
-function FishPond_insertIcon() {
-	
-}
-
-function getAllFishPond() {
-	initPkg_FishPond_Bubble();
-	initPkg_FishPond_Box();
-	// initPkg_FishPond_Task();
-	// initPkg_FishPond_RoomSign();
-	// initPkg_FishPond_Task2();
-}
-
-function FishPond_showTip(a) {
-	// let d = document.getElementById("fish-pond__tip");
-	// if (a == true) {
-	// 	if (d.style.display != "block") {
-	// 		showMessage("【鱼粮】有鱼粮可以领取啦！", "info");
-	// 		d.style.display = "block";
-	// 	}
-	// } else {
-	// 	d.style.display = "none";
-	// }
-}
-let boxList = [];
-function initPkg_FishPond_Box() {
-	getFishPond_Box();
-}
-
-function initPkg_FishPond_Box_Timer() {
-	getFishPond_BoxList();
-}
-
-function getFishPond_Box() {
-	if (!boxList) {
-		return;
-	}
-	// 清空boxList内的气泡
-	if (boxList.length == 0) {
-		// showMessage("【鱼塘宝箱】暂无可领取的鱼粮", "info");
-		return;
-	}
-	let arr = boxList.concat();
-	for (let i = 0; i < arr.length; i++) {
-		GM_xmlhttpRequest({
-			method: "POST",
-			url: "https://pcapi.douyucdn.cn/japi/tasksys/ytxb/getPrize",
-			data: "id=" + arr[i] + "&token=" + dyToken,
-			responseType: "json",
-			headers: {
-			  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-			},
-			onload: function(response) {
-				showMessage("【鱼塘宝箱】" + response.response.data.msg, "success");
-				// console.log("【鱼塘宝箱】" , response.response.msg, response.response);
-			}
-		});
-	}
-	// FishPond_showTip(false);
-	boxList.length = 0;
-}
-
-function getFishPond_BoxList() {
-	// 获取可领取的鱼粮,如果有,就显示小红点
-	GM_xmlhttpRequest({
-		method: "POST",
-		url: "https://pcapi.douyucdn.cn/japi/tasksys/ytxb/box",
-		data: 'token=' + dyToken,
-		responseType: "json",
-		headers: {
-		  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-		},
-		onload: function(response) {
-			if (!boxList) {
-				return;
-			}
-			boxList.length = 0;
-			for (let i = 0; i < response.response.data.length; i++) {
-				if (response.response.data[i] != null) {
-					if (response.response.data[i].status == "2") {
-						boxList.push(response.response.data[i].id);
-						getAllFishPond();
-					}
-				}
-			}
-		}
-	});
-}
-
-
-
-let bubbleList = [];
-
-function initPkg_FishPond_Bubble() {
-	getFishPond_Bubble();
-}
-
-function initPkg_FishPond_Bubble_Timer() {
-	getFishPond_BubbleList();
-}
-
-function getFishPond_Bubble() {
-	if (!bubbleList) {
-		return;
-	}
-	// 清空bubbleList内的气泡
-	if (bubbleList.length == 0) {
-		// showMessage("【鱼塘气泡】暂无可领取的鱼粮", "info");
-		return;
-	}
-	
-	let bubbleToGet = "";
-	for (let i = 0; i < bubbleList.length; i++) {
-		if (i != bubbleList.length - 1) {
-			bubbleToGet = bubbleToGet + bubbleList[i] + "%2C";
-		} else {
-			bubbleToGet = bubbleToGet + bubbleList[i];
-		}
-	}
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/batchGetPrize',{
-		method: 'POST',
-		mode: 'no-cors',
-		credentials: 'include',
-		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-		body: 'ids=' + bubbleToGet + '&rid=' + rid
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		let result = "";
-		for (let i = 0; i < ret.data.prizeList.length; i++) {
-			result = result + ret.data.prizeList[i].num + "个" + ret.data.prizeList[i].name + ",";
-		}
-		bubbleList.length = 0; // 此处领取完毕,小红点也要去掉
-		// FishPond_showTip(false);
-		showMessage("【鱼塘气泡】领取结果:" + result, "success");
-		// console.log("【鱼塘气泡】领取结果:" + result, ret);
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-
-function getFishPond_BubbleList() {
-	// 获取可领取的鱼粮,如果有,就显示小红点
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/bubble',{
-		method: 'GET',
-		mode: 'no-cors',
-		credentials: 'include'
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		if (!bubbleList) {
-			return;
-		}
-		bubbleList.length = 0;
-		for (let i = 0; i < ret.data.list.length; i++) {
-			if (ret.data.list[i] != null) {
-				if (ret.data.list[i].status == "2") {
-					bubbleList.push(ret.data.list[i].id);
-					getAllFishPond();
-				}
-			}
-		}
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-let roomSignList = [];
-function initPkg_FishPond_RoomSign() {
-	getFishPond_RoomSign();
-}
-
-function initPkg_FishPond_RoomSign_Timer() {
-	getFishPond_RoomSignList();
-}
-
-function getFishPond_RoomSign() {
-	// 清空roomSignList内的气泡
-	// if (roomSignList.length == 0) {
-	// 	// showMessage("【签到宝箱】暂无可领取的鱼粮", "info");
-	// 	return;
-	// }
-    // let arr = roomSignList.concat();
-	// for (let i = 0; i < arr.length; i++) {
-	// 	fetch('https://www.douyu.com/japi/roomuserlevel/apinc/getPrize',{
-    //         method: 'POST',
-    //         mode: 'no-cors',
-    //         credentials: 'include',
-    //         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    //         body: 'rid=' + rid + '&ctn=' + getCCN()
-    //     }).then(res => {
-    //         return res.json();
-    //     }).then(ret => {
-    //         if (ret.error == "0") {
-    //             showMessage("【签到宝箱】领取结果:" + ret.msg, "success");
-    //         }
-    //     }).catch(err => {
-    //         console.log("请求失败!", err);
-    //     })
-	// }
-	// // FishPond_showTip(false);
-	// roomSignList.length = 0;
-    fetch('https://www.douyu.com/japi/roomuserlevel/apinc/getPrize',{
-        method: 'POST',
-        mode: 'no-cors',
-        credentials: 'include',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-        body: 'rid=' + rid + '&ctn=' + getCCN()
-    }).then(res => {
-        return res.json();
-    }).then(ret => {
-        if (ret.error == "0") {
-            showMessage("【签到宝箱】领取结果:" + ret.msg, "success");
-        }
-    }).catch(err => {
-        console.log("请求失败!", err);
-    })
-}
-
-function getFishPond_RoomSignList() {
-    fetch('https://www.douyu.com/japi/roomuserlevel/apinc/levelInfo?rid=' + rid + '&clientType=0',{
-		method: 'GET',
-		mode: 'no-cors',
-		credentials: 'include'
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-        if (ret.error == "0" ) {
-            if (ret.data.treasure.status == "1") {
-                // roomSignList.push("1");
-                // getAllFishPond();
-                getFishPond_RoomSign();
-            }
-        }
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-
-
-
-let taskList = [];
-function initPkg_FishPond_Task() {
-	getFishPond_Task();
-}
-
-function initPkg_FishPond_Task_Timer() {
-	getFishPond_TaskList();
-}
-
-function getFishPond_Task() {
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/batchGetPrize',{
-		method: 'POST',
-		mode: 'no-cors',
-		credentials: 'include',
-		headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-		body: 'ids=1182%2C1183%2C1184%2C1185%2C1186' + '&rid=' + rid
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		if (ret.data !== null) {
-			for (let i = 0; i < ret.data.length; i++) {
-				showMessage("【鱼塘任务】领取结果:成功领取" + ret.data[i].name + ret.data[i].num + "个", "success");
-			}
-		}
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-	if (taskList.length == 0) {
-		// showMessage("【鱼塘任务】暂无可领取的鱼粮", "info");
-		return;
-	}
-	let arr = taskList.concat();
-	for (let i = 0; i < arr.length; i++) {
-		fetch('https://www.douyu.com/japi/tasksys/ytxb/getPrize',{
-			method: 'POST',
-			mode: 'no-cors',
-			credentials: 'include',
-			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-			body: 'id=' + arr[i] + '&roomId=' + rid
-		}).then(res => {
-			return res.json();
-		}).then(ret => {
-			// console.log("【鱼塘任务】领取结果:", ret);
-			showMessage("【鱼塘任务】领取结果:" + ret.data.msg, "success");
-		}).catch(err => {
-			console.log("请求失败!", err);
-		})
-	}
-	taskList.length = 0;
-	// FishPond_showTip(false);
-}
-
-function getFishPond_TaskList() {
-	// 获取可领取的鱼粮,如果有,就显示小红点
-	taskList.length = 0;
-	getFishPond_TaskList_Day();
-	getFishPond_TaskList_Week();
-	getFishPond_TaskList_Ytzb();
-	// getFishPond_TaskList_Client();
-}
-
-
-function getFishPond_TaskList_Day() {
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/userStatusV2?cycleType=1&roomId=' + rid,{
-		method: 'GET',
-		mode: 'no-cors',
-		credentials: 'include'
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		
-		for (let i = 0; i < ret.data.list.length; i++) {
-			if (ret.data.list[i].status == "2") {
-				taskList.push(ret.data.list[i].id);
-				getAllFishPond();
-			}
-		}
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-function getFishPond_TaskList_Week() {
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/userStatusV2?cycleType=2&roomId=' + rid,{
-		method: 'GET',
-		mode: 'no-cors',
-		credentials: 'include'
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		for (let i = 0; i < ret.data.list.length; i++) {
-			if (ret.data.list[i].status == "2") {
-				taskList.push(ret.data.list[i].id);
-				getAllFishPond();
-			}
-		}
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-
-function getFishPond_TaskList_Ytzb() {
-	fetch('https://www.douyu.com/japi/tasksys/ytxb/userStatusV2?cycleType=25&roomId=' + rid,{
-		method: 'GET',
-		mode: 'no-cors',
-		credentials: 'include'
-	}).then(res => {
-		return res.json();
-	}).then(ret => {
-		for (let i = 0; i < ret.data.list.length; i++) {
-			if (ret.data.list[i].status == "2") {
-				taskList.push(ret.data.list[i].id);
-				getAllFishPond();
-			}
-		}
-	}).catch(err => {
-		console.log("请求失败!", err);
-	})
-}
-
-function initPkg_FishPond_Task2() {
-	getFishPond_Task2();
-}
-
-function initPkg_FishPond_Task2_Timer() {
-    getFishPond_Task2();
-}
-
-
-async function getFishPond_Task2() {
-    let taskList = await getFishPond_Task2List();
-    if (taskList.data == null) {
-        return;
-    }
-    getFishPond_Task2Panel(taskList.data.panel);
-    getFishPond_Task2Bubble(taskList.data.bubble);
-}
-
-function getFishPond_Task2List() {
-    return new Promise(resolve => {
-        fetch('https://www.douyu.com/japi/fishpoolTask/w/apinc/taskList',{
-			method: 'POST',
-			mode: 'no-cors',
-			credentials: 'include',
-			headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-			body: 'rid=' + rid + '&ctn=' + getCCN()
-		}).then(res => {
-			return res.json();
-		}).then(ret => {
-            resolve(ret);
-		}).catch(err => {
-			console.log("请求失败!", err);
-		})
-    })
-}
-
-async function getFishPond_Task2Panel(panelList) {
-    for (let i = 0; i < panelList.length; i++) {
-        let item = panelList[i];
-        for (let j = 0; j < item.taskList.length; j++) {
-            let taskItem = item.taskList[j].task;
-            if (taskItem) {
-                if (taskItem.status == 2) {
-                    let id = taskItem.id;
-                    // 领取
-                    await sleep(1500).then(() => {
-                        getFishPond_Task2GetPrize(id);
-                    })
-                }
-            }
-        }
-    }
-}
-
-function getFishPond_Task2GetPrize(id) {
-    fetch('https://www.douyu.com/japi/fishpoolTask/w/apinc/getPrize',{
-        method: 'POST',
-        mode: 'no-cors',
-        credentials: 'include',
-        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-        body: 'id=' + id + '&rid=' + rid + '&ctn=' + getCCN()
-    }).then(res => {
-        return res.json();
-    }).then(ret => {
-        if (ret.error == 0) {
-            showMessage("【高级鱼塘】" + ret.data.msg, "success");
-        } else {
-            showMessage("【高级鱼塘】" + ret.msg, "error");
-        }
-    }).catch(err => {
-        console.log("请求失败!", err);
-    })
-}
-
-async function getFishPond_Task2Bubble(bubbleList) {
-    for (let i = 0; i < bubbleList.length; i++) {
-        let item = bubbleList[i];
-        if (item.status == 2) {
-            let id = item.id;
-            await sleep(1500).then(() => {
-                getFishPond_Task2GetPrize(id);
-            })
-        }
-    }
-}
 
 let followListHook;
 function initPkg_FollowList() {
@@ -4209,13 +4501,330 @@ function getFollowList() {
         })
     })
 }
+function initPkg_ImageDanmaku() {
+  initPkg_ImageDanmaku_Dom();
+  initPkg_ImageDanmaku_Func();
+}
+
+function initPkg_ImageDanmaku_Dom() {
+  const chatTool = document.getElementsByClassName("ChatToolBar__right")[0];
+  const dom = document.createElement("div");
+  dom.className = "BarrageFilter";
+  dom.title = "添加图片弹幕（仅安装插件的用户可见）";
+  dom.innerHTML = `
+  <input id="ex-upload-image-input" type="file" id="ex-upload-image" style="display: none" accept="image/*">
+  <svg id="ex-upload-image-svg" viewBox="0 0 1088 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="21426" width="18" height="18"><path d="M864.896 639.68a37.76 37.76 0 0 1 37.568 37.568v112.832h112.832a37.76 37.76 0 0 1 37.568 37.568 37.76 37.76 0 0 1-37.568 37.632H902.4v112.768a37.76 37.76 0 0 1-37.568 37.632 37.76 37.76 0 0 1-37.632-37.632V865.28h-112.832a37.76 37.76 0 0 1-37.568-37.632 37.76 37.76 0 0 1 37.568-37.568h112.832v-112.832a37.76 37.76 0 0 1 37.632-37.568zM930.688 0.384c46.656 0 84.608 37.952 84.608 84.608v474.688a37.632 37.632 0 0 1-75.2 0V398.208l-377.088 304.64a84.352 84.352 0 0 1-94.4 8.32l-1.28-0.768-209.216-127.616a9.344 9.344 0 0 0-7.552-0.256l-175.36 125.632v147.712c0 5.12 4.288 9.408 9.408 9.408H595.2a37.632 37.632 0 0 1 0 75.2H84.608A84.672 84.672 0 0 1 0 855.872V84.992C0 38.4 37.952 0.384 84.608 0.384z m0 75.2H84.608a9.536 9.536 0 0 0-9.408 9.408V615.68l135.552-97.152 1.792-1.024a84.032 84.032 0 0 1 82.432-0.256l1.344 0.768L505.6 645.632a9.344 9.344 0 0 0 10.048-1.152l0.128-0.128 424.32-342.848V84.992a9.536 9.536 0 0 0-9.344-9.408zM282.048 150.784c72.512 0 131.584 59.072 131.584 131.648a131.776 131.776 0 0 1-131.584 131.584A131.776 131.776 0 0 1 150.4 282.432c0-72.576 59.072-131.648 131.648-131.648z m0 75.264a56.448 56.448 0 0 0 0 112.768 56.448 56.448 0 0 0 0-112.768z" fill="#BBBBBB" p-id="21427"></path></svg>
+  `;
+  chatTool.insertBefore(dom, chatTool.firstChild);
+}
+
+function initPkg_ImageDanmaku_Func() {
+  const chatDom = document.getElementsByClassName("ChatSend-txt")[0];
+  document.addEventListener("paste", async (event) => {
+    if (document.activeElement !== chatDom) return;
+    const items = (event.clipboardData || event.originalEvent.clipboardData).items;
+    for (let index in items) {
+      let item = items[index];
+      if (item.kind === "file" && item.type.startsWith("image/")) {
+        chatDom.value += `[DouyuEx图片上传中]`;
+        let blob = item.getAsFile();
+        const url = await getUploadImageUrl(blob);
+        addImageDanmaku(url);
+        break;
+      }
+    }
+  });
+
+  let timer = setInterval(() => {
+    if (typeof document.getElementById("js-barrage-list") != "undefined") {
+      clearInterval(timer);
+      new DomHook("#js-barrage-list", false, (m) => {
+        if (m.length <= 0) return;
+        if (m[0].addedNodes.length <= 0) return;
+        let dom = m[0].addedNodes[0];
+        const contentDom = dom.getElementsByClassName("Barrage-content");
+        if (!contentDom || (contentDom && contentDom.length === 0)) return;
+        const text = contentDom[0].innerHTML;
+        if (!text.includes("[DouyuEx图片")) return;
+        let newText = text.replace(/\[DouyuEx图片(.*?)\]/g, (match, str) => getImageDanmakuHtml(str));
+        dom.getElementsByClassName("Barrage-content")[0].innerHTML = newText;
+      });
+    }
+  }, 1000);
+
+  let timer2 = setInterval(() => {
+    if (typeof document.getElementsByClassName("danmu-6e95c1")[0] != "undefined") {
+      clearInterval(timer2);
+      new DomHook(".danmu-6e95c1", false, (m) => {
+        if (m.length <= 0) return;
+        if (m[0].addedNodes.length <= 0) return;
+        let dom = m[0].addedNodes[0];
+        if (!dom || (dom && !dom.innerHTML)) return;
+        const text = dom.innerHTML;
+        if (!text.includes("[DouyuEx图片")) return;
+        let newText = text.replace(/\[DouyuEx图片(.*?)\]/g, (match, str) => getImageDanmakuHtml(str));
+        dom.innerHTML = newText;
+      });
+    }
+  }, 1000);
+
+  document.getElementById("ex-upload-image-svg").addEventListener("click", () => {
+    document.getElementById("ex-upload-image-input").click();
+  });
+
+  document.getElementById("ex-upload-image-input").addEventListener("change", async (e) => {
+    chatDom.value += `[DouyuEx图片上传中]`;
+    let file = e.target.files[0];
+    const url = await getUploadImageUrl(file).catch((err) => console.log(err));
+    addImageDanmaku(url);
+  });
+}
+
+function getImageDanmakuHtml(str) {
+  if (!isValidImageFile(str)) return "";
+  const split = str.split(".");
+  const url = decompressImageUrl(split[0]);
+  const realImageUrl = DOMPurify.sanitize(`https://img.douyucdn.cn/data/yuba/weibo/${url.slice(0, 4) + "/" + url.slice(4, 6) + "/" + url.slice(6, 8) + "/" + url}.200x0.${split[1]}`);
+  const imgHtml = `<a href="${realImageUrl.replace("200x0.", "")}" target="_blank"><img class="ex-image-danmaku" src="${realImageUrl}" alt=""></a>`;
+  return DOMPurify.sanitize(imgHtml);
+}
+
+function addImageDanmaku(url) {
+  const chatDom = document.getElementsByClassName("ChatSend-txt")[0];
+  const split = url.split(".");
+  chatDom.value = chatDom.value.replace("[DouyuEx图片上传中]", `[DouyuEx图片${compressImageUrl(split[0])}.${split[1]}]`);
+}
+
+function compressImageUrl(text) {
+  let number = BigInt(text);
+  return number.toString(36);
+}
+
+function decompressImageUrl(base36Str) {
+  const base36Chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let decimal = 0n;
+  let multiplier = 1n;
+
+  for (let i = base36Str.length - 1; i >= 0; i--) {
+    const char = base36Str[i].toUpperCase();
+    const charIndex = base36Chars.indexOf(char);
+    if (charIndex === -1) {
+      throw new Error(`Invalid base36 character: ${char}`);
+    }
+    decimal += BigInt(charIndex) * multiplier;
+    multiplier *= 36n;
+  }
+
+  return decimal.toString();
+}
+
+function getUploadPreRequest() {
+  return new Promise((resolve) => {
+    GM_xmlhttpRequest({
+      method: "GET",
+      url: `https://yuba.douyu.com/wbapi/web/image/preRequest?source=&timestamp=${new Date().getTime()}`,
+      responseType: "json",
+      headers: {
+        "dy-client": "pc",
+        "dy-token": dyToken
+      },
+      onload: function (response) {
+        resolve(response.response);
+      }
+    });
+  });
+}
+
+function dataURLtoBlob(dataurl) {
+  var arr = dataurl.split(","),
+    mime = arr[0].match(/:(.*?);/)[1],
+    bstr = atob(arr[1]),
+    n = bstr.length,
+    u8arr = new Uint8Array(n);
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n);
+  }
+  return new Blob([u8arr], {
+    type: mime
+  });
+}
+
+function getUploadImageUrl(file) {
+  return new Promise(async (resolve, reject) => {
+    const preRequestRet = await getUploadPreRequest();
+    const preRequestData = preRequestRet.data;
+    if (!preRequestData) return;
+    let formData = new FormData();
+
+    for (let key in preRequestData) {
+      formData.append(key, preRequestData[key]);
+    }
+    formData.append("file", file);
+
+    let request = new XMLHttpRequest();
+    request.open("POST", "https://img.douyucdn.cn/upload", true);
+    request.onload = function () {
+      if (this.status >= 200 && this.status < 400) {
+        try {
+          let json = JSON.parse(this.response);
+          const ret = json.uri.split("/").pop().split("?")[0];
+          resolve(ret);
+        } catch (error) {
+          reject(error);
+        }
+      } else {
+        reject("图片上传失败");
+      }
+    };
+    request.send(formData);
+  });
+}
+
+function getImageDanmakuFromImgSrc(src) {
+  const split = src.split("/");
+  const url = split.pop();
+  const split2 = url.split(".");
+  return `[DouyuEx图片${compressImageUrl(split2[0])}.${split2[2]}]`;
+}
+
+async function initPkg_LevelTask_Timer() {
+  let ids = await getLevelTaskIds(rid);
+  let tasks = await getLevelTasks(ids);
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
+    const taskId = task.taskId;
+    const taskName = task.name
+    const taskStatus = task.taskStatus;
+    const prizeStatus = task.prizeStatus;
+    if (taskStatus == 1 && prizeStatus == 0) {
+      let result = await finishLevelTask(rid, taskId);
+      for (let j = 0; j < result.length; j++) {
+        showMessage(`【等级任务】${taskName} 获得${result[j].name}${result[j].num}`, "success");
+      }
+    }
+  }
+}
+
+function getLevelTaskIds(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/interactnc/web/userLevel/userLevelDetail?rid=" + rid, {
+        method: 'GET',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        let ids = ret.data.taskIds.join(",");
+        resolve(ids);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
+function getLevelTasks(ids) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/tasksys/userLevelTask/getTaskStatus?taskIds=" + ids, {
+        method: 'GET',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret.data.list);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
+function finishLevelTask(rid, taskid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/tasksys/userLevelTask/getPrize", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&taskIds=${taskid}&roomId=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret.data.list);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
+let myLastBarrage = ""; // 浏览器弹幕框中的最后一条自己的弹幕内容
+let barrageSendCheckTimer = 0;
+let barrageSendCheckTimer2 = 0;
+async function initPkg_LiveTool_BarrageSendCheck() {
+  myName = await getUserName();
+  let timer = setInterval(() => {
+    if (typeof document.getElementById("js-barrage-list") != "undefined") {
+      clearInterval(timer);
+      new DomHook("#js-barrage-list", false, (m) => {
+        if (m.length <= 0) return;
+        if (m[0].addedNodes.length <= 0) return;
+        let dom = m[0].addedNodes[0];
+        let isSelf = dom.getElementsByClassName("is-self").length > 0;
+        if (!isSelf) return;
+        const contentDom = dom.getElementsByClassName("Barrage-content");
+        if (!contentDom || (contentDom && contentDom.length === 0)) return;
+        let localLastBarrage = contentDom[0].innerText.trim();
+        clearTimeout(barrageSendCheckTimer);
+        barrageSendCheckTimer = setTimeout(() => {
+          if (myLastBarrage !== "" && localLastBarrage !== "") {
+            let data = stt_deserialize(myLastBarrage);
+            if (!data.txt) return;
+            if (data.txt.includes(`[DouyuEx图片`)) {
+              data.txt = data.txt.replace(/\[DouyuEx图片[^\]]+\]/g, "").trim();
+            }
+            if (data.txt.replace(/\s+/g, " ") !== localLastBarrage.replace(/\s+/g, " ")) {
+              let contentDom = dom.getElementsByClassName("Barrage-content")[0];
+              contentDom.style.textDecoration = "line-through gray 1px";
+              if (contentDom && contentDom.parentNode) {
+                contentDom.parentNode.insertBefore(createBarrageFailDom(), contentDom.nextSibling);
+              }
+            }
+          }
+        }, 300);
+      });
+    }
+  }, 1000);
+}
+
+function createBarrageFailDom() {
+  let span = document.createElement("span");
+  span.textContent = "(可能发送失败)";
+  span.style.marginLeft = "4px";
+  span.style.color = "gray";
+  span.style.fontSize = "9px";
+  span.style.cursor = "point";
+  span.title = "该条弹幕发送失败，不会被其他人看到（可能会误判）";
+  return span;
+}
+
+function initPkg_LiveTool_BarrageSendCheck_Handle(text) {
+  if (getType(text) == "chatmsg") {
+    if (!text.includes(myName)) return;
+    myLastBarrage = text;
+  }
+}
+
 let barrageSpeed_count = 0;
 function initPkg_LiveTool_BarrageSpeed() {
     // LiveTool_BarrageSpeed_Dom();
     setInterval(() => {
         let barrageSpeed = Number((barrageSpeed_count / 5) * 60).toFixed(0);
         barrageSpeed_count = 0;
-        document.getElementsByClassName("ChatSend-txt")[0].placeholder = "弹幕时速：" + barrageSpeed + "条/分";
+        document.getElementsByClassName("ChatSend-txt")[0].placeholder = "弹幕时速：" + barrageSpeed + "条/分 按↑↓查看历史弹幕 视频ctrl+滚轮缩放";
         // document.getElementsByClassName("barrageSpeed__value")[0].innerText = barrageSpeed;
     }, 5000)
 }
@@ -4224,7 +4833,7 @@ function LiveTool_BarrageSpeed_Dom() {
     let a = document.createElement("div");
     a.className = "barrageSpeed";
     let html = `
-        弹幕时速：<span class='barrageSpeed__value'>**</span>条/分
+        弹幕时速：<span class='barrageSpeed__value'>**</span>条/分 按↑↓查看历史弹幕 视频ctrl+滚轮缩放
     `
     a.innerHTML = html;
     
@@ -4238,7 +4847,7 @@ function initPkg_LiveTool_BarrageSpeed_Handle(text) {
     }
 }
 let isEnterOn = false;
-let enterWordList = {};
+let enterWordList = [];
 function initPkg_LiveTool_Enter() {
     LiveTool_Enter_insertDom();
     LiveTool_Enter_insertFunc();
@@ -4359,32 +4968,38 @@ function LiveTool_Enter_insertFunc() {
         let word = document.getElementById("enter__word").value;
         let level = document.getElementById("enter__level").value;
 
-        if (word == "") {
+        if (word == "") return;
+        if (level == "") return;
+
+        let isExist = false;
+
+        for (const item of enterWordList) {
+            if (Number(level) === Number(item.level)) {
+                isExist = true;
+                break;
+            }
+        }
+        if (isExist) {
+            showMessage("【进场欢迎】等级已存在", "error");
             return;
         }
-        if (level == "") {
-            return;
-        }
-        // 构造json并添加json
-        enterWordList[word] = {
-            enter: Number(level),
-        }
-
-        // 添加到select中去
-        select_wordList.options.add(new Option(word, ""));
-
+        
+        enterWordList.push({
+            level,
+            word
+        });
+        
+        enterWordList.sort((a, b) => b.level - a.level);
+        refreshEnterSelectOptions();
         saveData_Enter();
     });
 
     document.getElementById("enter__del").addEventListener("click", () => {
         let select_wordList = document.getElementById("enter__select");
         let word = select_wordList.options[select_wordList.selectedIndex].text;
-
-        // 删除json内的对象
-        delete enterWordList[word];
-
-        // 删除select里的option
-        select_wordList.options.remove(select_wordList.selectedIndex);
+        enterWordList.splice(select_wordList.selectedIndex, 1);
+        enterWordList.sort((a, b) => b.level - a.level);
+        refreshEnterSelectOptions();
         saveData_Enter();
     });
 
@@ -4419,6 +5034,14 @@ function saveData_isEnter() {
 	localStorage.setItem("ExSave_isEnter", JSON.stringify(data)); // 存储弹幕列表
 }
 
+function refreshEnterSelectOptions() {
+    let select_wordList = document.getElementById("enter__select");
+    select_wordList.options.length = 0;
+    for (const item of enterWordList) {
+        select_wordList.options.add(new Option(`【${item.level}级】${item.word}`, ""));
+    }
+}
+
 function initPkg_Enter_Set() {
 	// 设置初始化
     let ret = localStorage.getItem("ExSave_Enter");
@@ -4428,28 +5051,28 @@ function initPkg_Enter_Set() {
 	let select_wordList = document.getElementById("enter__select");
 	if (ret != null) {
         let retJson = JSON.parse(ret);
-        enterWordList = retJson;
-		for (let key in retJson) {
-            if (retJson.hasOwnProperty(key)) {
-                select_wordList.options.add(new Option(key, ""));
-            }
+        if (!Array.isArray(retJson)) {
+            retJson = [];
+            saveData_Enter();
         }
+        enterWordList = retJson;
+		refreshEnterSelectOptions();
     }
     
-    ret = localStorage.getItem("ExSave_LastEnterWord");
-    if (ret != null) {
-        let i = 0;
-        for (const key in enterWordList) {
-            if (key == ret) {
-                select_wordList.selectedIndex = i;
-                let level = enterWordList[ret].enter;
-                document.getElementById("enter__word").value = ret;
-                document.getElementById("enter__level").value = level;
-                break;
-            }
-            i++;
-        }
-    } 
+    // ret = localStorage.getItem("ExSave_LastEnterWord");
+    // if (ret != null) {
+    //     let i = 0;
+    //     for (const key in enterWordList) {
+    //         if (key == ret) {
+    //             select_wordList.selectedIndex = i;
+    //             let level = enterWordList[ret].enter;
+    //             document.getElementById("enter__word").value = ret;
+    //             document.getElementById("enter__level").value = level;
+    //             break;
+    //         }
+    //         i++;
+    //     }
+    // } 
 
     ret = localStorage.getItem("ExSave_isEnter");
 	
@@ -4482,14 +5105,13 @@ function initPkg_LiveTool_Enter_Handle(text) {
         }
         let nn = getStrMiddle(text, "nn@=", "/");
         let level = getStrMiddle(text, "level@=", "/");
-        let select_wordList = document.getElementById("enter__select");
-        let reply = select_wordList.options[select_wordList.selectedIndex].text;
-        let levelLimit = enterWordList[reply].enter;
-        if (Number(level) < Number(levelLimit)) {
-            return;
+        for (const item of enterWordList) {
+            if (Number(level) >= Number(item.level)) {
+                reply = String(item.word).replace(/<id>/g, nn);
+                sendBarrage(reply);
+                break;
+            }
         }
-        reply = String(reply).replace(/<id>/g, nn);
-        sendBarrage(reply);
     }
 }
 
@@ -4826,24 +5448,11 @@ function initPkg_LiveTool_LiveNotice_Handle(text) {
     if (getType(text) == "rss") {
         let rid = getStrMiddle(text, "rid@=", "/");
         let ss = getStrMiddle(text, "ss@=", "/");
-        if (ss == "1") {
+        let ivl = getStrMiddle(text, "ivl@=", "/"); // 区分轮播，当ivl为1时则为轮播
+        if (ss == "1" && ivl == "0") {
             showMessageWindow("开播提醒", "直播间：" + rid + "开播了，点我签到", () => {
                 signRoom(rid);
             });
-        } else {
-            clearInterval(timer_closing);
-            timer_closing = setInterval(() => {
-                if (closingNum > 60) {
-                    clearInterval(timer_closing);
-                    closingNum = 0;
-                }
-                let x = document.getElementsByClassName("dy-ModalRadius-close-x");
-                if (x.length > 0) {
-                    clearInterval(timer_closing);
-                    x[0].click();
-                }
-                closingNum++;
-            }, 200);
         }
     }
 }
@@ -4882,6 +5491,8 @@ function initPkg_LiveTool_Module() {
 	initPkg_LiveTool_Reply();
 	initPkg_LiveTool_Treasure();
 	initPkg_LiveTool_BarrageSpeed();
+	initPkg_LiveTool_RankList();
+	initPkg_LiveTool_BarrageSendCheck();
 
 	// initPkg_LiveTool_Bojiang_Handle();
 }
@@ -4921,6 +5532,8 @@ function initPkg_LiveTool_HandleFunc() {
 		// initPkg_LiveTool_Friend_Handle(ret);
 		initPkg_LiveTool_Vote_Handle(ret); // 投票
 		initPkg_LiveTool_BarrageSpeed_Handle(ret); // 弹幕时速
+		initPkg_LiveTool_RankList_Handle(ret); // 排行榜
+		initPkg_LiveTool_BarrageSendCheck_Handle(ret); // 检查弹幕是否发送成功
     });
 }
 
@@ -5358,6 +5971,63 @@ function getRoomAdminStatus() {
             console.log("请求失败!", err);
         })
     });
+}
+let rankListData = {
+    day: {},
+    week: {},
+    all: {}
+};
+function initPkg_LiveTool_RankList() {
+    let a = new DomHook(".layout-Player-rankAll", false, (m) => {
+        let dom = document.getElementsByClassName("RankAllMain-container");
+        if (dom.length > 0) {
+            if (Object.keys(rankListData.all).length > 0) {
+                setRankListData("all", document.querySelectorAll(".layout-Player-rankAll .ChatRankWeek-listItem--nickname"));
+            }
+        }
+    })
+}
+
+function initPkg_LiveTool_RankList_Handle(text) {
+    if (getType(text) == "ranklist") {
+        let data = stt_deserialize(text);
+        if (data.list_day) {
+            rankListData.day = getRankListData(data.list_day);
+            setRankListData("day", document.querySelectorAll(".layout-Player-rank .ChatDayRank .ChatRankWeek-listItem--nickname"));
+        }
+        if (data.list) {
+            rankListData.week = getRankListData(data.list);
+            setRankListData("week", document.querySelectorAll(".layout-Player-rank .ChatRankWeek .ChatRankWeek-listItem--nickname"));
+        }
+        if (data.list_all) {
+            rankListData.all = getRankListData(data.list_all);
+        }
+        setRankListData();
+    }
+}
+
+function setRankListData(rankItemType, rankItems) {
+    if (!rankItems) return;
+    for (let i = rankItemType === "week" ? 10 : 0; i < rankItems.length; i++) {
+        let rankItem = rankItems[i];
+        let rankItemName = rankItem.innerHTML.split("<span")[0];
+        let rankItemParent = rankItem.parentElement;
+        let rankContent =  rankListData[rankItemType][rankItemName];
+        if (rankItemParent.className.includes("--top")) {
+            rankItem.innerHTML = `${rankItemName}<span class="exRankPoint--top">${rankContent}</span>`;
+        } else {
+            rankItem.innerHTML = `${rankItemName}<span class="exRankPoint">${rankContent}</span>`;
+        }
+    }
+}
+
+function getRankListData(list) {
+    let obj = {};
+    for (let i = 0; i < list.length; i++) {
+        let item = list[i];
+        obj[item.nickname] = Number(item.gold) / 100;
+    }
+    return obj;
 }
 let isReplyOn = false;
 let replyWordList = {};
@@ -6228,6 +6898,7 @@ function initPkg_Lottery_Func() {
 async function initPkg_Lottery_Timer() {
     let html = "";
     let lotteryList = await getExLotteryList();
+    if (!lotteryList.data.list) return;
     for (let i = 0; i < lotteryList.data.list.length; i++) {
         let item = lotteryList.data.list[i];
         if (item.status !== 0) {
@@ -6563,7 +7234,7 @@ async function calcMonthCost(type) {
     let ret;
 
     do {
-        ret = await MonthCost_queryData(host + "?" + `firstId=&lastId=${lastId}&propType=0&beginTime=${beginTime}&endTime=${endTime}&type=${type}&pageNum=${currentPage}&pageSize=100`)
+        ret = await MonthCost_queryData(host + "?" + `firstId=&lastId=${lastId}&propType=0&beginTime=${beginTime}&endTime=${endTime}&type=${type}&pageNum=${currentPage}&pageSize=50`)
         if (ret.code == "0") {
             let len = ret.data.details.length;
             if (len == 0) {
@@ -6752,7 +7423,7 @@ function setNightMode() {
     .Title-row-text,.Title-anchorName{color:rgba(153,153,153,1) !important;}
     #js-player-toolbar{background:rgb(37,38,42) !important;border:1px solid rgb(37,38,42) !important;}
     .PlayerToolbar-wealthNum,.Header-wrap .Header-menu-link>a,.public-DropMenu-link,.Header-icon{color:rgb(191,191,191) !important;}
-    .layout-Main{background-color:rgba(35,36,39,1) !important;}
+    .layout-Main{background:rgba(35,36,39,1) !important;}
     .ChatRank-rankWraper{background:rgba(47,48,53,1) !important;border:rgba(47,48,53,1) solid 1px !important;}
     .bg-icon{display:none;}
     .ChatRankWeek-headerContent,.NobleRank,.NobleRankTips{background-color:rgba(47,48,53,1) !important;}
@@ -6817,7 +7488,7 @@ function setNightMode() {
     .layui-text{color:rgb(187,187,187) !important;}
     .GuessReturnYwFdSlider-ywNum{color:rgb(237,90,101) !important;}
     .VideoBottomTabs span{color:rgb(204,204,204)}
-    #point__value{color:rgb(191,191,191) !important;}
+    .BackpackHeader-info--title,#point__value{color:rgb(191,191,191) !important;}
     #red_envelope_text,#red_envelope_query{color:rgb(191,191,191) !important;}
     .layout-Container{background-color:rgb(35,36,39) !important;}
     .FansRankBottom-invisible,.ChatRankWeek-invisibleContent{background:rgb(47,48,53) !important;}
@@ -6828,8 +7499,12 @@ function setNightMode() {
     .VideoRecommendItem a{border-bottom: 3px solid rgb(35,36,39) !important;}
     .AnchorFriendPane-title a:after{display:none !important;}
 
-    .MedalOwnerInfo-box{border-bottom: 1px solid rgb(79 81 88)!important;}
-    .FansMedalList-item.is-NoWear{border-top: 1px solid rgb(79 81 88)!important;}
+    .MedalOwnerInfo-box{border-bottom: 1px solid rgb(79,81,88)!important;}
+    .FansMedalList-item.is-NoWear{border-top: 1px solid rgb(79,81,88)!important;}
+
+    .layout-Player-announce,#js-player-title,.DiamondsFansRankList-anniversary{background: none !important;}
+    .DiamondsFansRankContainer-skinbg,.shark-webp .DiamondsFansRankList-anniversary{background: none !important;background-color: rgba(35, 36, 39, 1) !important;}
+    .DiamondsFansRankList-anntitle,.DiamondsFansRankList-anntitle{color: #cfcfcf;}
 
     /*弹幕时速*/
     .barrageSpeed{color: rgba(255,255,255,0.5) !important;}
@@ -6856,7 +7531,7 @@ function cancelNightMode() {
 function getUserLevelNightModeStyle() {
     let ret = "";
     for (let i = 1; i < 70; i++) {
-        ret += ".shark-webp .UserLevel--" + String(i) + ",";
+        ret += ".UserLevel--" + String(i) + ",";
     }
     ret = ret.substring(0, ret.length - 1);
     ret += `{background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADACAMAAAAN8R4NAAAC+lBMVEUlJioDvrdnxgPfkxaJb0lrsSIhrKYDvLVif0ftnhtnxQQKnZlZpAwnKCy+iDDYmzlFfHwrLC/ckhc5OTq1exuIbkg6PjyAa0qehVxzX0JpwA5CQT84PkEpKi5geEksLjE3lZNHamsqpKAfQEIxQiM9QT5Gd3c8RUguoJ1HbG0tLzIRt7FCUlVquxZabUpplD1TYUnOmkRBRkAzNTcVs64/REBSTUZnjEJDPDNGYWMwNDdHOyZGdHVqvRJpxAkKu7RAPz2zhDcwMTMcrqlCgYE6QUQ2ODjekxc/iIdqnjVrpDA0mZY6kY+tjFdliERqmjg9SEvGjCpHZmhEfX1VT0czOTxYaUqPc0avgzjonyZ4ZktVZElhV0k7REfZkRtLVEZ4ZkpFQkBrojJrpi5ccUmRdEY2NjdrtxsasKtGb3BPTElSTkrLmUVkhUVMSEOCc1xEWFo/S05hekinfz2oilpLSUZCSEIHvLVBT1HElktqXkprqSw8j42McUhjgkaaeUO0hDbenTNJUEVOSkThnS5qtB1u1QIkqKRBhYSGdlxpXUpnkECfe0DWkB131BIAy8NfWVFvYUprrSa4klNIRkTpnSA9jIuih1s8OzvMjSYwnZtEe3t8aUnOjiTUkCD+phRmX1NdVUcym5jkniuifT8rop5Ef393bFlQWkiWdkSrgTxqmDvBii3akhkPzMVESUNrqCqXgFyEbUg+PTx0almpfzwTtK9EW12wjVaCbEhOV0fOmUFYUki6hzLRjyLImEtXZ0m4hjPfmihsX0rUmzy4hjTlmRxBhINGTUScekGB0yj/rCXAlU5FTEPRky1tZFa8iDG0klyQfWCKeVy9lFFsX0tNRToZp6KbflA2TE65jkeddDCvfSvYlyrwoyQgzcYZycIVwbubgluFcVAyQkVESkLDkT75rjNqVTNxxBkhnJghi4h5aE5tWz67gydfoRpVjI1yjlZeTDJeqxBs0QGm1HSohUxVRzPJhhhyzBF0z82Tu2mHqmJThCGbY0TbAAAbfUlEQVR42uybe1BUVRzHv7uLyVIrXTZFXTeI8gWC4ZpYKcKaoKTp5pquEYnBWoFUQCkVIUkPSwoCAgwRg0oJKuylSVhE9iILtZe9c9KaXtP0rmmme3b3cL3uuZwzjTNZ2++Pc9z1O2fOxzlz93783YszTgrRcyvkpDOmjhgaxK2hI6aK5s49JczArbBTzhXd3+knDtZxa/CJp+OkUyFQp540YopIbsoI0dwpS0Vyy04R3d+J00RyY05ECIQqZKhYbqhoLkwsFya6v8FiucHQg9SZk4BJcQAdI7Ky7MDLcXI9ClL6INB64krgyqsAOkrr1rlBKyioP5YD5CixnDe8A80ZQGqzBbDcAdDRvOx6kzIBMOihbPAigI7yNy8DuG4LvKXXeeezxwJjLwTk8TQyrr7vaTItICMpnQ94UDBwqf4sAGlzIJOGLF+ufxQTYx977LGso4FDhwMVxmsB5BYBqKjZtcuYowCrY9XemDS8Jt47qIGHhANrDY8DWFIAYG3GmtaMOjpRYGWDo+kGgYv1CYgODrnsKOATTgYm6GYBGHc+gCtiZt92AqIXDn6AAYzYm4AI/ZkAll8AzJmINA8sCxhl8iAZHwKw8xBQVKUAM2PDi3bFk4EFjPodcig1HcCL64EnF/smP2DEBtMNYvT0VxMQPGc5CxiTF8o53dmAacbVMEXOOvn8DUzglSuArEQAkOTsoJuwIis/OIUNXFgKrHMBgFXOhtYqwBqxefFkYAIHOYAXygGgOA94dj2d/IBX3gLEjfR+PnN+AoAEJvB5M4HxM8gBv3vWmGnRAGYzgc+Sz3TaRHjqTn0akBh705yQS5nA18pnOrcKntpuzAUTmMY4wEmGJCwpgbcqU/PoRIFVG7zMs8H5F2AA4Et0l2DcXHKiH7n83suf0gAm403RI718iNiyYiW22MnJZgCTsTbC2ARPSU2lhUxgMh6Qapo4wGjbEZ3q+zXb2uikEwVWb1BPNph1A7SByfhgtG4CgGl3LwBmPK0JnH9X1g8gNfFRIHgFtpiAm1awgTua324GqaocYHipFvBw19fd4AE3fLBtI0hJQz6wkcnxwVSwgPO/u3g6mS8bGRubmHiZJvCYdybEkPlpnQmYeR4LOGGYXCm33nWBFzgt5axBczB9YsTLsQl+wNstctVteq3QC5xrvjK0lwE8j8Qe39RdOBBwtlkut3HPVpB6Zfe3vySZ5embty1mBVjZ4I+/eTaYMnr06LSHh7GAZ4+Sa9Hdj9wOUjEPWi/UTWAB60lJN+gfhWfBOYnT77Tj0TR97AXwAzaSMsX7foseL6pp3h7tB0xjO0lMG9hAyrSmPROkMsin5+lEgZUNWm/QXwdPaR5pHSlrlG4BSF0zWbdqGvyAtcsEKMAiFSSaM3AjFJhXFJhd0VCVLvBuLQNOHgJOD0U3+J8BPtZHdYRTJOf854606EXmP3PRCgJbdFX2CgRp+zBwLZlpTnutzo6HJDEflirfstOfJQ0dPus5AMPyL7LSnyWmDtumjbcBGDXmNF9OR4CZBgupltorBWHFSNmbXaqcfyiarFVcs6sn1Cniw3ntra1hmRSYqcP26SPlbxJvWJ44jAIzdHhUTGSk/GnCqqgNq0YpwGzRpfZKQTRixIgPs4FRViuz0rVsu2th3f2ZiA+3FstTCQVm6TAee1UGvmc+sDyBAvvrMCJvBBaOR1QkcP9sBVjDYDHPD5gZK9z/kBqYvZb53Slw7y4U8WGi2G3bKDBLhy94+OKR8ngzgabA/joM3YXj77sGuH01cFskE5gaLBdYiT0UCgYwe63W0nQxH94atgQUmKHDZw4CASaiqL+ZAvvr8Dm6meeP83girtCt9gemohttbOIBk9Hrw5ZmCxOYSvNuZS3zoZ4Ktg9vO9qHJacjyA8Yg86UPDo8bPowH/CdI7dAAVbrMAE+D4iMBHBvzNXQAu748O094AN3uDZ7fHjfprIyl7EsiQnc8do6Za0pG4uTwPbhPV9QH37fRiwxEwh3+APnf/mHR4ezbo2NHamPHSYNuicFDOAxMe/FgNSqC4GTL4d021eLwACmovvRgYGB5x3pw9bq6uoOV7WSo6EkuTwhutaHH4zIvNLM9OGatsVeHy5PtljMKFliswxpocD+vi7JOnzqyNGYeNfnkybRq7RKhz/16vCNUYvGXn4v5j6yeuxY1lVaMVg2MDsGvyPNXMu5m3zTJzF92KDy4ZSCjK7saArM1mFypBP1P4To76HADB22btDpzjdhBvkyigIL+uu/1IdNJqhKF3i3lgEnDwGnhwEHfIyP6vH/XzwBd9EKgkZDt2KdXDkCPpyyd12KkA9LV+17XMyHgaQ7RHw4Ii7uHBEfjhg/3pfTQdNzq8ri4+P38X3Y0ry/l3yiOU23zqvJLTI+IeLDgH1jI/g+fHMiaWPzfXj1qg0bdAsosJbn5lJYjg/vrwI+W6fkNN36gBw8sEvAh8kfdjeC58O0jc334Q23A/fPpcBanlu6r+Nrm4APG9PtU00CPuyx3J4+ER9G8fr0RvB82NfGDub7MMmdsJACa3muq6ywyNjE9WG3sbQ3l+Y4PvyuMT5CxIfT20CAOT5M29giPnyvbhwosFbft8kG9FYN4MN2Ty7FWAvs388CJqN0pFtLFaF9TB9eJh3pw+aNZgYwGfMjjvLhiGduWSniwxFXzzxPA7jjsK/v+4YJqC3V9uFurw+j5ipWf5g2kV9oBgXe/gZwsMzG8mFHrdeHIxzP2oDKTfX1jan1Zn8fHvT9kT482tvGZvjwx7+rfHjuAmDh5QqwSofNVGGbq6SKsnksYJrz/mXVTvOVpdvVORpS+fDP8dWWnl1MH970UTFItQypk1e21tXVLW2sE/DhtJRJg+azfPgRtQ+PWzT2hEgKrNX3zck1lhUK+LBpl9FYJODDSOmtcVVZMLAP/+ptDJMjzfdhs9zGTrDzfXjR+atiZtv/9+EAubUMOHkIOD0MOGDRI/ifeeQh4C5abM8lOkwKtIL8vZmO1qv2uYV8GEi6SsiH866XK5Prw3Ti+zBwyYU8Hx7e09NTagTfhytcRX2ug2wfvlbda7Z3u8wiPvxK/Zo1ayp5Pkwnrg+TXEwMG1hp6ZLaXiTgw32HgL3dGv1hda/50OHDZhEfXkJguT5MJ74PA1Efx4Dnw4DJ1STgw7Wh0ejbI+DDeHdXusss4sOOymXhNq4P04nvw7g98uwY8HwY6CgT6Q9be4w1NUkCPpweaqbAHB8urw8qCJvC82E68X347BNAgVk+bKc6X/oZE5jmrOWeXF/pGxW9Hyo5rV6zubsJbGC0LXar+sNOO9DyCsOHT1X5sG/i+vComFEDAHd8NNWnsE1G+wDAn+2p9Zxje+lBoNO4lu3D3c5+H66UG8nNxrIKZn94qK8/3EZ8GJ0mYCirP3yLyoeDfW1ihg+/947iwzMX3T15coxu8ig/4Hm+9rBPCouKwAKmqmv0qW78Tre10Oj28+FMucybXPMoMGkkH3RVsH14j68/7PgmyWLGxhIpr34x14ft3onlwzNeUnz4duusWbPGzJgFCqzhuXX0ZHN8OGe/qya3ScCHAXKk2T7c6PPhsF/DZB/OXBJWX8z1YTrxfRggR/oY+rDpfx8+jm8tA04eAk4P/ymQ49+HRR9lWCZ2VP8zPix6MToefFjdH0bF8H2SkOcmdew1H/1zk05E93qAjpmdkIjlptOfmwH7w7ZllTZuf5i+38z34WtOk2sBrz/cYeztKbMJeG5eTdHO0moFuP+eMc9AnCK5QM5tC0tGZ0ZycnKLAqztw+au9S2pj3N92Pt+cxzfh+dOjoqKGs/rDxv3Aj2FAp57aD+ws48BjI3b5JwhHQgvaE3GC8lQyjCQD7eUADsq+T58WRYAAR8edwUAjg/LQBVAVY+A59bsBd4NtTKAi4noZoBUdjLCW9KL8/yAWT4cdsdb4dUCPnxLXH6wTcCHZ44fc5+N68O5vVJOczPfc1PIYwxfH3YzgInoJpdQ4OywkuzGbAVY04ftBkfBklQBH06MXUneb+b68IzJ590/eAIbWFHYTtnl9odq9X0j+j3XTvqlB0ttfsBk3CoZplBgSybpkTGA0fbNuUf6sM0wFFi/ngL7vz5MRXjLOcD8iQwfXqjuD18t5yLnavlw6RfNIOWGpGqIsx6WJsDYPRxyKxQs4GV7ptaDAueZAYuBBdzw7fv0eWmPD7ffofG89J/5R/rwWVusnnPu78NfTVP1h6+2knOu1R/+yFXo1eFedLo6FWC/JjIFfjf02ryavSpgKrq2TY5i9B9ph9nWspECq98f7vLG2gzv15HnpdfYLI6t/P7w9InSzbEJ/P5wzI3S6qdm8/rD1fFG1z6IeO4BY00f1MBUdJMNmf3AKGnMaEmiwMz+cLshg/iwqdVgKOD7MH2/mevDC8bpJr8k4MMmYR/+G557bHzYxPdhdU4XeLeWAScPAaeHx3qDxz3wsT2CS0Vz/9yRPtYXmeP+omWAV0wzgUyPuSZRfwXSGzKP/hlJpwJLRyfWvkXq6BxZjyTo6CRfLnVjYB/uDJ8CrL2elIAPw5YVZ+P3h+lESkeAFTFN8omptKM9GVgyZGtXA90gMxdNPDf8zTffdBg0c8menLyeu7w1m66n4cPF7evb3vQumAq+Dw+bPn8++ZLjw3RSgFViatjs89fNXYCzxA/E57nRXs8t8EpudgErV09znvW2ydH0roF82GbYDGvYWo9EFIDvw0QcguO4PkwnCqz21+vLQWpxsuwrzvB0sEBI7i1vLtsDbCp3auVe6F+v0hGNbY6BfNi8GHCnbiYLZnQK+LD+ubjg17k+TCcK7OevdIMvOoaUlLOONBVYBXjpRtCc9npINrS3J/F8+EkHGZfVA1wftulvmZ+m5/uwb/IDJuMOyeBUgIHN5f4gZCyeKucUYEcDmLm2rW5lvfD69MySfhD2+8PmIWvsdEGuD9tuXQk8/DC3P+ybWMANjju60H+kWz3/+CyQhrLs96EAOw3RADPX/YWyniMciDasZQDv+PCLb0FqSlc2SDnD7Czg/Lt+Uj0vHfKcxvPSn6jeH6aTGnixt1H7WnH/Bp3ta6US9UVGaei6tkEBLigAtHLKeq0vutFgcLN8uNtnv12Oty0WCXiyBYDA89KPpUxacSfLh99R+bB3osB+/ko3iIZ2gyNTAVELrEUBpseW5jTWc5d0tSenM334RW/MaSC3m0vhTnUCAj5sXa7XzzFxfZhOCrBmSaL+KpgzHXMfNgn6MM3pAu/WMuDkIeD08K/2zjNWhiiK42dGlyzGKgnWItFWjW6xeu+9r15WogtC9LASfYPoEi1EjU4QRHQiPuglhEQLgsQXH9xr7zV7uHPPZBBlzYd3n+efO/55a9/83jn3f2rlaUrfuGmeWu50f4Hhn/9S/cN/xdMUXF1N3er++Dctm4cFudb7yq8NemAe5jJc9gX/mi/13Hprlli2zgl0JWbT9eEGS3pJnekcLz2zPL80PCzipScW5ZcCHkbYPLx3ZzeotyDHpp3oQQHJDgD7NDr9QNTPlk2n2ltS5wy6HJ/d1IeXrNs2NqqpD4t46ayJRGKIKQ07x0t3jMfjQw1p+Lt6btMk53aDTdNtDELPvmvzCxmc2gRwYBBMH8T/RuqcQZdjsZv6cPslAPNlqcU5Xppf85pLw87x0sCu5RtswxhMl3A+8kHXbtCtK3/Ya/L9PzAvx+aoqOdy08wOdD0ldTrQ7VrfTX24/jawjucXhnXx0uCL2GlLmnhpbl0aVnMuN7xkbT9r7PoRdD23SYaC/LUgdRrQ5Ybp/WDwgmjTHDoelvHSMLAcSMO6eGmIVQGVYWi/N7CzkzTsW5dhZ9cMfgXO5chrycf7aWs7QYMMI+zyJubh/EEMurZhXB9uIGRwgfdL5xi79NgO2U2ri5eGIWNA1S9dO4jjpWHoatsw5tcL7eGr4X0+6LVAWc+9/07Uc+/dDbIlOok5PyB1SNg3Kay24AiAo+E1d3uI/Y7nece/4yuAvXEpeRjHSx81GyjztF68xfHSo4wwgIqHm5yNDpKG2cH0JoHpU1T13CYPNia/3u31R99gPwzK0WBEtJeSh08L0M3xbjADXWzYlq1sn7zthR3PrH1+a2dGaNDtmpKHcbx087ZgG9bES2/gb9kqHg7wQq00DJsWNLVBPIMKh6MZojv5ed8DGaJ51dwsQZdfPZBhJIuKfummX/K0jnWLrpsvfyxp4qWbmEdtw5p46c7GKGz4x/nV542bf32/dAjwZaTfo2XawUPa4eHPvvFv0rk3/LNfWr9F570+/ONvHr9L556HdVw6K/8SC3PpeIDxjEjlx2D5LwXaqmMGipAdUzkfiSu2fvnDVrB1aL9Kcr8GydxoS+iI+nBPn5v6cDhWU+gM0HHpmtybjq9s8O0j3kw5l4l/ygKtxsPMSNvEkCAyjIXQpkCF2UMglNUcYBu2ZZJz2UZiPzs3WlMfZug0r3mErA8XYui0vOUEWR/WcWnuvozWpmi4VARaTa4u/gYbhjrsQ4gLQ5ErEDC3Zm3ewjbsPOcJ5Ubr6sNDygO0nUfVh4vC0NLsU1lq0XCpxStf2+QzLZ7LVD4iHrB4oBX/R1RPYMNYGBDf7+rYsJRJzrW+IBHKjdbVhyfPg1DCRZ7W5uUQiucShnVc2m2T1e/EWg2XMgdmC/DzJ9zCdZDh74R1zIGADWOZPecJ50br+qWbRCJmJhfnhzvXnWDEQRjGddrggtRzvCPWZlg5P4cjlyYDrYYMr2zOlGVLbBhmTw1mF0J/efMKNoznPKXsx30XOKrSDcR5WpnaXtmaqTqdp5W55ehDmZspDE/b+Oqe6Fs+VZktDcBSHlweM7ti8vtZYfwXp5Eu7NP+yLAE2K1v+Hqlwhf3yDCSDXyTul8wsaeJUpdA54e3msXZ5wUUPNzwSWp9uDF/F4uVQYaTXFpjfXfBpac78b7lsZtg6YIR33Op/8NzOZfJX5UFWlXPVPl8pCIyLIQCYKHAmEBFsycyrOBcGZBVYeH44jI3WlMfrhwZ7gu3SJD90sEJjXzhVXFhWJ1rtfMLl+6bnnvBEkWd1ie51N+WBVqFAFiddqptBAFsJUj+pzMzFQZs2JZZcr8mbSMFWEBWAf5FYURXH97aIlJge3G6Pnxo1YS6RdCPJZJz3fctO+kCYqV0QOh+9Pxw+j1aph08pB0eut3wZw+i+m2Gvb20fnzUmNv9ftv84Z89TO63vWkh3kRcKheaX/kfTwI1p3jx4/0px33U97XKlx/MlsGF+ULzcJ+sA0NueLhsx1hIM39YBjeLheLX3SjXyvE88q1ll3PmDCLD8r6Yr5+KPmiah8dkb5soF6b7pUtkKRKvEqbnD4uF5lcGahcLEHOKK7PzyIFlI23DmHOtlP1EHzTNw9kZgCXa0P3SWWIA8bnCMOZNG18DjEvFouZXW8fxtGIBYk6xv7UfBi+7jgxjbLbnHptdymd9CiQPhzilzctE8zAfPbQ8Ts8fthd840pmJcSvHE+ZYXJOMdyZYWcFaHh4sDmE90HTPDygbWh8nTo0D5cqEmpXpoxy/nDgPeNQGdwsFiW/mkdtfmV4yg1Tc4r9Z84sBYVh/vErX1tsv8FmSh+07vzw+XJmue2ZFDy8Ooh4ePRBo0qRzArDhRd+Kpcyf1gsKn7NV8fWvSkscq3Uc4ov3UgG5lU7e9gCteHCz0+K/Z5+uaHZxeG+s/ugeUuVIaQ8MF3iZgz1S4eZrkgrbHje9/OH24qF5NdAEk+JOcWnr95oMsxOjXDYb/CX+05uUlX2QZt4/DDql27e1nclcp7kYWhZxDe67mjbMOZNe/6wWDRcagsqFiDmFHfKlu3s2WzjbMOYh5/K/XhgtCX6oCkeLr7HjAwEmocbFzPqxkAY/tlc6jZPy20ftF4XoHkY64z0e7RMO3hIOzz8Z8De7fXP/OrG7fXP/HLO7WU6lnNxP7IjN4dFnZbWSX6lObc4qzfrOFcGZDUuERM6w7VhJW+2qVMh0xDcj4x0mIdFnZbUIX7Vz1FqO3lISMO5IiBrYt0ixYaGPBm2eVOWc33Zt6J+ZE19WNRpSZ3gV5JzRb1Zw7kiIOtFMx405M0w5k1Llu/tfmQHHa8PizotqRP8SnKuqDdrOFcEZHHzzeIeDKvLubgfWcOvok5L6SS/kpybjxekCpdz5txkQNbEkFESoPZBz4b5x6Dk0nwDs19B/cjfcDPXSW5GdVqss5BO8CvFueE5dr0Zc26JJOeKgKywMRFg9dAfMDyGc6ldzkX9yJiHs9ZJ4ebiok6r0FmpOkjlV3zfyuhcsKg3Kzg32QedDMh6AXWLArTa4M0w5tICYyxWzhX9yCQPB0WdltIJfiXrvqzeHGb1ZmfOTQZknYNmmcOj69b0ZhjzZsUEK+fifmSFTg48EnVaUif4leZc6G9Gpuo4VwZkbTAmbAEPhjWg6bGeS/Prj+ZkAdYZ/x8t/8ND8ko/PHS74Z+uc23Y7UvmT9e5Nuz2TeFP17k2bIAKODtw4LQA2h2SMi2XFipRNEDr5BxgWsfnI5G6xjg32r1hFXAacQachUIds2yWMh2Xlp1QbNWEQqROzAEmdWI+EqUrKuTeDGPgDCbP6uVquco2rOHSYkUANjQjdWIOMKkT85EonVy8GcbA2XjR6KJPgF3NbMNqLg2HGZfOZdQSL6LTcX6Vc4ApnZyPROnE4tEwBs6yxuYtmctgwwpZSnBzzJhI6eQcYEon5iPROrF4MWw3GieBs8EoXms8hAwjGeJSbqTMKFqH5gBjXShVJ+YjkTqxeDFsB1ElG407822HdkSGFTIZ3GzFX3ZW6qrcRjoxB5jQ3QynzkfCudFv0X5i8WQYA+dEo2aAvUiRYUcubQatdpXtXbIQqUNzgLHuUYquI5qPhHRZUnXNxOLRMAbOWEOjWAdAhjVcWpd/sRipE3OASZ2Yj0Tp5OLFMA3EhoZLf5MO8/D/R8v/8JCuePinG/nPw/952AMPO3ApymU2nLEZ5VVp9+PneGkd6m/W9EF7qw9ruBTlMhvO2IzyqjT7iXO8pA71N2v6oL3VhzW8iXKZDWdsRnlVmv3EOV5Sh/qbdX3QxbzUhx1480nnyjiX2VBj8+3OgPOqHPYre6iyPMdLcm4otb9Z0wftrT6s4U2Uy2zosBliVWhuFud4SR3ub9b0QRfyVB9GvBmDVN5EucyGDpvtvCqs64h4GJ3jxftZSCf6m1X3zYJyo73UhxFvPiqKeFO0Gyt4uHMqNqO8KrxfzdT90DlevF8sVYf6m5Hu4aEXKX3Q3urDGn5FucyGDpt5XhXNzeIcL6lD/c2aPmhv9WENb6JcZkODzSKviuJXcY6X1KH+Zk0ftLf6MMGbPoJLA7+GcwOkzvefh//Dw3885NdnBn9Rvur73V4AAAAASUVORK5CYII=) !important; !important}`;
@@ -6945,7 +7620,23 @@ function setNightModeIframe() {
     .style-newvoteHead-CetsR strong{color: rgb(125,125,125)!important;}
     .style-optionWrapper-GJ6RJ{background: rgb(125,125,125)!important;}
     .style-newvotestyleTitle-j27SH{color:rgb(47,48,53)!important;}
-    
+
+    .index-wrapperBox-fPzNk{background: rgb(35,36,39)!important;}
+    .index-content-pC8LK,.index-hotTopTitle-q1ajK,.index-title-Hmt3k{color:rgb(167,167,167)!important;}
+    .index-aboutTitle-gEBas,.index-title-Hmt3k,.index-itemTitle-M\\+\\+1W{color:rgb(167,167,167)!important;}
+    .index-itemContent-ti7Xk{background:rgb(47,48,53)!important;}
+    .index-controlBgL-tdJKP,.index-controlBg-Pexdr{background: transparent!important;}
+    .index-wrapperBox-fPzNk{border:1px solid rgb(125,125,125) !important;}
+    .wb_card-wbCardWrap-4JJpr,.wb_card-topListItemBox-035It{border-bottom:1px solid rgb(125,125,125)!important;}
+
+    .index-aboutTopic-akyQd .index-itemWrap-6-qcp{background: rgb(47,48,53)!important;}
+    .index-aboutTopic-akyQd .index-topicName-a5Qxh{color:rgb(167,167,167)!important;}
+
+    .wb_card-wbCardDetail-HysKF{background: rgb(35,36,39)!important;}
+    .wb_card-wbInfo-a7-LR a,.wb_card-wbText-mwDSN{color:rgb(167,167,167)!important;}
+    .wb_card-groupnameAndGrouplevel-EbL7t{background: rgb(47,48,53)!important;color: rgb(125,125,125)!important;}
+    .wb_handle-wbRowLine-6D3SZ a{background: rgb(47,48,53)!important;color: rgb(125,125,125)!important;}
+    .wb_handle-line-Dd0zJ{color: rgb(125,125,125)!important;}
     `)
 }
 
@@ -7465,7 +8156,7 @@ function PopupPlayer_insertPrompt() {
     html += '<div class="postbird-box-dialog">';
     html += '<div style="min-height:170px" class="postbird-box-content">';
     html += '<div class="postbird-box-header">';
-    html += '<span class="postbird-box-title"><span>请输入直播间地址：</span></span>';
+    html += '<span class="postbird-box-title"><span>请输入直播间地址：</span><a style="float:right;color:royalblue;" href="http://live.douyuex.com/" target="_blank">DouyuEx联播</a></span>';
     html += '</div>'; // header
     html += '<div class="postbird-box-text">';
     html += '<input id="popup-player__url" value="https://www.douyu.com/5189167" style="height:30px;box-sizing:border-box" type="text" class="postbird-prompt-input" autofocus="true">';
@@ -7531,7 +8222,7 @@ function createNewVideo(id, rid, platform) {
             break;
         case "Huya":
             let a = String(rid).split("/");
-            createNewVideo_Huya(id, rid, a[a.length - 1]);
+            createNewVideo_Huya(id, a[a.length - 1], a[a.length - 1]);
             break;
         default:
             createNewVideo_Douyu(id, rid);
@@ -7578,8 +8269,8 @@ function setElementResize(id) {
         document.onmousemove = function (ev) {
             ev.stopPropagation();
             ev.preventDefault();
-            w = Math.max(300, ev.clientX - pos.x + pos.w)
-            h = Math.max(150, ev.clientY - pos.y + pos.h)
+            w = Math.max(400, ev.clientX - pos.x + pos.w)
+            h = Math.max(0, ev.clientY - pos.y + pos.h)
             w = w >= document.offsetWidth - box.offsetLeft ? document.offsetWidth - box.offsetLeft : w
             h = h >= document.offsetHeight - box.offsetTop ? document.offsetHeight - box.offsetTop : h
             box.style.width = w + 'px';
@@ -7624,7 +8315,7 @@ function setElementDrag(id) {
 
 // Douyu
 function createNewVideo_Douyu(id, rid) {
-    getRealLive_Douyu(rid, true, true, "1", (lurl) => {
+    getRealLive_Douyu(rid, true, false, "1", (lurl) => {
         if (lurl != "" || lurl != null) {
             if (lurl == "None") {
                 showMessage("房间未开播或其他错误", "error");
@@ -7640,10 +8331,13 @@ function createNewVideo_Douyu(id, rid) {
             a.id = "exVideoDiv" + String(id);
             a.rid = rid;
             a.className = "exVideoDiv";
-            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='复制直播流地址'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "斗鱼 - " + rid + "</span></a>";
-            html += "<select class='exVideoQn' id='exVideoQn" + String(id) + "'><option value='1'>流畅</option><option value='2'>高清</option><option value='3'>超清</option><option value='0'>蓝光</option></select>";
+            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='进入直播间' target='_blank' href='https://www.douyu.com/" + rid + "'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "斗鱼 - " + rid + "</span></a>";
+            html += "<select class='exVideoQn' id='exVideoQn" + String(id) + "'><option value='2'>高清</option><option value='3'>超清</option><option value='4'>蓝光4M</option><option value='8'>蓝光8M</option></option><option value='0'>原画</option></select>";
             html += "<select style='display:none' class='exVideoCDN' id='exVideoCDN" + String(id) + "'><option value='1'>主线路</option><option value='2'>备用线路5</option><option value='3'>备用线路6</option></select>";
             html += "<a style='margin-left:5px' href='" + lurl_host + "' target='_blank'>无视频？</a>";
+            html += `<input id='exVideoEmbed${String(id)}' type='button' value='嵌入视频' style='height:30px;'>`;
+            html += `<input id='exVideoUnEmbed${String(id)}' type='button' value='恢复视频' style='height:30px;display:none;'>`;
+            html += `<input id='exVideoCopy${String(id)}' type='button' value='复制直播流' style='height:30px;'>`;
             html += "<a><div class='exVideoClose' id='exVideoClose" + String(id) + "'>X</div></a>";
             html += "</div>";
             html += "<video controls='controls' class='exVideoPlayer' id='exVideoPlayer" + String(id) + "'></video><div class='exVideoScale' id='exVideoScale" + String(id) + "'></div>";
@@ -7664,6 +8358,9 @@ function setElementFunc_Douyu(id, rid) {
     let exVideoPlayer = document.getElementById("exVideoPlayer" + String(id));
     let info = document.getElementById("exVideoInfo" + String(id));
     let scale = document.getElementById("exVideoScale" + String(id));
+    let exVideoEmbed = document.getElementById("exVideoEmbed" + String(id));
+    let exVideoUnEmbed = document.getElementById("exVideoUnEmbed" + String(id));
+    let originVideo = document.getElementById("__video2");
     exVideoPlayer.onclick = function(e) {
         e.stopPropagation();
         e.preventDefault();
@@ -7689,33 +8386,55 @@ function setElementFunc_Douyu(id, rid) {
     let exVideoCDN = document.getElementById("exVideoCDN" + String(id));
     let exVideoClose = document.getElementById("exVideoClose" + String(id));
     exVideoQn.onchange = function() {
-        getRealLive_Douyu(rid, true, true, exVideoQn.value, (lurl) => {
+        getRealLive_Douyu(rid, true, false, exVideoQn.value, (lurl) => {
             videoPlayerArr[id].destroy();
             setElementVideo(id, lurl);
         })
     }
     exVideoCDN.onchange = function() {
-        getRealLive_Douyu(rid, true, true, exVideoQn.value, (lurl) => {
+        getRealLive_Douyu(rid, true, false, exVideoQn.value, (lurl) => {
 			videoPlayerArr[id].destroy();
             setElementVideo(id, lurl);
         })
     }
     exVideoClose.onclick = function() {
+        originVideo.style.display = "block";
+        videoPlayerArr[id].destroy();
+        exVideoPlayer.remove();
         box.remove();
     }
 
-    let exVideoRID = document.getElementById("exVideoRID" + String(id));
-    exVideoRID.onclick = function() {
-        getRealLive_Douyu(rid, true, true, exVideoQn.value, (lurl) => {
-            GM_setClipboard(String(lurl).replace("https", "http"));
-            showMessage("复制成功", "success");
-        })
+    let exVideoCopy = document.getElementById("exVideoCopy" + String(id)) || document.getElementById("exVideoRID" + String(id));
+    if (exVideoCopy) {
+        exVideoCopy.onclick = function() {
+            getRealLive_Douyu(rid, !exVideoCopy.innerHTML.includes("斗鱼音频流"), false, exVideoQn.value, (lurl) => {
+                GM_setClipboard(String(lurl).replace("https", "http"));
+                showMessage("复制成功", "success");
+            })
+        }
+    }
+    if (exVideoEmbed) {
+        exVideoEmbed.onclick = function() {
+            originVideo.style.display = "none";
+            exVideoEmbed.style.display = "none";
+            exVideoUnEmbed.style.display = "inline";
+            box.style.height = "0px";
+            originVideo.parentElement.insertBefore(exVideoPlayer, originVideo);
+        }
+    }
+    if (exVideoUnEmbed) {
+        exVideoUnEmbed.onclick = function() {
+            originVideo.style.display = "block";
+            exVideoUnEmbed.style.display = "none";
+            exVideoEmbed.style.display = "inline";
+            box.style.height = "250px";
+            box.insertBefore(exVideoPlayer, box.childNodes[box.childNodes.length - 1]);
+        }
     }
 }
 
 function createNewAudio_Douyu(id, rid) {
     getRealLive_Douyu(rid, false, true, "1", (lurl) => {
-        console.log(lurl);
         if (lurl != "" || lurl != null) {
             if (lurl == "None") {
                 showMessage("房间未开播或其他错误", "error");
@@ -7731,7 +8450,7 @@ function createNewAudio_Douyu(id, rid) {
             a.id = "exVideoDiv" + String(id);
             a.rid = rid;
             a.className = "exVideoDiv";
-            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='复制音频流地址'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "斗鱼 - " + rid + "</span></a>";
+            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='复制直播流地址'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "斗鱼音频流 - " + rid + "</span></a>";
             html += "<select style='display:none' class='exVideoQn' id='exVideoQn" + String(id) + "'><option value='1'>流畅</option><option value='2'>高清</option><option value='3'>超清</option><option value='0'>蓝光</option></select>";
             html += "<select style='display:none' class='exVideoCDN' id='exVideoCDN" + String(id) + "'><option value='1'>主线路</option><option value='2'>备用线路5</option><option value='3'>备用线路6</option></select>";
             html += "<a style='margin-left:5px;display:none' href='" + lurl_host + "' target='_blank'>无视频？</a>";
@@ -7759,9 +8478,12 @@ function createNewVideo_Bilibili(id, rid){
             a.id = "exVideoDiv" + String(id);
             a.rid = rid;
             a.className = "exVideoDiv";
-            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='复制直播流地址'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "Bilibili - " + rid + "</span></a>";
+            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='进入直播间' target='_blank' href='https://live.bilibili.com/"+  rid + "'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "Bilibili - " + rid + "</span></a>";
             html += "<select class='exVideoQn' id='exVideoQn" + String(id) + "'><option value='1'>流畅</option><option value='2'>高清</option><option value='3'>超清</option><option value='4'>蓝光</option><option value='5'>原画</option></select>";
             html += "<select class='exVideoCDN' id='exVideoCDN" + String(id) + "'><option value='1'>主线路</option><option value='2'>备用线路1</option><option value='3'>备用线路2</option><option value='4'>备用线路3</option></select>";
+            html += `<input id='exVideoEmbed${String(id)}' type='button' value='嵌入视频' style='height:30px;'>`;
+            html += `<input id='exVideoUnEmbed${String(id)}' type='button' value='恢复视频' style='height:30px;display:none;'>`;
+            html += `<input id='exVideoCopy${String(id)}' type='button' value='复制直播流' style='height:30px;'>`;
             html += "<a><div class='exVideoClose' id='exVideoClose" + String(id) + "'>X</div></a>"
             html += "</div>";
             html += "<video controls='controls' class='exVideoPlayer' id='exVideoPlayer" + String(id) + "'></video><div class='exVideoScale' id='exVideoScale" + String(id) + "'></div>";
@@ -7805,6 +8527,9 @@ function setElementFunc_Bilibili(id, rid) {
     let exVideoQn = document.getElementById("exVideoQn" + String(id));
     let exVideoCDN = document.getElementById("exVideoCDN" + String(id));
     let exVideoClose = document.getElementById("exVideoClose" + String(id));
+    let exVideoEmbed = document.getElementById("exVideoEmbed" + String(id));
+    let exVideoUnEmbed = document.getElementById("exVideoUnEmbed" + String(id));
+    let originVideo = document.getElementById("__video2");
     exVideoQn.onchange = function() {
         getRealLive_Bilibili(rid, exVideoQn.value, exVideoCDN.value, (lurl) => {
             videoPlayerArr[id].destroy();
@@ -7818,12 +8543,30 @@ function setElementFunc_Bilibili(id, rid) {
         })
     }
     exVideoClose.onclick = function() {
+        originVideo.style.display = "block";
+        videoPlayerArr[id].destroy();
+        exVideoPlayer.remove();
         box.remove();
+    }
+    exVideoEmbed.onclick = function() {
+        originVideo.style.display = "none";
+        exVideoEmbed.style.display = "none";
+        exVideoUnEmbed.style.display = "inline";
+        box.style.height = "0px";
+        originVideo.parentElement.insertBefore(exVideoPlayer, originVideo);
+    }
+
+    exVideoUnEmbed.onclick = function() {
+        originVideo.style.display = "block";
+        exVideoUnEmbed.style.display = "none";
+        exVideoEmbed.style.display = "inline";
+        box.style.height = "250px";
+        box.insertBefore(exVideoPlayer, box.childNodes[box.childNodes.length - 1]);
     }
 
 
-    let exVideoRID = document.getElementById("exVideoRID" + String(id));
-    exVideoRID.onclick = function() {
+    let exVideoCopy = document.getElementById("exVideoCopy" + String(id));
+    exVideoCopy.onclick = function() {
         getRealLive_Bilibili(rid, exVideoQn.value, exVideoCDN.value, (lurl) => {
             GM_setClipboard(lurl);
             showMessage("复制成功", "success");
@@ -7845,9 +8588,12 @@ function createNewVideo_Huya(id, rid, rname){
             a.id = "exVideoDiv" + String(id);
             a.rid = rid;
             a.className = "exVideoDiv";
-            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='复制直播流地址'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "Huya - " + rname + "</span></a>";
+            html += "<div class='exVideoInfo' id='exVideoInfo" + String(id) + "'><a title='进入直播间' target='_blank' href='" + rid + "'><span class='exVideoRID' id='exVideoRID" + String(id) + "' style='color:white'>" + "Huya - " + rname + "</span></a>";
             html += "<select class='exVideoQn' id='exVideoQn" + String(id) + "'><option value='1'>流畅</option><option value='2'>超清</option><option value='3'>蓝光4M</option><option value='4'>原画</option></select>";
             // html += "<select class='exVideoCDN' id='exVideoCDN" + String(id) + "'><option value='1'>主线路</option><option value='2'>备用线路1</option><option value='3'>备用线路2</option></select>";
+            html += `<input id='exVideoEmbed${String(id)}' type='button' value='嵌入视频' style='height:30px;'>`;
+            html += `<input id='exVideoUnEmbed${String(id)}' type='button' value='恢复视频' style='height:30px;display:none;'>`;
+            html += `<input id='exVideoCopy${String(id)}' type='button' value='复制直播流' style='height:30px;'>`;
             html += "<a><div class='exVideoClose' id='exVideoClose" + String(id) + "'>X</div></a>"
             html += "</div>";
             html += "<video controls='controls' class='exVideoPlayer' id='exVideoPlayer" + String(id) + "'></video><div class='exVideoScale' id='exVideoScale" + String(id) + "'></div>";
@@ -7867,6 +8613,8 @@ function setElementFunc_Huya(id, rid) {
     let exVideoPlayer = document.getElementById("exVideoPlayer" + String(id));
     let info = document.getElementById("exVideoInfo" + String(id));
     let scale = document.getElementById("exVideoScale" + String(id));
+    let exVideoEmbed = document.getElementById("exVideoEmbed" + String(id));
+    let exVideoUnEmbed = document.getElementById("exVideoUnEmbed" + String(id));
     exVideoPlayer.onclick = function(e) {
         e.stopPropagation();
         e.preventDefault();
@@ -7891,6 +8639,7 @@ function setElementFunc_Huya(id, rid) {
     let exVideoQn = document.getElementById("exVideoQn" + String(id));
     // let exVideoCDN = document.getElementById("exVideoCDN" + String(id));
     let exVideoClose = document.getElementById("exVideoClose" + String(id));
+    let originVideo = document.getElementById("__video2");
     exVideoQn.onchange = function() {
         getRealLive_Huya(rid, exVideoQn.value, (lurl, msg) => {
             if (msg != "") {
@@ -7902,12 +8651,15 @@ function setElementFunc_Huya(id, rid) {
         })
     }
     exVideoClose.onclick = function() {
+        originVideo.style.display = "block";
+        videoPlayerArr[id].destroy();
+        exVideoPlayer.remove();
         box.remove();
     }
 
 
-    let exVideoRID = document.getElementById("exVideoRID" + String(id));
-    exVideoRID.onclick = function() {
+    let exVideoCopy = document.getElementById("exVideoCopy" + String(id));
+    exVideoCopy.onclick = function() {
         getRealLive_Huya(rid, exVideoQn.value, (lurl, msg) => {
             if (msg != "") {
                 showMessage(msg, "error");
@@ -7917,6 +8669,22 @@ function setElementFunc_Huya(id, rid) {
             showMessage("复制成功", "success");
         })
     }
+    exVideoEmbed.onclick = function() {
+        originVideo.style.display = "none";
+        exVideoEmbed.style.display = "none";
+        exVideoUnEmbed.style.display = "inline";
+        box.style.height = "0px";
+        originVideo.parentElement.insertBefore(exVideoPlayer, originVideo);
+    }
+
+    exVideoUnEmbed.onclick = function() {
+        originVideo.style.display = "block";
+        exVideoUnEmbed.style.display = "none";
+        exVideoEmbed.style.display = "inline";
+        box.style.height = "250px";
+        box.insertBefore(exVideoPlayer, box.childNodes[box.childNodes.length - 1]);
+    }
+
 }
 
 // iframe
@@ -7954,6 +8722,7 @@ function setElementFunc_iframe(id) {
     let box = document.getElementById("exVideoDiv" + String(id));
     let exVideoClose = document.getElementById("exVideoClose" + String(id));
     exVideoClose.onclick = function() {
+        videoPlayerArr[id].destroy();
         box.remove();
     }
     box.onclick = function(e) {
@@ -7982,6 +8751,7 @@ let real_info = {
 	money_bag: 0,
 	money_total: 0,
 }
+let hasAvatarBottom = false;
 
 function initPkg_RealAudience() {
 	initPkg_RealAudience_StyleHook();
@@ -8000,7 +8770,7 @@ function initPkg_RealAudience() {
 		real_info.isShow = retData.data.show_status;
 		setRealViewer();
 		setInterval(setRealViewer, 150000);
-		setInterval(switchRealAndTodayWatch, 30000);
+		setInterval(switchRealAndTodayWatch, 5000);
 	}).catch(err => {
 		console.log("请求失败!", err);
 	})
@@ -8074,10 +8844,11 @@ async function setRealViewer() {
 	document.getElementById("real-audience__money").title = "总礼物价值:" + real_info.money_total + " 鱼翅礼物:" + real_info.money_yc;
 	
 	document.getElementById("real-audience__time").innerText = "已播:" + formatSeconds(showedTime);
-	document.getElementById("real-audience__time").title = "开播时间:" + String(dateFormat("yyyy年MM月dd日hh时mm分ss秒 ",new Date(Number(real_info.showtime + "000")))) + "\n已观看:" + formatSeconds(todayWatchData.data.todayWatch);;
+	document.getElementById("real-audience__time").title = "开播时间:" + String(dateFormat("yyyy年MM月dd日hh时mm分ss秒 ",new Date(Number(real_info.showtime + "000")))) + "\n已观看:" + formatSeconds(todayWatchData.data.todayWatch);
 	
 	if (todayWatchData.error == 0) {
 		document.getElementById("real-audience__watchtime").innerText = "已观看:" + formatSeconds(todayWatchData.data.todayWatch);
+		document.getElementById("real-audience__watchtime").title = "开播时间:" + String(dateFormat("yyyy年MM月dd日hh时mm分ss秒 ",new Date(Number(real_info.showtime + "000")))) + "\n已观看:" + formatSeconds(todayWatchData.data.todayWatch);
 	}
 }
 
@@ -8096,7 +8867,7 @@ function setAvatarVideo() {
 	setAvatarVideo_Dom();
 	setAvatarVideo_Func(videoUrl, videoReplayUrl);
 	document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display = "none";
-	document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height = "44px";
+	document.getElementsByClassName("Title-anchorPic-bottom")[0].style.height = hasAvatarBottom ? "44px" : "22px";
 
 	document.getElementsByClassName("Title-anchorPicBack")[0].addEventListener("mouseenter", () => {
 		document.getElementsByClassName("Title-anchorPic-bottom")[0].style.display = "block";
@@ -8108,22 +8879,16 @@ function setAvatarVideo() {
 
 function setAvatarVideo_Dom() {
 	let a = document.createElement("div");
-	a.id = "Ex_VideoReview";
-	a.className = "Title-anchorPic-bottomItem";
-	a.innerHTML = "<span>回看</span>";
+	hasAvatarBottom = !!document.getElementsByClassName("Title-anchorPic-bottom")[0];
 
-	let a1 = document.createElement("i");
-	a1.style = "top: 28px";
-
-	let a2 = document.createElement("div");
-	a2.id = "Ex_VideoSubmit";
-	a2.className = "Title-anchorPic-bottomItem";
-	a2.innerHTML = "<span>投稿</span>";
-
-	let b = document.getElementsByClassName("Title-anchorPic-bottom")[0];
-	b.insertBefore(a, b.childNodes[0]);
-	b.insertBefore(a1, b.childNodes[0]);
-	b.insertBefore(a2, b.childNodes[0]);
+	a.className = hasAvatarBottom ? "" : "Title-anchorPic-bottom";
+	a.innerHTML = `
+	<div id="Ex_VideoReview" class="Title-anchorPic-bottomItem"><span>回看</span></div>
+	<i style="top: 28px"></i>
+	<div id="Ex_VideoSubmit" class="Title-anchorPic-bottomItem"><span>投稿</span></div>
+	`
+	let b = document.getElementsByClassName("Title-anchorPic-bottom")[0] || document.getElementsByClassName("Title-anchorPicBack")[0];
+	b.append(a);
 }
 
 function setAvatarVideo_Func(videoUrl, videoReplayUrl) {
@@ -8236,10 +9001,8 @@ function initPkg_Refresh_Barrage_Func() {
 	document.getElementById("refresh-barrage").addEventListener("click", function() {
         if (current_barrage_status == 0) {
             // 简化
-            current_barrage_status = 1;
             setRefreshBarrage();
         } else {
-            current_barrage_status = 0;
             cancelRefreshBarrage();
         }
         saveData_Refresh();
@@ -8265,7 +9028,6 @@ function initPkg_Refresh_Barrage_Set() {
             retJson.barrage = {status: false};
         }
         if (retJson.barrage.status == true) {
-            current_barrage_status = 1;
             setRefreshBarrage();
         }
     }
@@ -8273,14 +9035,21 @@ function initPkg_Refresh_Barrage_Set() {
  
 function setRefreshBarrage() {
     let cssText = `
-    .Barrage-honor,.Barrage-listItem .Barrage-icon,.Barrage-listItem .FansMedal.is-made,.Barrage-listItem .RoomLevel,.Barrage-listItem .Motor,.Barrage-listItem .ChatAchievement,.Barrage-listItem .Barrage-hiIcon,.Barrage-listItem .Medal,.Barrage-listItem .MatchSystemTeamMedal{display:none !important;}
+    .UserCsgoGameDataMedal,.Barrage-honor,.Barrage-listItem .Barrage-icon,.Barrage-listItem .FansMedal.is-made,.Barrage-listItem .RoomLevel,.Barrage-listItem .Motor,.Barrage-listItem .ChatAchievement,.Barrage-listItem .Barrage-hiIcon,.Barrage-listItem .Medal,.Barrage-listItem .MatchSystemTeamMedal{display:none !important;}
     /*.Barrage-listItem .UserLevel{display:none !important;}*/
+    .Barrage-listItem .Baby{display:none !important;}
     `;
     StyleHook_set("Ex_Style_RefreshBarrage", cssText);
+    current_barrage_status = 1;
+    document.getElementById("refresh-barrage").style.backgroundColor = "rgb(18,150,219)";
+    document.getElementById("refresh-barrage__text").style.color = "#fff";
 }
 
 function cancelRefreshBarrage() {
     StyleHook_remove("Ex_Style_RefreshBarrage");
+    current_barrage_status = 0;
+    document.getElementById("refresh-barrage").style.backgroundColor = "#fff";
+    document.getElementById("refresh-barrage__text").style.color = "";
 }
 function initPkg_Refresh_BarrageFrame() {
 	initPkg_Refresh_BarrageFrame_Dom();
@@ -8305,11 +9074,13 @@ function initPkg_Refresh_BarrageFrame_Func() {
         let dom_rank = document.getElementsByClassName("layout-Player-rank")[0];
         let dom_barrage = document.getElementById("js-player-barrage");
         let dom_activity = document.getElementById("js-room-activity");
+        let dom_topBarrage = document.getElementsByClassName("Barrage")[0];
         if (dom_rank.style.display == "none") {
             // 被拉高
             dom_rank.style.display = "block";
             dom_barrage.style = "";
             dom_activity.style.display = "block";
+            dom_topBarrage.className = "Barrage";
             document.getElementById("refresh-barrage-frame__text").innerText = "拉高";
 
         } else {
@@ -8318,6 +9089,7 @@ function initPkg_Refresh_BarrageFrame_Func() {
             dom_rank.style.display = "none";
             dom_activity.style.display = "none";
             dom_barrage.style = "top:" + topHeight + "px";
+            dom_topBarrage.className = "Barrage top-0-important";
             document.getElementById("refresh-barrage-frame__text").innerText = "恢复";
         }
         saveData_Refresh();
@@ -8391,8 +9163,14 @@ function Refresh_Video_insertIcon() {
 }
 
 function initPkg_Refresh_Video_Func() {
+    new DomHook('.right-e7ea5d', true, () => {
+        const video_fullPage = document.querySelector('.wfs-2a8e83.removed-9d4c42') ? true : false;
+        const dom_player_toolbar = document.getElementById("js-player-toolbar");
+        dom_player_toolbar.style = video_fullPage ? "z-index:20" : "z-index:30";
+    });
+
 	document.getElementById("refresh-video").addEventListener("click", (e) => {
-        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
         let dom_video = document.getElementsByClassName("layout-Player-video")[0];
         let dom_refresh = document.getElementById("refresh-video");
         let dom_refresh2 = document.getElementById("refresh-video2");
@@ -8410,9 +9188,10 @@ function initPkg_Refresh_Video_Func() {
             refresh_Video_setStyle();
         }
         saveData_Refresh();
+        resizeWindow();
     });
     document.getElementById("refresh-video2").addEventListener("click", () => {
-        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+        let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
         let dom_video = document.getElementsByClassName("layout-Player-video")[0];
         let dom_refresh = document.getElementById("refresh-video");
         let dom_refresh2 = document.getElementById("refresh-video2");
@@ -8430,11 +9209,12 @@ function initPkg_Refresh_Video_Func() {
             refresh_Video_setStyle();
         }
         saveData_Refresh();
+        resizeWindow();
     });
 }
 
 function refresh_Video_getStatus() {
-    let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+    let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
     if (dom_toolbar.style.visibility == "hidden") {
         return true;
     } else {
@@ -8450,22 +9230,32 @@ function initPkg_Refresh_Video_Set() {
             retJson.video = {status: false};
         }
         if (retJson.video.status == true) {
-            let dom_toolbar = document.getElementsByClassName("PlayerToolbar-Content")[0];
+            let dom_toolbar = document.getElementsByClassName("PlayerToolbar-ContentRow")[0];
             let dom_video = document.getElementsByClassName("layout-Player-video")[0];
             let dom_refresh2 = document.getElementById("refresh-video2");
             let dom_refresh = document.getElementById("refresh-video");
+            let dom_player_toolbar = document.getElementById("js-player-toolbar");
             dom_toolbar.style.visibility = "hidden";
             dom_video.style = "bottom:0;z-index:25";
+            dom_player_toolbar.style = "z-index:30";
+            let ret = localStorage.getItem("ExSave_FullScreen");
+            if (ret != null) {
+                let retJson = JSON.parse(ret);
+                if (retJson.isFullScreen) {
+                    dom_player_toolbar.style = "z-index:20";
+                }
+            }
             dom_refresh2.style.display = "block";
             dom_refresh.innerText = "√ 简洁模式";
             refresh_Video_setStyle();
+            resizeWindow();
         }
     }
 }
 
 function refresh_Video_setStyle() {
     StyleHook_set("Ex_Style_VideoRefresh", `
-    .pushTower-wrapper-gf1HG,.PkView-9f6a2c,.MorePk,.RandomPKBar,.LiveRoomLoopVideo,.LiveRoomDianzan,.maiMaitView-68e80c,.PkView{display:none !important;}
+    .PELact,.pushTower-wrapper-gf1HG,.PkView-9f6a2c,.MorePk,.RandomPKBar,.LiveRoomLoopVideo,.LiveRoomDianzan,.maiMaitView-68e80c,.PkView{display:none !important;}
     `)
 }
 
@@ -8476,9 +9266,11 @@ function initPkg_RemoveAD() {
     let t = setInterval(() => {
         let a = document.getElementsByClassName("PlayerToolbar-wealthNum")[0];
         if (a != undefined) {
+            clearInterval(t);
             optimizePageStyle();
             removeChatLimit();
-            clearInterval(t);
+
+            initPkg_RemoveMsgNotice();
         }
     }, 1000);
     
@@ -8486,7 +9278,7 @@ function initPkg_RemoveAD() {
 // .dy-ModalRadius-mask,dy-ModalRadius-wrap{display:none !important;}
 function removeAD() {
     StyleHook_set("Ex_Style_RemoveAD", `
-    .XinghaiAd,.CustomGroupGuide,.FudaiGiftToolBarTips,.UserInfo-tryEnterHiddenLead,.BargainingKit,.AnchorPocketTips,.FishShopTip,.FollowGuide,#js-bottom-right-cloudGame,.CloudGameLink,.RoomText-icon-horn,.RoomText-list,.Search-ad,.RedEnvelopAd,.noHandlerAd-0566b9,.PcDiversion,.DropMenuList-ad,.DropPane-ad,.WXTipsBox,.igl_bg-b0724a,.closure-ab91fb,.VideoAboveVivoAd,.pwd-990896,.css-widgetWrapper-EdVVC,.watermark-442a18,.FollowGuide-FadeOut,.MatchSystemChatRoomEntry-roomTabs,.FansMedalDialog-normal,.GameLauncher,.recommendAD-54569e,.recommendApp-0e23eb,.Title-ad,.Bottom-ad,.SignBarrage,.corner-ad-495ade,.SignBaseComponent-sign-ad,.SuperFansBubble,.is-noLogin,.PlayerToolbar-signCont,#js-widget,.Frawdroom,.HeaderGif-right,.HeaderGif-left,.liveos-workspace{display:none !important;}
+    .ScreenBannerAd,.XinghaiAd,.CustomGroupGuide,.FudaiGiftToolBarTips,.UserInfo-tryEnterHiddenLead,.BargainingKit,.AnchorPocketTips,.FishShopTip,.FollowGuide,#js-bottom-right-cloudGame,.CloudGameLink,.RoomText-icon-horn,.RoomText-list,.Search-ad,.RedEnvelopAd,.noHandlerAd-0566b9,.PcDiversion,.DropMenuList-ad,.DropPane-ad,.WXTipsBox,.igl_bg-b0724a,.closure-ab91fb,.VideoAboveVivoAd,.css-widgetWrapper-EdVVC,.watermark-442a18,.FollowGuide-FadeOut,.MatchSystemChatRoomEntry-roomTabs,.FansMedalDialog-normal,.GameLauncher,.recommendAD-54569e,.recommendApp-0e23eb,.Title-ad,.Bottom-ad,.SignBarrage,.corner-ad-495ade,.SignBaseComponent-sign-ad,.SuperFansBubble,.is-noLogin,.PlayerToolbar-signCont,#js-widget,.Frawdroom,.HeaderGif-right,.HeaderGif-left,.liveos-workspace{display:none !important;}
     .Barrage-topFloater{z-index:999}
     .danmuAuthor-3d7b4a, .danmuContent-25f266{overflow: initial}
     .BattleShipTips{display:none !important;}
@@ -8516,6 +9308,46 @@ function removeAD() {
     .SharePanel,.CommonShareToolkit{
         display: none!important;
     }
+
+    /*去除还在电脑面前的mask*/
+    .mask1-63237a,.mask2-a8df6e,.panel1-1484c9,.panel2-5ece0e{
+        display: none!important;
+    }
+    /*左侧悬浮二维码广告*/
+    .IconCardAdCard{
+        display: none!important;
+    }
+    /*视频右侧的游戏手柄按钮AD*/
+    .IconCardAd {
+        display: none!important;
+    }
+    /*视频区视频广告*/
+    .CloseVideoPlayerAd,.IconCardAdBoundsBox{
+        display: none!important;
+    }
+    /*直播间顶部广告*/
+    .room-top-banner-box {
+        display: none!important;
+    }
+    /*弹幕框底部进场弹幕信息*/
+    #js-barrage-extend-container {
+        display: none!important;
+        display: var(--enter-display, none) !important;
+    }
+    /*直播间右侧广告*/
+    .LadderNav {
+        display: none!important;
+    }
+    #js-bottom-right-recommendAd {
+        display: none!important;
+    }
+    /*弹幕框顶部广告*/
+    .aside-top-uspension-box {
+        display: none!important;
+    }
+    #js-player-asideMain {
+        top: 0!important;
+    }
     `);
     // body{transform: translateZ(0)!important;}
     // .RomanticDatePanelModal-middle--small{height:220px !important;}
@@ -8540,6 +9372,291 @@ function optimizePageStyle() {
     // 弹幕框滚动条隐藏
     let dom_barrage = document.getElementById("js-barrage-list").parentNode;
     dom_barrage.id = "js-barrage-list-parent";
+}
+let isRemoveMsgNotice = 0;
+function initPkg_RemoveMsgNotice() {
+	initPkg_RemoveMsgNotice_Dom();
+    initPkg_RemoveMsgNotice_Func();
+    initPkg_RemoveMsgNotice_Set();
+}
+
+function initPkg_RemoveMsgNotice_Dom() {
+	let a = document.createElement("div");
+    a.style = "position: absolute;right: 5px;top: 40px;cursor: pointer;"
+    a.id = "ex-removeMsgNotice";
+    a.innerHTML = `<label id="msg-removeNotice" style="cursor: pointer;"><input type="checkbox" />关闭角标提醒</label>`;
+    a.title = "关闭角标提醒";
+	let b = document.getElementsByClassName("PrivateLetter-frame")[0];
+    if (b) {
+        b.appendChild(a);
+    }
+}
+
+function initPkg_RemoveMsgNotice_Func() {
+    let dom = document.getElementById("msg-removeNotice");
+    if (!dom) return;
+    let checkbox = dom.querySelector("input");
+    dom.addEventListener("click", () => {
+        let ischecked = checkbox.checked;
+		if (ischecked == true) {
+            isRemoveMsgNotice = 1;
+            removeMsgNotice();
+		} else{
+            isRemoveMsgNotice = 0;
+            removeMsgNoticeCanel();
+        }
+        saveData_removeMsgNotice();
+    })
+}
+
+function initPkg_RemoveMsgNotice_Set() {
+    let ret = localStorage.getItem("ExSave_isRemoveMsgNotice");
+    if (ret && ret == "1") {
+        isRemoveMsgNotice = 1;
+        removeMsgNotice();
+        let dom = document.getElementById("msg-removeNotice");
+        if (dom) {
+            dom.querySelector("input").checked = true;
+        }
+    }
+}
+
+function removeMsgNotice() {
+    StyleHook_set("Ex_Style_RemoveMsgNotice", `.UserInfo .Badge,.ChatLetter-PopUnread{display:none!important;}`);
+}
+
+function removeMsgNoticeCanel() {
+    StyleHook_remove("Ex_Style_RemoveMsgNotice");
+}
+
+function saveData_removeMsgNotice() {
+    localStorage.setItem("ExSave_isRemoveMsgNotice", isRemoveMsgNotice); 
+}
+const roomVipExpireDayLimit = 3;
+function initPkg_RoomVip() {
+  setRoomVipExpireDays();
+}
+
+function initPkg_RoomVip_Dom() {
+  let a = document.createElement("span");
+  a.className = "room-vip";
+  a.innerHTML = `
+	距VIP到期 <span id="room-vip-expire-days">**</span> 天
+	`;
+  let b = document.getElementsByClassName("PlayerToolbar-Wealth")[0];
+  b.insertBefore(a, b.childNodes[0]);
+}
+
+function setRoomVipExpireDays() {
+  fetch("https://www.douyu.com/member/platform_task/effect_list", {
+    method: "GET",
+    mode: "no-cors",
+    cache: "default",
+    credentials: "include"
+  })
+    .then((res) => {
+      return res.text();
+    })
+    .then(async (doc) => {
+      doc = new DOMParser().parseFromString(doc, "text/html");
+      const enterEffectDom = doc.getElementsByClassName("enter-wraper is-effect");
+      if (!enterEffectDom) return;
+      if (enterEffectDom.length == 0) return;
+      const showEffectMoreDom = enterEffectDom[0].getElementsByClassName("show-effect-more");
+      if (!showEffectMoreDom) return;
+      if (showEffectMoreDom.length == 0) return;
+      for (let i = 0; i < showEffectMoreDom.length; i++) {
+        const detail = JSON.parse(showEffectMoreDom[i].getAttribute("data-detail"));
+        if (String(detail.property_id) !== "1646") continue; // 1646是VIP的ID
+        if (String(detail.show_id_list) !== String(rid)) continue;
+        const expireTime = detail.expire_time * 1000;
+        const days = Math.floor((expireTime - Date.now()) / (1000 * 60 * 60 * 24));
+        if (days <= roomVipExpireDayLimit) {
+          initPkg_RoomVip_Dom();
+          document.getElementById("room-vip-expire-days").innerText = days;
+        }
+      }
+    })
+    .catch((err) => {
+      console.log("请求失败!", err);
+    });
+}
+
+let isRemoveDanmakuBackground = getLocalIsRemoveDanmakuBackground();
+function initPkg_Shield_RemoveDanmakuBackground() {
+  const shieldTool = document.getElementsByClassName("ShieldTool-list")[0];
+  shieldTool.insertAdjacentHTML(
+    "beforeend",
+    `
+      <div class="ShieldTool-listItem ${isRemoveDanmakuBackground ? "is-checked" : "is-noChecked"}" id="ex-removeDanmakuBackground">
+          <span class="ShieldTool-checkIcon"></span>
+          <h5 class="ShieldTool-checkText">屏蔽弹幕背景</h5>
+      </div>`
+  );
+  if (isRemoveDanmakuBackground) removeDanmakuBackground();
+  const dom = document.getElementById("ex-removeDanmakuBackground");
+  dom.addEventListener("click", () => {
+    isRemoveDanmakuBackground = !isRemoveDanmakuBackground;
+    if (isRemoveDanmakuBackground) {
+      removeDanmakuBackground();
+      dom.className = dom.className.replace("is-noChecked", "is-checked");
+    } else {
+      StyleHook_remove("Ex_Style_RemoveDanmakuBackground");
+      dom.className = dom.className.replace("is-checked", "is-noChecked");
+    }
+    saveRemoveDanmakuBackground();
+  });
+}
+
+function getLocalIsRemoveDanmakuBackground() {
+  const ret = localStorage.getItem("ExSave_isRemoveDanmakuBackground");
+  return ret ? Number(ret) === 1 : false;
+}
+
+function saveRemoveDanmakuBackground() {
+  localStorage.setItem("ExSave_isRemoveDanmakuBackground", isRemoveDanmakuBackground ? 1 : 0);
+}
+
+function removeDanmakuBackground() {
+  StyleHook_set(
+    "Ex_Style_RemoveDanmakuBackground",
+    `
+      .danmuItem-31f924 {
+        background: none !important;
+      }
+      .danmuItem-31f924 div{
+        background: none;
+      }
+      .danmuItem-31f924 > img {
+        display: none;
+      }
+      .danmuItem-31f924 div > img {
+        display: none;
+      }
+      .super-text-0281ca {
+        background: none !important;
+      }
+      .danmuItem-31f924 .noble-bf13ad {
+        background: none !important;
+      }
+      .customBarrage {
+        background: none !important;
+        text-shadow: none !important;
+      }
+      .customBarrage > div {
+        background: none !important;
+      }
+  `
+  );
+}
+let isRemoveDanmakuImage = getLocalIsRemoveDanmakuImage();
+function initPkg_Shield_RemoveDanmakuImage() {
+  const shieldTool = document.getElementsByClassName("ShieldTool-list")[0];
+  shieldTool.insertAdjacentHTML(
+    "beforeend",
+    `
+      <div class="ShieldTool-listItem ${isRemoveDanmakuImage ? "is-checked" : "is-noChecked"}" id="ex-RemoveDanmakuImage">
+          <span class="ShieldTool-checkIcon"></span>
+          <h5 class="ShieldTool-checkText">屏蔽DouyuEx图片</h5>
+      </div>`
+  );
+  if (isRemoveDanmakuImage) removeDanmakuImage();
+  const dom = document.getElementById("ex-RemoveDanmakuImage");
+  dom.addEventListener("click", () => {
+    isRemoveDanmakuImage = !isRemoveDanmakuImage;
+    if (isRemoveDanmakuImage) {
+      removeDanmakuImage();
+      dom.className = dom.className.replace("is-noChecked", "is-checked");
+    } else {
+      StyleHook_remove("Ex_Style_RemoveDanmakuImage");
+      dom.className = dom.className.replace("is-checked", "is-noChecked");
+    }
+    saveRemoveDanmakuImage();
+  });
+}
+
+function getLocalIsRemoveDanmakuImage() {
+  const ret = localStorage.getItem("ExSave_isRemoveDanmakuImage");
+  return ret ? Number(ret) === 1 : false;
+}
+
+function saveRemoveDanmakuImage() {
+  localStorage.setItem("ExSave_isRemoveDanmakuImage", isRemoveDanmakuImage ? 1 : 0);
+}
+
+function removeDanmakuImage() {
+  StyleHook_set(
+    "Ex_Style_RemoveDanmakuImage",
+    `
+    .danmuItem-31f924 a {
+      display: none !important;
+    }
+  `
+  );
+}
+
+function initPkg_Shield_RemoveEnter() {
+  let shieldTool = document.getElementsByClassName("ShieldTool-list")[0];
+  let isRemoveEnterBarrage = localStorage.getItem("ExSave_isRemoveEnterBarrage"); // '1'移除check
+  let isChecked = (isRemoveEnterBarrage == null || isRemoveEnterBarrage == '1') ? true : false;
+  let isSupported = window.CSS && window.CSS.supports && window.CSS.supports('--enter-display', 'none'); //CSS变量兼容性检测
+  let barrageExtendContainer = document.getElementById("js-barrage-extend-container");
+  barrageExtendContainer && barrageExtendContainer.style.setProperty("--enter-display", isChecked ? "none" : "block", "important");
+
+  if (shieldTool == undefined || !isSupported)
+      return;
+  if (isRemoveEnterBarrage == null)
+      isRemoveEnterBarrage = '1';
+
+  shieldTool.insertAdjacentHTML("beforeend", `
+      <div class="ShieldTool-listItem ${ isChecked ? 'is-checked' : 'is-noChecked'}" id="ex-enter-shield">
+          <span class="ShieldTool-checkIcon"></span>
+          <h5 class="ShieldTool-checkText">屏蔽进场弹幕</h5>
+      </div>`);
+  document.getElementById("ex-enter-shield").addEventListener("click", (e) => {
+      let classList = e.currentTarget.classList;
+      let noChecked = classList.toggle("is-noChecked");
+      let chceked = classList.toggle("is-checked");
+      let enterDisplay = (noChecked && !chceked) ? "block": "none";
+      barrageExtendContainer && barrageExtendContainer.style.setProperty("--enter-display", enterDisplay, "important");
+      localStorage.setItem("ExSave_isRemoveEnterBarrage", (noChecked && !chceked) ? "0" : "1"); // '1'移除check
+      
+  });
+}
+function initPkg_Shield() {
+  let t = setInterval(() => {
+      if (typeof document.getElementsByClassName("ShieldTool-list")[0] !== "undefined") {
+          clearInterval(t);
+          initPkg_Shield_RemoveEnter();
+          initPkg_Shield_RemoveDanmakuBackground();
+      }
+  }, 1000);
+}
+
+
+function initPkg_ShowDanmaku() {
+    responseHook((url, text) => {
+        if (url.indexOf("/betard") !== -1) {
+            return text.replace('player_barrage\":0', 'player_barrage\":1');
+        }
+        return text;
+    });
+}
+
+function initPkg_ShowDanmakuOriginAction() {
+    scriptHook({
+        url: "/firstqueue",
+        callback: (content) => {
+            let newContent = content;
+            // 加一按钮
+            newContent = newContent.replace(`if(s&&s.isOpenFireFBComment)`, `if(true)`);
+            // 回复按钮
+            newContent = newContent.replace(`if(A&&!this.isFireOpenRank(a))if(parseInt(A,10)&&M&&S>=R&&(!L||L&&I))`, `if(true)if(true) `);
+            // 点赞按钮
+            newContent = newContent.replace(`else if(1==+Object(m.B)("barrage_praise"))`, `if(true) `);
+            return newContent;
+        }
+    });
 }
 function initPkg_Sign() {
 	initPkg_Sign_Dom();
@@ -8573,10 +9690,10 @@ function initPkg_Sign_Main(isAll) {
 		// 入口即为调用
 		initPkg_Sign_Yuba(); // 鱼吧签到
 		initPkg_Sign_Client();
-		initPkg_Sign_Motorcade();
+		// initPkg_Sign_Motorcade();
 		initPkg_Sign_Room(isAll);
 		// initPkg_Sign_Ad_666(); // 此处移动到鱼塘鱼丸领取中去以免观看冲突
-		initPkg_Sign_Ad_Sign();
+		// initPkg_Sign_Ad_Sign(); // 2022年9月1日23:41:59 失效
 		// initPkg_Sign_Aoligei();
 		// initPkg_Sign_Ad_Yuba();
 		// initPkg_Sign_Bycc();
@@ -8589,15 +9706,20 @@ function initPkg_Sign_Main(isAll) {
 		// initPkg_Sign_1000();
         // initPkg_Sign_Zhuli();
 
-		initPkg_Sign_TV();
-		initPkg_Sign_Yuba_Like();
+		// initPkg_Sign_TV(); // 2022年9月1日23:41:59 失效
+		// initPkg_Sign_Yuba_Like(); // 2022年9月1日23:41:59 失效
         
         // initPkg_Sign_Renlei();
         initPkg_Sign_Act();
+				initPkg_Sign_ActqzsUserTask();
         // initPkg_Sign_Bowuyuan();
         // initPkg_Sign_ZBXSL2();
         // initPkg_Sign_COD();
 		// initPkg_Sign_Wangzhe();
+		initPkg_Sign_ReadPosts();
+		initPkg_Sign_Follow();
+		initPkg_Sign_FansTree();
+		initPkg_Sign_SuperFans();
 }
 
 // function takeActPrize(name) {
@@ -8809,6 +9931,139 @@ async function getAct() {
 
 }
 
+async function initPkg_Sign_ActqzsUserTask() {
+  const rids = ["5189167", "290935", "6979222", "5132174", "4042402"];
+  let activityId = await getActivityId(dateFormat("yyyyMM", new Date()));
+  if (!activityId) {
+    const currentDate = new Date();
+    const nextMonth = currentDate.getMonth() + 1;
+    const prevMonth = currentDate.getMonth() - 1;
+    const prevMonthDate = new Date(currentDate.getFullYear(), prevMonth, 1);
+    const nextMonthDate = new Date(currentDate.getFullYear(), nextMonth, 1);
+    activityId = await getActivityId(dateFormat("yyyyMM", prevMonthDate));
+    if (!activityId) {
+      activityId = await getActivityId(dateFormat("yyyyMM", nextMonthDate));
+    }
+  }
+  let cardArenaId = await getCardArenaId(dateFormat("yyyyMM", new Date()));
+  if (!cardArenaId) {
+    const currentDate = new Date();
+    const nextMonth = currentDate.getMonth() + 1;
+    const prevMonth = currentDate.getMonth() - 1;
+    const prevMonthDate = new Date(currentDate.getFullYear(), prevMonth, 1);
+    const nextMonthDate = new Date(currentDate.getFullYear(), nextMonth, 1);
+    cardArenaId = await getCardArenaId(dateFormat("yyyyMM", prevMonthDate));
+    if (!cardArenaId) {
+      cardArenaId = await getCardArenaId(dateFormat("yyyyMM", nextMonthDate));
+    }
+  }
+  const actIds = [activityId, cardArenaId];
+
+  for (const actId of actIds) {
+    for (const rid of rids) {
+      const signinActRet = await signinAct(actId, rid);
+      if (signinActRet.error == 0) {
+        let gift = signinActRet.data.awards.map(item => `${item.name}x${item.num}`).join("、");
+        showMessage("【一键签到】右侧活动直播间已签到，获得" + gift, "success");
+      }
+      const signinCardArenaRet = await signinCardArena(actId, rid);
+      if (signinCardArenaRet.error == 0) {
+        let gift = signinCardArenaRet.data.awards.map(item => `${item.name}x${item.num}`).join("、");
+        showMessage("【一键签到】右侧活动直播间已签到，获得" + gift, "success");
+      }
+    }
+  }
+}
+
+function getActivityId(dateStr) {
+  return new Promise((resolve) => {
+    fetch(`https://webconf.douyucdn.cn/resource/common/activity/actqzs${dateStr}_w.json`)
+      .then((res) => {
+        return res.text();
+      })
+      .then((ret) => {
+        let json = ret.substring(
+          String("DYConfigCallback(").length,
+          ret.length
+        );
+        json = json.substring(0, json.lastIndexOf(")"));
+        try {
+          json = JSON.parse(json);
+          resolve(json.data.activity_setting.activity_id);
+        } catch (err) {
+          resolve(null);
+        }
+      })
+      .catch((err) => {
+        resolve(null);
+      });
+  });
+}
+
+function getCardArenaId(dateStr) {
+  return new Promise((resolve) => {
+    fetch(`https://webconf.douyucdn.cn/resource/common/activity/cardArena${dateStr}_w.json`)
+      .then((res) => {
+        return res.text();
+      })
+      .then((ret) => {
+        let json = ret.substring(
+          String("DYConfigCallback(").length,
+          ret.length
+        );
+        json = json.substring(0, json.lastIndexOf(")"));
+        try {
+          json = JSON.parse(json);
+          resolve(json.data.activity_setting.activity_id);
+        } catch (err) {
+          resolve(null);
+        }
+      })
+      .catch((err) => {
+        resolve(null);
+      });
+  });
+}
+
+
+function signinCardArena(activityId, rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/revenuenc/web/cardArena/userTask/signIn", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&activity_id=${activityId}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
+function signinAct(activityId, rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/revenuenc/web/actqzs/userTask/signIn", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&activity_id=${activityId}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
 function initPkg_Sign_Ad_Sign() {
 	getFishBall_Ad_Sign();
 }
@@ -8888,6 +10143,80 @@ function signClient() {
 		}
 	});
 }
+async function initPkg_Sign_FansTree() {
+  for (let i = 0; i < myFansBadgeList.length; i++) {
+    const roomId = myFansBadgeList[i];
+    let ret = await signRoomTree(roomId);
+    if (ret.error !== 0) {
+      showMessage(`【粉丝家园】${roomId}${ret.msg}`, "error");
+    } else {
+      showMessage(`【粉丝家园】${roomId}签到成功！`, "success");
+    }
+  }
+}
+
+function signRoomTree(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/interactnc/web/fanshome/sign", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+async function initPkg_Sign_Follow() {
+  // 此处为了完成斗鱼等级任务
+  const room_id = "3186571";
+  await followRoom(room_id);
+  await unfollowRoom(room_id);
+}
+
+function unfollowRoom(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/wgapi/livenc/liveweb/follow/rm", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
+
+function followRoom(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/wgapi/livenc/liveweb/follow/add", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
 function initPkg_Sign_Motorcade() {
 	signMotorcade();
 }
@@ -8916,86 +10245,72 @@ async function signMotorcade_Sign() {
 	let retConnect = await motorcadeConnect();
 	let retConnect2 = await motorcadeConnect2(retConnect.data.uid, retConnect.data.sig);
 	let mid = await getMotorcadeID(retConnect2.TinyId, retConnect2.A2Key, retConnect.data.uid);
-	if (mid == null) {
-		closePage();
-		return;
-	}
-	if (mid == undefined) {
-		closePage();
-		return;
-	}
-	if (mid == "") {
+	if (!mid || mid == "") {
 		closePage();
 		return;
 	}
 	console.log("mid是：", mid);
 	mid = encodeURIComponent(mid);
-	fetch('https://msg.douyu.com/v3/motorcade/signs/weekly?mid=' + mid + '&timestamp=' + Math.random().toFixed(17), {
-		method: 'GET',
-		mode: 'cors',
-		credentials: 'include',
+
+	GM_xmlhttpRequest({
+		method: "GET",
+		url: 'https://msg.douyu.com/v3/motorcade/signs/weekly?mid=' + mid + '&timestamp=' + Math.random().toFixed(17),
+		responseType: "json",
 		headers: {
 			'dy-device-id':'-',
 			"dy-client": "web",
 			"dy-csrf-token":getCookie("post-csrfToken"),
 			'Content-Type': 'application/x-www-form-urlencoded'
 		},
-	}).then(res => {
-		return res;
-	}).then(ret => {
-		console.log("weekly:", ret);
-		if (ret.data.is_sign == "1") {
-			closePage();
-		} else {
-			fetch('https://msg.douyu.com/v3/msign/add?timestamp=' + Math.random().toFixed(17), {
-				method: 'POST',
-				mode: 'cors',
-				credentials: 'include',
-				headers: {
-					'dy-device-id':'-',
-					"dy-client": "web",
-					"dy-csrf-token":getCookie("post-csrfToken"),
-					'Content-Type': 'application/x-www-form-urlencoded'
-				},
-				body: "to_mid="+ mid +"&expression=" + String(Number(ret.data.total) + 1)
-			}).then(res => {
-				return res;
-			}).then(ret => {
-				if (Math.floor(ret.status_code / 100) == 2){
-					console.log("【车队】签到成功")
-				} else {
-					console.log(ret.message);
-				}
+		onload: function(response) {
+			let ret = response.response;
+			console.log("weekly:", ret);
+			if (ret.data.is_sign == "1") {
 				closePage();
-			}).catch(err => {
-				console.log("请求失败!", err)
-				closePage();
-			})
+			} else {
+				GM_xmlhttpRequest({
+					method: "POST",
+					url: 'https://msg.douyu.com/v3/msign/add?timestamp=' + Math.random().toFixed(17),
+					data: "to_mid="+ mid +"&expression=" + String(Number(ret.data.total) + 1),
+					responseType: "json",
+					headers: {
+						'dy-device-id':'-',
+						"dy-client": "web",
+						"dy-csrf-token":getCookie("post-csrfToken"),
+						'Content-Type': 'application/x-www-form-urlencoded'
+					},
+					onload: function(response) {
+						
+						if (Math.floor(response.response.status_code / 100) == 2){
+							console.log("【车队】签到成功")
+						} else {
+							console.log(response.response.message);
+						}
+						closePage();
+					}
+				});
+			}
 		}
-	}).catch(err => {
-		console.log("请求失败!", err)
-	})
+	});
 }
 
 function motorcadeConnect() {
     return new Promise(resolve => {
-        fetch('https://msg.douyu.com/v3/login/getusersig?t=' + String(new Date().getTime()) + '&timestamp=' + Math.random().toFixed(17), {
-			method: 'GET',
-			mode: 'cors',
-			credentials: 'include',
-			headers: {
-				'dy-device-id':'-',
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: 'https://msg.douyu.com/v3/login/getusersig?t=' + String(new Date().getTime()) + '&timestamp=' + Math.random().toFixed(17),
+            data: '{"State":"Online"}',
+            responseType: "json",
+            headers: {
+                'dy-device-id':'-',
 				"dy-client": "web",
 				"dy-csrf-token":getCookie("post-csrfToken"),
 				'Content-Type': 'application/x-www-form-urlencoded'
-			},
-		}).then(res => {
-			return res;
-		}).then(ret => {
-			resolve(ret);
-		}).catch(err => {
-			console.log("请求失败!", err)
-		})
+            },
+            onload: function(response) {
+                resolve(response.response);
+            }
+        });
     })
 }
 
@@ -9027,7 +10342,7 @@ function getMotorcadeID(tinyid, a2, identifier) {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
             onload: function(response) {
-				if (response.response.GroupIdList.length > 0) {
+				if (response.response.GroupIdList && response.response.GroupIdList.length > 0) {
 					resolve(response.response.GroupIdList[0].GroupId);
 				} else {
 					resolve("");
@@ -9035,6 +10350,28 @@ function getMotorcadeID(tinyid, a2, identifier) {
             }
         });
     })
+}
+async function initPkg_Sign_ReadPosts() {
+	const counts = 5;
+  for (let i = 0; i < counts; i++) {
+    await readPosts();
+		await sleep(2000);
+  }
+}
+
+function readPosts() {
+	GM_xmlhttpRequest({
+		method: "GET",
+		url: "https://yuba.douyu.com/wbapi/web/post/detail/555691541586843641?cid=&timestamp=" + new Date().getTime(),
+		responseType: "json",
+		headers: {
+			'Content-Type': 'application/x-www-form-urlencoded',
+      "dy-token": dyToken,
+      "dy-client": "pc"
+		},
+		onload: function(response) {
+		}
+	});
 }
 
 function initPkg_Sign_Room(isAll) {
@@ -9107,6 +10444,36 @@ function signRoom(r) {
         }
 	});
 }
+async function initPkg_Sign_SuperFans() {
+  for (let i = 0; i < myFansBadgeList.length; i++) {
+    const roomId = myFansBadgeList[i];
+    let ret = await signSuperFans(roomId);
+    if (ret.error !== 0) {
+      // showMessage(`【钻粉联赛签到】${roomId}${ret.msg}`, "error");
+    } else {
+      showMessage(`【钻粉联赛签到】${roomId}签到成功！`, "success");
+    }
+  }
+}
+
+function signSuperFans(rid) {
+  return new Promise((resolve, reject) => {
+    fetch("https://www.douyu.com/japi/interactnc/web/dfansact/userSign", {
+        method: 'POST',
+        mode: 'no-cors',
+        credentials: 'include',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: `ctn=${getCCN()}&rid=${rid}`
+    }).then(res => {
+        return res.json();
+    }).then(ret => {
+        resolve(ret);
+    }).catch(err => {
+        console.log("请求失败!", err);
+        reject(err);
+    })
+  })
+}
 function initPkg_Sign_TV() {
 	signTV();
 }
@@ -9134,6 +10501,7 @@ function signTV() {
 let signedYuba = 0;
 let totalYuba = 0;
 let doneYuba = 0;
+let signCountMap = {};
 function initPkg_Sign_Yuba() {
     signYubaList();
 }
@@ -9164,7 +10532,7 @@ function signYubaFast() {
     });
 }
 
-function signYuba(group_id, t) {
+async function signYuba(group_id, t) {
     GM_xmlhttpRequest({
         method: "POST",
         url: "https://yuba.douyu.com/ybapi/topic/sign",
@@ -9176,7 +10544,20 @@ function signYuba(group_id, t) {
             "dy-token": t,
             'Referer': 'https://yuba.douyu.com/group/' + group_id
         },
-        onload: function (response) {
+        onload: async function (response) {
+            if (signCountMap[group_id] >= 10) {
+                return;
+            }
+            if (response.response.message == "签到失败") {
+                await sleep(2000);
+                signYuba(group_id, t);
+                return;
+            }
+            if (signCountMap[group_id]) {
+                signCountMap[group_id]++;
+            } else {
+                signCountMap[group_id] = 1;
+            }
             doneYuba++;
             if (response.response.message == "") {
                 signedYuba++;
@@ -9186,17 +10567,8 @@ function signYuba(group_id, t) {
                 // showMessage("【鱼吧】" + group_id + response.response.message, "warning");
                 // console.log("【鱼吧】" + group_id + response.response.message);
             }
-            getSupplementaryNums(group_id).then(async (numsRet) => {
-                if (numsRet.status_code == "200") {
-                    let nums = numsRet.data.supplementary_cards;
-                    for (let j = 0; j < nums; j++) {
-                        let a = await signSupplementary(group_id);
-                        if (a.message == "补签失败" || a.message == "系统维护中") {
-                            break;
-                        }
-                    }
-                }
-            })
+            
+            signYubaSupplementary(group_id);
             if (doneYuba == totalYuba) {
                 // 完成全部签到
                 if (signedYuba > 0) {
@@ -9213,9 +10585,15 @@ function signYuba(group_id, t) {
                 totalYuba = null;
                 doneYuba = null;
             }
-
         }
     });
+}
+
+async function signYubaSupplementary(group_id) {
+    let result = await signSupplementary(group_id);
+    for (let i = 0; i < result.data.supplementary_cards; i++) {
+        await signSupplementary(group_id);
+    }
 }
 
 async function signYubaList() {
@@ -9359,23 +10737,35 @@ function initPkg_Statistics() {
   let s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 }
-function initPkg_TabSwitch() {
-    // // Try to trick the site into thinking it's never hidden
-    // Object.defineProperty(document, 'hidden', {value: false, writable: false});
-    // Object.defineProperty(document, 'visibilityState', {value: 'visible', writable: false});
-    // Object.defineProperty(document, 'webkitVisibilityState', {value: 'visible', writable: false});
-    // document.dispatchEvent(new Event('visibilitychange'));
-    // document.hasFocus = function () { return true; };
-    
-    // // visibilitychange events are captured and stopped
-    // document.addEventListener('visibilitychange', function(e) {
-    //     e.stopImmediatePropagation();
-    // }, true, true);
+function initPkg_SyncJoy() {
+	initPkg_SyncJoy_Dom();
+	initPkg_SyncJoy_Func();
 }
+
+function initPkg_SyncJoy_Dom() {
+	SyncJoy_insertIcon();
+}
+function SyncJoy_insertIcon() {
+	let a = document.createElement("div");
+	a.className = "ex-syncjoy";
+	a.innerHTML = '<a class="ex-panel__icon" title="SyncJoy"><svg style="display:block;" viewBox="0 0 1280 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="42930" width="32" height="32"><path d="M1280.012 768.4c0-10.514-0.916-21.2-2.812-31.96l-66.76-423.2C1182.812 155.92 1044.012 64 638.212 64 238.012 64 97.432 154.92 69.572 313.2L2.812 736.4a183.96 183.96 0 0 0-2.812 31.96c0 103.78 89.16 191.62 203 191.62 99.38 0 187.56-60.12 219-149.28l15-42.72h406l15 42.72c31.44 89.16 119.62 149.28 219 149.28C1190.812 958.2 1280.012 872.2 1280.012 768.4zM494.212 496l-63.92-0.02-0.08 64.02c0 26.4-21.56 48-47.96 48-26.4 0-48.04-21.6-48.04-48l0.074-64.02-64.074 0.02c-26.4 0-47.96-21.6-47.96-48s21.54-48 47.96-48l64.08-0.022L334.212 336c0-26.4 21.64-48 48.04-48s47.96 21.6 47.96 48l0.074 63.98 63.926 0.02c26.4 0 48.04 21.6 48.04 48-0.04 26.4-19.84 48-48.04 48zM864.012 622.2c-44.18 0-80-35.84-80-80s35.82-80 80-80 80 35.84 80 80c0 46-35.8 80-80 80z m128-192c-44.18 0-80-35.84-80-80s35.82-80 80-80 80 35.84 80 80c0 46-35.8 80-80 80z" p-id="42931" fill="#533566"></path></svg><i id="SyncJoy__tip" class="ex-panel__tip"></i></a>';
+	
+	let b = document.getElementsByClassName("ex-panel__wrap")[0];
+	b.insertBefore(a, b.childNodes[0]);
+	
+}
+
+function initPkg_SyncJoy_Func() {
+	document.getElementsByClassName("ex-syncjoy")[0].addEventListener("click", function() {
+        openPage("https://sb.douyuex.com/");
+	});
+}
+
+
 // 版本号
 // 格式 yyyy.MM.dd.**
 // var curVersion = "2020.01.12.01";
-var curVersion = "2022.02.08.01"
+var curVersion = "2024.12.26.01"
 var isNeedUpdate = false
 var lastestVersion = ""
 function initPkg_Update() {
@@ -9465,7 +10855,7 @@ async function Update_checkVersion(isShowNotUpdate = false) {
 			}
 		} else {
 			if (isShowNotUpdate) {
-				showMessage(`【版本更新】当前版本${curVersion}已为最新`, "success")
+				showMessage(`【版本更新】当前版本${curVersion}已为最新，<a href="https://html.douyuex.com/update/" target="_blank">点击查看更新内容</a>`, "success")
 			}
 		}
 	})
@@ -9478,13 +10868,13 @@ async function Update_checkVersion(isShowNotUpdate = false) {
 		}
 	} else {
 		if (isShowNotUpdate) {
-			showMessage(`【版本更新】当前版本${curVersion}已为最新`, "success")
+			showMessage(`【版本更新】当前版本${curVersion}已为最新，<a href="https://html.douyuex.com/update/" target="_blank">点击查看更新内容</a>`, "success")
 		}
 	}
 }
 
 function Update_openUpdatePage() {
-	openPage("https://xiaochunchun.gitee.io/douyuex/install/web.html", true);
+	openPage("https://html.douyuex.com/install/web.html", true);
 }
 
 function Update_showTip(a) {
@@ -9500,10 +10890,11 @@ function Update_showTip(a) {
 	}
 	
 }
-// 【版本更新】最新版本：2010.02.10.01，点击官方源或者greasyfork源更新
 function Update_showMessage() {
-	let msg = `【版本更新】最新版本：${lastestVersion}，点击<a href="https://xiaochunchun.gitee.io/douyuex/install/web.html" target="_blank">官方源</a>或者<a href="https://greasyfork.org/zh-CN/scripts/394497" target="_blank">GreasyFork源</a>更新`
-	showMessage(msg, "error");
+	let msg = `【版本更新】最新版本：${lastestVersion}，点击<a href="https://html.douyuex.com/install/web.html" target="_blank">官方源</a>或者<a href="https://greasyfork.org/zh-CN/scripts/394497" target="_blank">GreasyFork源</a>更新，<a href="https://html.douyuex.com/update/" target="_blank">点击查看更新内容</a>`
+	showMessage(msg, "error", {
+		timeout: 50,
+	});
 }
 
 let videoStartTime = 0;
@@ -9627,7 +11018,7 @@ function Camera_insertIcon() {
     a.innerHTML = `
     <svg t="1620266708389" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2080" width="38" height="38"><path d="M512 337.371136c-119.543808 0-216.800256 97.255424-216.800256 216.798208 0 119.543808 97.256448 216.800256 216.800256 216.800256s216.800256-97.256448 216.800256-216.800256C728.800256 434.625536 631.543808 337.371136 512 337.371136zM680.479744 554.16832c0 92.911616-75.579392 168.501248-168.479744 168.501248-92.900352 0-168.480768-75.589632-168.480768-168.501248 0-92.923904 75.579392-168.521728 168.480768-168.521728C604.899328 385.646592 680.479744 461.24544 680.479744 554.16832z" p-id="2081" fill="#ffffff"></path><path d="M831.209472 337.349632l-47.167488 0c-13.647872 0-24.751104 11.083776-24.751104 24.707072 0 13.635584 11.103232 24.7296 24.751104 24.7296l47.167488 0c13.646848 0 24.75008-11.094016 24.75008-24.7296C855.959552 348.433408 844.85632 337.349632 831.209472 337.349632z" p-id="2082" fill="#ffffff"></path><path d="M700.505088 171.497472c4.235264 0 6.403072 0.405504 7.232512 0.612352 1.47968 1.514496 4.790272 6.218752 11.717632 20.685824 2.83648 5.910528 8.6272 18.86208 15.888384 35.533824l11.788288 27.063296 29.518848 0 96.535552 0c35.122176 0 63.695872 28.535808 63.695872 63.609856l0 469.933056c0 35.05152-28.573696 63.567872-63.695872 63.567872L150.811648 852.503552c-35.121152 0-63.694848-28.516352-63.694848-63.567872L87.1168 319.0016c0-35.062784 28.573696-63.589376 63.694848-63.589376l99.35872 0 29.110272 0 11.964416-26.537984c4.698112-10.421248 8.416256-19.063808 11.058176-25.70752 9.86112-24.829952 15.207424-30.125056 16.239616-30.974976 0.52736-0.161792 2.64192-0.695296 7.673856-0.695296L700.505088 171.496448M700.505088 126.441472 326.216704 126.441472c-32.519168 0-47.275008 13.479936-65.787904 60.096512-3.180544 7.999488-7.689216 18.122752-10.257408 23.819264l-99.35872 0c-59.96544 0-108.750848 48.738304-108.750848 108.645376l0 469.933056c0 59.894784 48.785408 108.623872 108.750848 108.623872l722.37568 0c59.96544 0 108.751872-48.729088 108.751872-108.623872L981.940224 319.0016c0-59.91936-48.786432-108.665856-108.751872-108.665856l-96.535552 0c-4.458496-10.236928-12.420096-28.372992-16.574464-37.031936C744.823808 141.448192 733.973504 126.441472 700.505088 126.441472L700.505088 126.441472z" p-id="2083" fill="#ffffff"></path></svg>
     `;
-    let b = document.getElementsByClassName("player-dialog")[0];
+    let b = document.getElementById("js-player-dialog");
     b.insertBefore(a, b.childNodes[0]);
 }
 
@@ -9878,6 +11269,119 @@ function setVideoCinemaMode(fit) {
     `;
     StyleHook_set("Ex_Style_Cinema", style);
 }
+let icon_joysound_on = `<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjJweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjIgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+am95c291bmQvc2VsZWN0ZWQ8L3RpdGxlPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIwJSIgeDI9IjUwJSIgeTI9IjEwMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0YwQ0I5NSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRTlCRTgwIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9ImpveXNvdW5kL3NlbGVjdGVkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i57yW57uEIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyLjc4NTc1MCwgMC43MTQyMjUpIiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTEpIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNMTYuNDI4NiwwIEwxNi40Mjg2LDkuNjQzIEMxNi40Mjg2LDE0LjEzNDU1MjcgMTIuODIzMzY2NywxNy43ODQyODggOC4zNDg5MzYxOCwxNy44NTYxNjk2IEw4LjE4NzE4MTUzLDE3Ljg1NzI1NjEgTDguMTg3MTgxNTMsMTcuODU3MjU2MSBMNy44NTcxLDE3Ljg1NzI1NjEgTDcuODU3MTM4OTYsMTcuODQ5NjQxIEMzLjQ5MjM4MDEzLDE3LjY2MjA3NDQgMCwxNC4wNTMxMzQxIDAsOS42NDMwNSBDMCw1LjExMzExNTA1IDMuNjg0NDAwMiwxLjQyODU1IDguMjE0MjUsMS40Mjg1NSBDOS43MDA3OTkxMywxLjQyODU1IDExLjA5NjI5ODUsMS44MjUzNTUwMiAxMi4zMDA0MTUxLDIuNTE4NjIzMzEgQzEyLjc0OTU2ODcsMS4wNjAxNjYwMSAxNC4xMDgyMjM2LDAgMTUuNzE0MzUsMCBMMTYuNDI4NiwwIFogTTguMjE0MjUsMi40Mjg1NSBDNC4yMzY2OTQ5NiwyLjQyODU1IDEsNS42NjUzODk3OCAxLDkuNjQzMDUgQzEsMTMuNTAwNzUwOCA0LjA0NDc3MzgsMTYuNjYxNzMzMyA3Ljg1NzA4ODk5LDE2Ljg0ODU2NjggTDcuODU3MDYyNTQsMTQuNTc1MDE3IEM2Ljc3Mjk4NjcxLDE0LjQ5NzMxMDMgNS43ODQ2MTcxOSwxNC4wNjg3NDc3IDUuMDA1MTgzMTEsMTMuNDAyNTU3OCBMNC45MjI0NzY5NywxMy4zMzAyNzYyIEw0LjgwNDkyNDY4LDEzLjIyMTc5NDEgQzMuODU5Mjk3NTksMTIuMzIwNjI4MyAzLjI2OTI1LDExLjA0OTU0OTYgMy4yNjkyNSw5LjY0MzAyNSBDMy4yNjkyNSw2LjkxNTg4MjYzIDUuNDg3MTA3NjMsNC42OTgwMjUgOC4yMTQyNSw0LjY5ODAyNSBDOS44MTQwMDc1Niw0LjY5ODAyNSAxMS4yMzg0NTI3LDUuNDYxMjEyMzMgMTIuMTQyNzY0NSw2LjY0MjcxMjE1IEwxMi4xNDI3NjQ1LDMuNTk0NjQ0OTEgQzExLjAxMTU4OTYsMi44NTczNjc2NSA5LjY2MTk5NDQ5LDIuNDI4NTUgOC4yMTQyNSwyLjQyODU1IFogTTguMjE0MjUsNS42OTgwMjUgQzYuMDM5MzkyMzcsNS42OTgwMjUgNC4yNjkyNSw3LjQ2ODE2NzM3IDQuMjY5MjUsOS42NDMwMjUgQzQuMjY5MjUsMTEuNjY5NTM3MyA1LjgwNjQ4MjY0LDEzLjM0NDc0OTggNy43NzU4ODgxNSwxMy41NjM1NjcyIEw3Ljg1NzEsMTMuNTcxNSBMOC4yMTQzNSwxMy41NzE1IEMxMC4zNDk2LDEzLjU3MTUgMTIuMDg2ODUsMTEuODY4IDEyLjE0MTYsOS43NDYgTDEyLjE0MjY0NjgsOS42NDMgTDEyLjE0MjY0NjgsOS4yODIzMzIzMyBDMTEuOTU5ODU4NSw3LjI3NTc1MDI2IDEwLjI2NzQ4MjMsNS42OTgwMjUgOC4yMTQyNSw1LjY5ODAyNSBaIE04LjIxNDI1LDcuNTAwMDI1IEM5LjM5NjE5Mjg0LDcuNTAwMDI1IDEwLjM1Nyw4LjQ2MDkzMzA5IDEwLjM1Nyw5LjY0MzAyNSBDMTAuMzU3LDEwLjgyNDkxNzQgOS4zOTYxNDIzNywxMS43ODU3NzUgOC4yMTQyNSwxMS43ODU3NzUgQzcuMDMyMTgyMTUsMTEuNzg1Nzc1IDYuMDcxNSwxMC44MjQ5OTE5IDYuMDcxNSw5LjY0MzAyNSBDNi4wNzE1LDguNDYwODU4NTUgNy4wMzIxMzE2OSw3LjUwMDAyNSA4LjIxNDI1LDcuNTAwMDI1IFogTTguMjE0MjUsOC41MDAwMjUgQzcuNTg0NDYzNDgsOC41MDAwMjUgNy4wNzE1LDkuMDEzMDk2MjcgNy4wNzE1LDkuNjQzMDI1IEM3LjA3MTUsMTAuMjcyNzMwNyA3LjU4NDQ5MDQyLDEwLjc4NTc3NSA4LjIxNDI1LDEwLjc4NTc3NSBDOC44NDM4NTc2MywxMC43ODU3NzUgOS4zNTcsMTAuMjcyNjMyNiA5LjM1Nyw5LjY0MzAyNSBDOS4zNTcsOS4wMTMxOTQzMyA4Ljg0Mzg4NDU3LDguNTAwMDI1IDguMjE0MjUsOC41MDAwMjUgWiIgaWQ9IuW9oueKtiI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="joysound-on"/>`;
+let icon_joysound_off = `<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjJweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjIgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+am95c291bmQvbm9ybWFsPC90aXRsZT4KICAgIDxnIGlkPSJqb3lzb3VuZC9ub3JtYWwiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLnvJbnu4QiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuNzg1NzUwLCAwLjcxNDIyNSkiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNi40Mjg2LDAgTDE2LjQyODYsOS42NDMgQzE2LjQyODYsMTQuMTM0NTUyNyAxMi44MjMzNjY3LDE3Ljc4NDI4OCA4LjM0ODkzNjE4LDE3Ljg1NjE2OTYgTDguMTg3MTgxNTMsMTcuODU3MjU2MSBMOC4xODcxODE1MywxNy44NTcyNTYxIEw3Ljg1NzEsMTcuODU3MjU2MSBMNy44NTcxMzg5NiwxNy44NDk2NDEgQzMuNDkyMzgwMTMsMTcuNjYyMDc0NCAwLDE0LjA1MzEzNDEgMCw5LjY0MzA1IEMwLDUuMTEzMTE1MDUgMy42ODQ0MDAyLDEuNDI4NTUgOC4yMTQyNSwxLjQyODU1IEM5LjcwMDc5OTEzLDEuNDI4NTUgMTEuMDk2Mjk4NSwxLjgyNTM1NTAyIDEyLjMwMDQxNTEsMi41MTg2MjMzMSBDMTIuNzQ5NTY4NywxLjA2MDE2NjAxIDE0LjEwODIyMzYsMCAxNS43MTQzNSwwIEwxNi40Mjg2LDAgWiBNOC4yMTQyNSwyLjQyODU1IEM0LjIzNjY5NDk2LDIuNDI4NTUgMSw1LjY2NTM4OTc4IDEsOS42NDMwNSBDMSwxMy41MDA3NTA4IDQuMDQ0NzczOCwxNi42NjE3MzMzIDcuODU3MDg4OTksMTYuODQ4NTY2OCBMNy44NTcwNjI1NCwxNC41NzUwMTcgQzYuNzcyOTg2NzEsMTQuNDk3MzEwMyA1Ljc4NDYxNzE5LDE0LjA2ODc0NzcgNS4wMDUxODMxMSwxMy40MDI1NTc4IEw0LjkyMjQ3Njk3LDEzLjMzMDI3NjIgTDQuODA0OTI0NjgsMTMuMjIxNzk0MSBDMy44NTkyOTc1OSwxMi4zMjA2MjgzIDMuMjY5MjUsMTEuMDQ5NTQ5NiAzLjI2OTI1LDkuNjQzMDI1IEMzLjI2OTI1LDYuOTE1ODgyNjMgNS40ODcxMDc2Myw0LjY5ODAyNSA4LjIxNDI1LDQuNjk4MDI1IEM5LjgxNDAwNzU2LDQuNjk4MDI1IDExLjIzODQ1MjcsNS40NjEyMTIzMyAxMi4xNDI3NjQ1LDYuNjQyNzEyMTUgTDEyLjE0Mjc2NDUsMy41OTQ2NDQ5MSBDMTEuMDExNTg5NiwyLjg1NzM2NzY1IDkuNjYxOTk0NDksMi40Mjg1NSA4LjIxNDI1LDIuNDI4NTUgWiBNOC4yMTQyNSw1LjY5ODAyNSBDNi4wMzkzOTIzNyw1LjY5ODAyNSA0LjI2OTI1LDcuNDY4MTY3MzcgNC4yNjkyNSw5LjY0MzAyNSBDNC4yNjkyNSwxMS42Njk1MzczIDUuODA2NDgyNjQsMTMuMzQ0NzQ5OCA3Ljc3NTg4ODE1LDEzLjU2MzU2NzIgTDcuODU3MSwxMy41NzE1IEw4LjIxNDM1LDEzLjU3MTUgQzEwLjM0OTYsMTMuNTcxNSAxMi4wODY4NSwxMS44NjggMTIuMTQxNiw5Ljc0NiBMMTIuMTQyNjQ2OCw5LjY0MyBMMTIuMTQyNjQ2OCw5LjI4MjMzMjMzIEMxMS45NTk4NTg1LDcuMjc1NzUwMjYgMTAuMjY3NDgyMyw1LjY5ODAyNSA4LjIxNDI1LDUuNjk4MDI1IFogTTguMjE0MjUsNy41MDAwMjUgQzkuMzk2MTkyODQsNy41MDAwMjUgMTAuMzU3LDguNDYwOTMzMDkgMTAuMzU3LDkuNjQzMDI1IEMxMC4zNTcsMTAuODI0OTE3NCA5LjM5NjE0MjM3LDExLjc4NTc3NSA4LjIxNDI1LDExLjc4NTc3NSBDNy4wMzIxODIxNSwxMS43ODU3NzUgNi4wNzE1LDEwLjgyNDk5MTkgNi4wNzE1LDkuNjQzMDI1IEM2LjA3MTUsOC40NjA4NTg1NSA3LjAzMjEzMTY5LDcuNTAwMDI1IDguMjE0MjUsNy41MDAwMjUgWiBNOC4yMTQyNSw4LjUwMDAyNSBDNy41ODQ0NjM0OCw4LjUwMDAyNSA3LjA3MTUsOS4wMTMwOTYyNyA3LjA3MTUsOS42NDMwMjUgQzcuMDcxNSwxMC4yNzI3MzA3IDcuNTg0NDkwNDIsMTAuNzg1Nzc1IDguMjE0MjUsMTAuNzg1Nzc1IEM4Ljg0Mzg1NzYzLDEwLjc4NTc3NSA5LjM1NywxMC4yNzI2MzI2IDkuMzU3LDkuNjQzMDI1IEM5LjM1Nyw5LjAxMzE5NDMzIDguODQzODg0NTcsOC41MDAwMjUgOC4yMTQyNSw4LjUwMDAyNSBaIiBpZD0i5b2i54q2Ij48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" alt="joysound-off"/>`;
+
+function initPkg_VideoTools_Joysound() {
+    initPkg_VideoTools_Joysound_Dom();
+    initPkg_VideoTools_Joysound_Func();
+}
+
+function initPkg_VideoTools_Joysound_Dom() {
+    Joysound_insertIcon();
+}
+
+function Joysound_insertIcon() {
+    let a = document.createElement("div");
+    a.id = "ex-joysound";
+    a.title = "Joysound音效增强"
+    if (unsafeWindow.hasInstalledJoysound && localStorage.getItem("Ex_isJoysound") == 1) {
+        a.innerHTML = icon_joysound_on;
+    } else {
+        a.innerHTML = icon_joysound_off;
+    }
+    let b = document.getElementsByClassName("right-e7ea5d")[0];
+    b.insertBefore(a, b.childNodes[0]);
+}
+
+function initPkg_VideoTools_Joysound_Func() {
+    let dom = document.getElementById("ex-joysound");
+    document.getElementById("ex-joysound").addEventListener("click", () => {
+        if (unsafeWindow.hasInstalledJoysound) {
+            if (localStorage.getItem("Ex_isJoysound") == 1) {
+                unsafeWindow.disableJoysound();
+                dom.innerHTML = icon_joysound_off;
+            } else {
+                unsafeWindow.enableJoysound();
+                dom.innerHTML = icon_joysound_on;
+            }
+        } else {
+            openPage("https://greasyfork.org/zh-CN/scripts/439845");
+        }
+    })
+}
+let videoMetaData = null;
+function initPkg_VideoTools_MetaData() {
+  MetaData_init();
+}
+
+function initPkg_VideoTools_MetaData_Dom() {
+  if (!videoMetaData) return;
+  if (!videoMetaData.dy_cpu_model && !videoMetaData.dy_gpu_model && !videoMetaData.dy_device_model && !videoMetaData.dy_os_version && !videoMetaData.z_canvas_code) return;
+  let a = document.createElement("li");
+    a.id = "ex-metadata";
+    a.innerHTML = `
+    主播配置信息
+    <ul class="metadata__wrap">
+      ${videoMetaData.dy_cpu_model ? `<li title="${videoMetaData.dy_cpu_model}">🤖CPU<br/>${videoMetaData.dy_cpu_model}</li>` : ``}
+      ${videoMetaData.dy_gpu_model ? `<li title="${videoMetaData.dy_gpu_model}">🎮显卡<br/>${videoMetaData.dy_gpu_model}</li>` : ``}
+      ${videoMetaData.dy_device_model ? `<li title="${videoMetaData.dy_device_model}">📱设备<br/>${videoMetaData.dy_device_model}</li>` : ``}
+      ${videoMetaData.dy_os_version ? `<li title="${videoMetaData.dy_os_version}">🖥️系统<br/>${videoMetaData.dy_os_version}</li>` : ``}
+      ${videoMetaData.z_canvas_code ? `<li title="${videoMetaData.z_canvas_code}">🎥场景<br/>${videoMetaData.z_canvas_code}</li>` : ``}
+    </ul>
+    `;
+
+    let b = document.getElementsByClassName("menu-da2a9e")[0];
+    b.insertBefore(a, b.childNodes[1]);
+}
+
+function MetaData_init() {
+  getRealLive_Douyu(rid, true, false, "1", (lurl) => {
+    if (lurl != "" || lurl != null) {
+      if (lurl == "None") {
+        showMessage("房间未开播或其他错误", "error");
+        return;
+      }
+      let lurl_host_arr = String(lurl).split("/live");
+      let lurl_host = "";
+      if (lurl_host_arr.length > 0) {
+        lurl_host = lurl_host_arr[0];
+      }
+      let id = "Fake"
+      let a = document.createElement("div");
+      let html = "";
+      a.id = "exVideoDiv" + id;
+      a.className = "exVideoDiv";
+      html += "<video controls='controls' class='exVideoPlayer' id='exVideoPlayer" + String(id) + "'></video><div class='exVideoScale' id='exVideoScale" + String(id) + "'></div>";
+      a.innerHTML = html;
+      let b = document.getElementsByClassName("layout-Main")[0];
+      b.insertBefore(a, b.childNodes[0]);
+      if (flvjs.isSupported()) {
+        let videoElement = document.getElementById("exVideoPlayer" + id);
+        let flvPlayer = flvjs.createPlayer(
+          {
+            type: "flv",
+            url: lurl
+          },
+          { fixAudioTimestampGap: false }
+        );
+        flvPlayer.on("media_info", (e) => {
+          if (e && e.metadata) {
+            videoMetaData = e.metadata;
+            let box = document.getElementById("exVideoDiv" + String(id));
+            let exVideoPlayer = document.getElementById("exVideoPlayer" + String(id));
+            flvPlayer.destroy();
+            exVideoPlayer.remove();
+            box.remove();
+            initPkg_VideoTools_MetaData_Dom();
+          }
+        });
+        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.load();
+      }
+    }
+  });
+}
 let currentBrightness = "";
 let currentContrast = "";
 let currentSaturate = "";
@@ -10007,12 +11511,31 @@ function initPkg_VideoTools_Filter_Func() {
         liveVideoNode.style.filter = `${ currentBrightness } ${ currentContrast } ${ currentSaturate }`;
     });
 
-    document.getElementById("ex-filter").addEventListener("mouseover", function () {
-        document.getElementsByClassName("filter__wrap")[0].style.display = "block";
+    const filterButton = document.getElementById("ex-filter");
+    const filterPanel = document.getElementsByClassName("filter__wrap")[0];
+    let overPanel = false;
+    let timeout = null;
+
+    filterButton.addEventListener("mouseover", function () {
+        if (timeout) clearTimeout(timeout);
+        filterPanel.style.display = "block";
+        timeout = setTimeout(() => {
+            if(!overPanel) {
+                filterPanel.style.display = "none";
+            }
+        }, 1500);
     });
-    document.getElementsByClassName("filter__wrap")[0].addEventListener("mouseleave", function () {
-        document.getElementsByClassName("filter__wrap")[0].style.display = "none"
+
+    filterPanel.addEventListener("mouseover", function() {
+        overPanel = true;
+    })
+    filterPanel.addEventListener("mouseleave", function () {
+        setTimeout(() => {
+            filterPanel.style.display = "none"
+            overPanel = false;
+        }, 500);
     });
+    
     document.getElementById("filter__reset").addEventListener("click", () => {
         resetVideoFilter();
     });
@@ -10036,7 +11559,11 @@ function initPkg_VideoTools_Filter_Func() {
         transformCss.rotate = `rotate(${String(rotateAngle)}deg)`;
         liveVideoNode.parentNode.style.transition = "all .5s";
         if ((rotateAngle/90) % 2 !== 0) {
-            transformCss.scale = "scale(" + String(liveVideoNode.videoHeight / liveVideoNode.videoWidth) + ")";
+            if (window.innerWidth > window.innerHeight) {
+                transformCss.scale = "scale(" + String(liveVideoNode.videoHeight / liveVideoNode.videoWidth) + ")";
+            } else {
+                transformCss.scale = "scale(" + String(liveVideoNode.videoWidth / liveVideoNode.videoHeight) + ")";
+            }
         } else {
             transformCss.scale = "";
         }
@@ -10329,6 +11856,7 @@ function initPkg_VideoTools() {
 
 function initPkg_VideoTools_Module() {
     // 添加模块
+    initPkg_VideoTools_Joysound();
     initPkg_VideoTools_VideoSpeed();
     initPkg_VideoTools_Cinema();
     initPkg_VideoTools_VideoSync();
@@ -10336,6 +11864,7 @@ function initPkg_VideoTools_Module() {
     initPkg_VideoTools_Filter();
     initPkg_VideoTools_Camera();
     initPkg_VideoTools_VideoZoom();
+    initPkg_VideoTools_MetaData();
 }
 
 function initPkg_VideoTools_Func() {
@@ -10703,6 +12232,105 @@ function getActList() {
 // }
 
 
+// https://blog.csdn.net/hongszh/article/details/104354252
+/**
+ * options:
+ *  - width: 视频宽度
+ *  - height: 视频高度
+ *  - fontSize: 字体大小
+ *  - color: 字体颜色
+ *  - alpha: 字体透明度 0~256
+ *  - stayTime: 弹幕停留时间
+ */
+class ASS {
+    constructor(options) {
+        let defaultOptions = {
+            width: 1920,
+            height: 1080,
+            fontSize: 36,
+            alpha: this._prefixInteger(Number(0).toString(16), 2), // 0~255 0不透明 255全透明
+            stayTime: 10,
+            title: "Default"
+        };
+        this.options = {
+            ...defaultOptions,
+            ...options,
+            ...options ? options.alpha ? this._prefixInteger(this.options.alpha.toString(16), 2) : {} : {},
+        };
+
+        this.lines = 20; // 弹幕行数
+        this.lineBase = this.options.height / this.lines; // 每行高度
+        this.currentLine = 0; // 当前行数
+        this.diffTime = 1500; // 如果上下两条在n秒内连续发送，就换行
+    }
+
+    generate(list) {
+        /**
+         * list<Array>: 
+         *  - time: 时间，单位毫秒
+         *  - txt: 文本
+         *  - color: 颜色
+         */
+        let sortList = list.sort((a, b) => {
+            return a.time - b.time;
+        })
+        let result = this._getScriptInfo() + this._getV4Styles() + this._getEvents();
+        for (let i = 0; i < sortList.length; i++) {
+            if (i > 0 && sortList[i].time - sortList[i-1].time <= this.diffTime) {
+                this.currentLine++;
+            } else {
+                this.currentLine = 0;
+            }
+            if (this.currentLine >= this.lines) {
+                this.currentLine = 0;
+            }
+            let item = sortList[i];
+            let endTime = Number(item.time) + Number(this.options.stayTime) * 1000;
+            let heightOffset = this.lineBase * this.currentLine + this.options.fontSize;
+            let fontWidth = this.options.fontSize * item.txt.length;
+            result += `Dialogue: 0,${formatSeconds2(Number(item.time)/1000)}.00,${formatSeconds2(endTime/1000)}.00,Color${item.color},,0,0,0,,{\\move(${this.options.width + fontWidth},${heightOffset},${-fontWidth},${heightOffset})}${item.txt}\n`;
+        }
+        return result;
+    }
+
+    _prefixInteger(num, length) {
+        num = '' + num;
+        return Array(length + 1 - num.length).join('0') + num;
+    }
+
+    _getScriptInfo() {
+        return `[Script Info]
+; DouyuEx -By qianjiachun
+; https://github.com/qianjiachun/douyuEx
+ScriptType: v4.00+
+Title: ${this.options.title}
+PlayResX: ${this.options.width}
+PlayResY: ${this.options.height}
+`
+    }
+
+    _getV4Styles() {
+        return `
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Color0,黑体,${this.options.fontSize},&H${this.options.alpha}FFFFFF,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color7,黑体,${this.options.fontSize},&H${this.options.alpha}5456FF,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color8,黑体,${this.options.fontSize},&H${this.options.alpha}2375FF,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color9,黑体,${this.options.fontSize},&H${this.options.alpha}B369FE,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color10,黑体,${this.options.fontSize},&H${this.options.alpha}00BCFF,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color11,黑体,${this.options.fontSize},&H${this.options.alpha}46C978,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color12,黑体,${this.options.fontSize},&H${this.options.alpha}FF7F9E,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+Style: Color13,黑体,${this.options.fontSize},&H${this.options.alpha}FF9B3D,&H80000000,&H80000000,&H80000000,0,0,0,0,100,100,0,0,0,0,0,0,0,0,0,134
+`
+    }
+
+    _getEvents() {
+        return `
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+`
+    }
+}
 /* 
     CClick
     单双击/长按不冲突的解决方案 
@@ -10717,7 +12345,7 @@ function getActList() {
 class CClick {
     constructor(element) {
         const CONST_LONG_TIME = 700; // 长按多少ms执行
-        const CONST_DOUBLE_TIME = 250; // 双击的间隔
+        const CONST_DOUBLE_TIME = 0; // 双击的间隔
         this.func_click = null;
         this.func_dbClick = null;
         this.func_longClick = null;
@@ -11484,27 +13112,34 @@ function getRealLive_Bilibili(room_id, qn, cdn, reallive_callback) {
             qn_data = "400";
             break;
         case "5":
-            qn_data = "10000";
+            qn_data = "20000";
             break;
         default:
             qn_data = "80";
             break;
     }
     GM_xmlhttpRequest({
-		method: "GET",
-		url: "https://api.live.bilibili.com/room/v1/Room/playUrl?cid=" + room_id + "&qn=" + qn_data + "&platform=web",
-		responseType: "json",
-		onload: function(response) {
+        method: "GET",
+        url: `https://api.live.bilibili.com/xlive/web-room/v2/index/getRoomPlayInfo?room_id=${room_id}&platform=web&qn=${qn_data}&protocol=0,1&format=0,1,2&codec=0,1`,
+        responseType: "json",
+        onload: function (response) {
             let ret = response.response;
             let rurl = "";
-            if (ret.data.durl != null) {
-                rurl = ret.data.durl[Number(cdn)].url;
-            } else {
-                rurl = "";
+            for (let i = 0; i < ret.data.playurl_info.playurl.stream.length; i++) {
+                const item = ret.data.playurl_info.playurl.stream[i];
+                if (String(item.protocol_name).includes("stream") && item.format.length > 0) {
+                    let url_info = item.format[0].codec[0].url_info[0];
+                    let base_url = item.format[0].codec[0].base_url;
+                    rurl = `${url_info.host}${base_url}${url_info.extra}`;
+                }
+            }
+            let streamList = ret.data.durl;
+            if (streamList) {
+                rurl = streamList.length > 0 ? streamList[0].url : "";
             }
             reallive_callback(rurl);
         }
-	});
+    });
 }
 /*
     Get Bilibili Real Room ID
@@ -11512,19 +13147,15 @@ function getRealLive_Bilibili(room_id, qn, cdn, reallive_callback) {
 */
 
 function getRealRid_Bilibili(url, realrid_callback) {
+    let arr = url.split("/");
+    let rid = arr[arr.length - 1];
     GM_xmlhttpRequest({
 		method: "GET",
-		url: url,
-        responseType: "text",
+		url: "https://api.live.bilibili.com/room/v1/Room/room_init?id=" + rid,
+        responseType: "json",
 		onload: function(response) {
             let ret = response.response;
-            let rid = "";
-            rid =  getStrMiddle(ret, 'room_id":', ',');
-            rid = rid.trim();
-            if (rid == "") {
-                rid = "-1";
-            }
-            realrid_callback(rid);
+            realrid_callback(ret.data.room_id);
         }
 	});
 }
@@ -11538,18 +13169,35 @@ function getRealLive_Douyu(room_id, is_video, is_https, qn, reallive_callback) {
     // 第三个参数传入bool,表示是否返回https地址。注意https地址只能使用一次，使用过以后需要再次获取；http地址无限制
     // 第四个参数传入string(1,2,3,4),表示清晰度 流畅_550p(rate:1) 高清_1200p(rate:2) 超清_2000p(rate:3) 蓝光4M_4000p(rate:0) 填写1015则返回默认清晰度
     // 第五个参数传入回调函数，最好是箭头函数，用于处理返回的地址，例: (url) => {console.log(url)}
-    GM_xmlhttpRequest({
-		method: "GET",
-		url: 'https://m.douyu.com/' + room_id,
-		responseType: "text",
-		onload: function(response) {
-            let a = response.response.match(/(function ub9.*)[\s\S](var.*)/i);
-            let ub9_ex = String(a[0]).replace("ub98484234", "ub98484234_ex");
-            eval1(ub9_ex, "exScript1");
-            let tt0 = Math.round(new Date().getTime()/1000).toString();
-            RealLive_get_sign_url(room_id, tt0, is_https, qn, reallive_callback, is_video);
-        }
-	});
+    let tt0 = Math.round(new Date().getTime()/1000).toString();
+    if (is_video) {
+        // 由于pc获取的流没办法通过在后缀增加&only-audio=1来实现音频流，所以分开来实现
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: 'https://www.douyu.com/' + room_id,
+            responseType: "text",
+            onload: function(response) {
+                let a = response.response.match(/(vdwdae325w_64we[\s\S]*?function ub98484234[\s\S]*?)function/i);
+                let ub9_ex = String(a[1]).replace("ub98484234", "ub98484234_ex_pc");
+                eval1(ub9_ex, "exScript2");
+                // RealLive_get_sign_url(room_id, tt0, is_https, qn, reallive_callback, is_video);
+                RealLive_get_sign_url_pc(room_id, tt0, true, qn, reallive_callback, is_video);
+            }
+        });
+    } else {
+        GM_xmlhttpRequest({
+            method: "GET",
+            url: 'https://m.douyu.com/' + room_id,
+            responseType: "text",
+            onload: function(response) {
+                let a = response.response.match(/(function ub9.*)[\s\S](var.*)/i);
+                let ub9_ex = String(a[0]).replace("ub98484234", "ub98484234_ex");
+                eval1(ub9_ex, "exScript1");
+                // RealLive_get_sign_url(room_id, tt0, is_https, qn, reallive_callback, is_video);
+                RealLive_get_sign_url(room_id, tt0, true, qn, reallive_callback, is_video);
+            }
+        });
+    }
 }
 
 function RealLive_get_sign_url(r, tt, is_https, qn, reallive_callback, is_video) {
@@ -11600,7 +13248,7 @@ function RealLive_get_sign_url(r, tt, is_https, qn, reallive_callback, is_video)
                     cl = "4000p"
                     break;              
                 default:
-                    cl = "1200p"
+                    cl = ""
                     break;
             }
             let realLive = "";
@@ -11611,12 +13259,14 @@ function RealLive_get_sign_url(r, tt, is_https, qn, reallive_callback, is_video)
                     realLive = String(ret.data.url).replace("m3u8", "flv");
                     realLive = realLive.replace("http:", "https:");
                 } else {
-                    if (qn == "1015") {
+                    if (qn == "1015" || cl == "") {
                         // qn写1015则不返回清晰度，即默认
-                        realLive = "http://tx2play1.douyucdn.cn/live/" + result + ".xs";
+                        // realLive = "http://tx2play1.douyucdn.cn/live/" + result + ".xs";
                         // realLive = "http://dyscdnali1.douyucdn.cn/live/" + result + ".flv?uuid=";
+                        realLive = "https://openflv-huos.douyucdn2.cn/dyliveflv1/" + result + ".flv?uuid=";
                     } else {
-                        realLive = "http://tx2play1.douyucdn.cn/live/" + result + "_" + cl + ".xs";
+                        realLive = "https://openflv-huos.douyucdn2.cn/dyliveflv1/" + result + "_" + cl + ".flv?uuid=";
+                        // realLive = "http://tx2play1.douyucdn.cn/live/" + result + "_" + cl + ".xs";
                     }
                 }
                 realLive = is_video ? realLive : realLive + "&only-audio=1";
@@ -11625,6 +13275,35 @@ function RealLive_get_sign_url(r, tt, is_https, qn, reallive_callback, is_video)
         }
     });
 }
+
+function RealLive_get_sign_url_pc(r, tt, is_https, qn, reallive_callback) {
+    let param1 = ub98484234_ex_pc(r, getDyDid(), tt);
+    let postData;
+    if (qn == "1015") {
+        postData = param1 + "&ver=219032101&cdn=hs-h5&rid=" + r + "&rate=0";
+    } else {
+        postData = param1 + "&ver=219032101&cdn=hs-h5&rid=" + r + "&rate=" + qn;
+    }
+    document.getElementById("exScript2").remove();
+    GM_xmlhttpRequest({
+        method: "POST",
+        url: "https://www.douyu.com/lapi/live/getH5Play/" + r,
+        data: postData,
+        responseType: "json",
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        onload: function(response) {
+            let ret = response.response;
+            let realLive = "";
+            if (ret.error === 0) {
+                realLive = `${ret.data.rtmp_url}/${ret.data.rtmp_live}`
+            }
+            reallive_callback(realLive);
+        }
+    });
+}
+
 
 
 function eval1(str, iid) {
@@ -11669,7 +13348,7 @@ function getRealRid_Douyu(url, realrid_callback) {
     Get Huya Real Live URL (https)
     By: 小淳
 */
-function getRealLive_Huya(url, qn, reallive_callback) {
+function getRealLive_Huya(rid, qn, reallive_callback) {
     // 第一个参数传入string,表示房间号（注意是真实房间号）
     // 第二个参数传入string(1,2,3,4),表示清晰度 流畅_500(1) 超清_2500(2) 蓝光4M_4500(3) 原画(4)
     // 第三个参数传入string(1,2,3,4),表示线路 1:主线路 2:备用线路1 3:备用线路2 4:备用线路3 
@@ -11695,67 +13374,128 @@ function getRealLive_Huya(url, qn, reallive_callback) {
     }
     GM_xmlhttpRequest({
         method: 'GET',
-        headers: {
-            'user-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
-        },
-        url: url,
-        responseType: 'blob',
-        onload: resp=>{
+        url: "https://mp.huya.com/cache.php?m=Live&do=profileRoom&roomid=" + rid,
+        responseType: 'json',
+        onload: ret=>{
             let msg = "";
-            let ret = resp.responseText;
-            let liveUrl = getStrMiddle(ret, `liveLineUrl":"`, `",`);
-            liveUrl = window.atob(liveUrl);
-            // let liveUrl = /\<script\>\s*var liveLineUrl = "(.+)";\s*\<\/script\>/.exec(ret);
-            if (liveUrl == null) {
+            let liveUrl = "";
+            let multiLine = ret.response.data.stream.flv.multiLine;
+            if (multiLine.length && multiLine.length > 0) {
+                liveUrl = multiLine[0].url.replace("http", "https");
+            }
+            if (liveUrl == null || liveUrl == "") {
                 msg = "房间暂未开播";
-            } else {
-                // liveUrl = liveUrl[1];
-                // liveUrl = liveUrl.replace(/(_\d+)(.m3u8)/, '$2');
-                // liveUrl = "https:" + liveUrl;
-                // liveUrl = liveUrl + "&ratio=" + qn_data;
-                // liveUrl = String(liveUrl).replace("m3u8", "flv");
-                liveUrl = "https:" + liveUrl;
-                liveUrl = String(liveUrl).replace("hls", "flv").replace("m3u8", "flv");
             }
             reallive_callback(liveUrl, msg);
         }
     })
 }
-class STT {
-    escape(v) {
-        return v.toString().replace(/@/g, '@A').replace(/\//g, '@S')
+let responseHookCallbackList = [];  
+let requestBodyMap = new Map(); // 使用Map来存储请求体和XMLHttpRequest实例的关联  
+  
+function initResponseHook() {  
+  // 保存原始的send方法  
+  const originalSend = unsafeWindow.XMLHttpRequest.prototype.send;  
+  
+  // 重写send方法以捕获请求体  
+  unsafeWindow.XMLHttpRequest.prototype.send = function(body) {  
+    // 将请求体与当前XMLHttpRequest实例关联起来  
+    requestBodyMap.set(this, body);  
+  
+    // 调用原始的send方法  
+    originalSend.call(this, body);  
+  
+    // 注意：不要在这里清除请求体，因为响应可能还没有返回  
+  };  
+  
+  // 重写responseText的getter以处理响应  
+  let accessor = Object.getOwnPropertyDescriptor(unsafeWindow.XMLHttpRequest.prototype, 'responseText');  
+  Object.defineProperty(unsafeWindow.XMLHttpRequest.prototype, 'responseText', {  
+    get: function() {  
+      let text = accessor.get.call(this);  
+      // 从Map中获取当前XMLHttpRequest实例对应的请求体  
+      let requestBody = requestBodyMap.get(this);  
+  
+      // 调用回调函数处理响应，并传入请求体  
+      for (const callback of responseHookCallbackList) {  
+        let newText = callback(this.responseURL, text, requestBody);  
+        if (newText !== undefined) {  
+          text = newText;  
+        }  
+      }  
+  
+      // 清除Map中对应的请求体（可选，取决于你是否需要保留这些信息）  
+      requestBodyMap.delete(this);  
+  
+      return text;  
+    },  
+    configurable: true  
+  });  
+}  
+  
+/**  
+ * 对网页上的请求进行hook  
+ * @param {(url: string, text: string, body: any)} callback - 回调函数，接收URL、响应文本和请求体作为参数  
+ */  
+function responseHook(callback) {  
+  responseHookCallbackList.push(callback);  
+}  
+/**
+ * 拦截并修改特定 Script 标签的内容
+ * 数组结构：
+ * [
+ *  { url: "", callback: (content: string) => string }
+ * ]
+ */
+let scriptHookCallbackList = [];
+
+function initScriptHook() {
+  new DomHook("head", true, function (mutations) {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.tagName !== "SCRIPT") return;
+        const src = node.getAttribute("src");
+        if (!src) return;
+        const callback = scriptHookCallbackList.find((item) => src.includes(item.url));
+        if (!callback) return;
+        fetch(node.src)
+          .then((response) => response.text())
+          .then((content) => {
+            const modifiedContent = callback.callback(content);
+            const newScript = document.createElement("script");
+            newScript.textContent = modifiedContent;
+            node.parentNode.replaceChild(newScript, node);
+          })
+          .catch((err) => console.error("Error loading script:", err));
+      });
+    });
+  });
+}
+
+function scriptHook(callback) {
+  scriptHookCallbackList.push(callback);
+}
+function stt_unescape(v) {
+    if (!v) return
+    return v.toString().replace(/@S/g, '/').replace(/@A/g, '@')
+}
+
+function stt_deserialize(raw) {
+    if(!raw) return
+    if (raw.includes('//')) {
+        return raw.split('//').filter(e => e !== '').map(item => stt_deserialize(item))
     }
 
-    unescape(v) {
-        return v.toString().replace(/@A/g, '@').replace(/@S/g, '/')
-    }
-
-    serialize(raw) {
-        if (util.isObject(raw)) {
-            return Object.keys(raw).map(k => `${k}@=${this.escape(this.serialize(raw[k]))}/`).join('')
-        } else if (Array.isArray(raw)) {
-            return raw.map(v => `${this.escape(this.serialize(v))}/`).join('')
-        } else if (util.isString(raw) || util.isNumber(raw)) {
-            return raw.toString()
-        }
-    }
-
-    deserialize(raw) {
-        if (raw.includes('//')) {
-            return raw.split('//').filter(e => e !== '').map(item => this.deserialize(item))
-        }
-
-        if (raw.includes('@=')) {
-            return raw.split('/').filter(e => e !== '').reduce((o, s) => {
-                const [k, v] = s.split('@=')
-                o[k] = this.deserialize(this.unescape(v))
-                return o
-            }, {})
-        } else if (raw.includes('@A=')) {
-            return this.deserialize(this.unescape(raw))
-        } else {
-            return raw.toString()
-        }
+    if (raw.includes('@=')) {
+        return raw.split('/').filter(e => e !== '').reduce((o, s) => {
+            const [k, v] = s.split('@=')
+            o[k] = stt_deserialize(stt_unescape(v))
+            return o
+        }, {})
+    } else if (raw.includes('@A=')) {
+        return stt_deserialize(stt_unescape(raw))
+    } else {
+        return raw.toString()
     }
 }
 
@@ -11922,48 +13662,63 @@ function hex(e) {
     By: 小淳
 */
 class Ex_WebSocket_UnLogin {
-    // 调用方法：
-    // 连接：let a = new Ex_WebSocket_UnLogin("房间号", 消息回调函数);
-    // 关闭连接: a.WebSocket_Close(); a = null; 记得null掉变量再重新连接
-    // 消息回调函数建议用箭头函数，示例：(msg) => {// TODO}
-    constructor(rid, callback) {
+    constructor(rid, msgHandler) {
         if ("WebSocket" in window) {
             this.timer = 0;
-            this.roomid = rid;
-            this.ws = new WebSocket("wss://danmuproxy.douyu.com:850" + String(getRandom(2,5))); // 负载均衡 8502~8504都可以用
-            this.ws.onopen = () => {
-                this.ws.send(WebSocket_Packet("type@=loginreq/roomid@=" + rid));
-                this.ws.send(WebSocket_Packet("type@=joingroup/rid@=" + rid + "/gid@=-9999/"));
-                this.timer = setInterval(() => {
-                    this.ws.send(WebSocket_Packet("type@=mrkl/"));
-                }, 40000)
-                // console.log("WebSocket已连接");
-            };
-            this.ws.onmessage = (e) => { 
-                let reader = new FileReader();
-                reader.onload = () => {
-                    let arr = String(reader.result).split("\0"); // 分包
-                    reader = null;
-                    for (let i = 0; i < arr.length; i++) {
-                        if (arr[i].length > 12) {
-                            // 过滤第一条和心跳包
-                            callback(arr[i]);
-                        }
-                    }
-                };
-                reader.readAsText(e.data);
-            };
-            this.ws.onclose = () => { 
-                showMessage("服务器连接丢失，请尝试刷新页面", "error");
-                console.log("服务器连接丢失");
-            };
+            this.rid = rid;
+            this.msgHandler = msgHandler;
+            this.connect();
         }
     }
+
+    connect() {
+        this.ws = new WebSocket("wss://danmuproxy.douyu.com:850" + String(getRandom(2, 5)));
+        this.ws.onopen = () => {
+            this.ws.send(WebSocket_Packet("type@=loginreq/roomid@=" + this.rid));
+            this.ws.send(WebSocket_Packet("type@=joingroup/rid@=" + this.rid + "/gid@=-9999/"));
+            // this.ws.send(WebSocket_Packet("type@=sub/mt@=asr_caption/"));
+            this.timer = setInterval(() => {
+                this.ws.send(WebSocket_Packet("type@=mrkl/"));
+            }, 40000);
+        };
+
+        this.ws.onerror = () => {
+            this.close();
+        };
+
+        this.ws.onmessage = (e) => {
+            let reader = new FileReader();
+            reader.onload = () => {
+                let arr = String(reader.result).split("\0"); // 分包
+                reader = null;
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i].length > 12) {
+                        // 过滤第一条和心跳包
+                        this.msgHandler(arr[i]);
+                    }
+                }
+            };
+            reader.readAsText(e.data);
+        };
+
+        this.ws.onclose = () => {
+            this.close();
+            this.reconnect();
+        };
+    }
+
+    reconnect() {
+        setTimeout(() => {
+            this.connect();
+        }, 3000); // 3秒后尝试重新连接
+    }
+
     close() {
         clearInterval(this.timer);
         this.ws.close();
     }
 }
+
 function initRouter(href) {
     // 用于优先载入夜间模式
     // if (String(href).indexOf("www.douyu.com") && String(href).indexOf("getFansBadgeList") == -1) {
@@ -12140,6 +13895,7 @@ function initRouter_Video() {
         initPkg_VideoTime();
         initPkg_VideoTools_Camera_Video();
         initPkg_DyVideoDownload();
+        initPkg_DyVideoBarrageLine();
     }
 }
 
